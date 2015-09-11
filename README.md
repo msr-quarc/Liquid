@@ -9,7 +9,7 @@ The “i” is just a constant scaling factor, hence the acronym.
 
 #### For More Information
 
-See the {Microsoft Research project page on LIQUi|>](http://research.microsoft.com/en-us/projects/liquid/).
+See the [Microsoft Research project page on LIQUi|>](http://research.microsoft.com/en-us/projects/liquid/).
 
 
 ### What Can I Do With It?
