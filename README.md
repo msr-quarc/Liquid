@@ -14,7 +14,8 @@ LIQUi|> includes three simulators:
 
 #### For More Information
 
-See the [Microsoft Research project page on LIQUi|>](http://research.microsoft.com/en-us/projects/liquid/).
+See the [Microsoft Research project page on LIQUi|>](http://research.microsoft.com/en-us/projects/liquid/)
+and the paper, [LIQUi|>: A Software Design Architecture and Domain-Specific Language for Quantum Computing](http://research.microsoft.com/pubs/209634/1402.4467.pdf).
 
 ### What Can I Do With It?
 
@@ -37,6 +38,8 @@ See the [users' guide](https://msr-quarc.github.io/Liquid/LIQUiD.pdf) and the [f
 The help may also be dowloaded as a [single file](https://msr-quarc.github.io/Liquid/Liquid.chm), if desired.
 
 Note that this version of LIQUi|> is limited to a maximum of 22 physical qubits for full state vector simulation.
+
+If you run into a problem or have a question, you can [post an issue](https://github.com/msr-quarc/Liquid/issues).
 
 ## How Do I Get It?
 
