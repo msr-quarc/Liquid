@@ -33,8 +33,8 @@ All of these algorithms, and many more, are included as samples with LIQUi|>.
 
 ## How Do I Use It?
 
-See the [users' guide](https:blob/master/Documentation/LIQUiD.pdf) and the [full help documentation](https:blob/master/Documentation/index.html).
-The help may also be dowloaded as a [single file](https:blob/master/Documentation/Liquid.chm), if desired.
+See the [users' guide](https://github.com/msr-quarc/Liquid/blob/master/Documentation/LIQUiD.pdf) and the [full help documentation](https://github.com/msr-quarc/Liquid/blob/master/Documentation/index.html).
+The help may also be dowloaded as a [single file](https://github.com/msr-quarc/Liquid/blob/master/Documentation/Liquid.chm), if desired.
 
 Note that this version of LIQUi|> is limited to a maximum of 22 physical qubits for full state vector simulation.
 
@@ -44,6 +44,6 @@ LIQUi|> is available as an Azure virtual machine image.
 The VM incldues the Community Edition of Visual Studio 2015 in addition to LIQUi|>.
 
 To set up and use your own Azure virtual machine with LIQUi|>:
-1. Get a free [Microsoft account](http://windows.microsoft.com/en-US/windows-live/sign-up-create-account-how) if you don't already have one. You can use an existing email address for this, if you want, such as your institutional account or an existing Gmail or Yahoo! email account.
-2. Sign up for a free [Azure trial](https://azure.microsoft.com/en-us/pricing/free-trial/) account.
-3. Search for the LIQUi|> virtual machine image in the [Azure Marketplace](http://azure.microsoft.com/en-us/marketplace/virtual-machines/all/). Click on the listing for the LIQUi|> quantum simulator to go to the LIQUi|> VM page, and click on the "Create Virtual Machine" link.
+1 Get a free [Microsoft account](http://windows.microsoft.com/en-US/windows-live/sign-up-create-account-how) if you don't already have one. You can use an existing email address for this, if you want, such as your institutional account or an existing Gmail or Yahoo! email account.
+1 Sign up for a free [Azure trial](https://azure.microsoft.com/en-us/pricing/free-trial/) account.
+1 Search for the LIQUi|> virtual machine image in the [Azure Marketplace](http://azure.microsoft.com/en-us/marketplace/virtual-machines/all/). Click on the listing for the LIQUi|> quantum simulator to go to the LIQUi|> VM page, and click on the "Create Virtual Machine" link.
