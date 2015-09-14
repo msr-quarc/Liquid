@@ -33,8 +33,8 @@ All of these algorithms, and many more, are included as samples with LIQUi|>.
 
 ## How Do I Use It?
 
-See the [users' guide](https://github.com/msr-quarc/Liquid/blob/master/Documentation/LIQUiD.pdf) and the [full help documentation](https://github.com/msr-quarc/Liquid/blob/master/Documentation/index.html).
-The help may also be dowloaded as a [single file](https://github.com/msr-quarc/Liquid/blob/master/Documentation/Liquid.chm), if desired.
+See the [users' guide](https://msr-quarc.github.io/Liquid/LIQUiD.pdf) and the [full help documentation](https://msr-quarc.github.io/Liquid/).
+The help may also be dowloaded as a [single file](https://msr-quarc.github.io/Liquid/Liquid.chm), if desired.
 
 Note that this version of LIQUi|> is limited to a maximum of 22 physical qubits for full state vector simulation.
 
