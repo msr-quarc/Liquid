@@ -33,8 +33,8 @@ All of these algorithms, and many more, are included as samples with LIQUi|>.
 
 ## How Do I Use It?
 
-See the [users' guide](master/Documentation/Liquid.pdf) and the [full help documentation](master/Documentation/index.html).
-The help may also be dowloaded as a [single file](Documentation/Liquid.chm), if desired.
+See the [users' guide](https:master/Documentation/LIQUiD.pdf) and the [full help documentation](https:master/Documentation/index.html).
+The help may also be dowloaded as a [single file](https:Documentation/Liquid.chm), if desired.
 
 Note that this version of LIQUi|> is limited to a maximum of 22 physical qubits for full state vector simulation.
 
