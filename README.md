@@ -17,6 +17,10 @@ LIQUi|> includes three simulators:
 See the [Microsoft Research project page on LIQUi|>](http://research.microsoft.com/en-us/projects/liquid/)
 and the paper, [LIQUi|>: A Software Design Architecture and Domain-Specific Language for Quantum Computing](http://research.microsoft.com/pubs/209634/1402.4467.pdf).
 
+#### How To Cite LIQUi|>
+
+If you use LIQUi|> in your research, please cite it as follows: *TBD (Krysta)*.
+
 ### What Can I Do With It?
 
 You can use LIQUi|> to define quantum circuits, render them into a variety of graphical formats, and execute them
