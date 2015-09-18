@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Liquid</name></assembly>
+<members>
+<member name="M:Microsoft.Research.Liquid.App.Main(System.String[])">
+ <summary>
+ The main entry point for Liquid.
+ </summary>
+</member>
+</members>
+</doc>
