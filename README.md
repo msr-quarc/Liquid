@@ -12,16 +12,16 @@ LIQUi|> includes three simulators:
 * A stabilizer simulator based on CHP (Aaronson and Gottesman, http://arXiv.org/abs/quant-ph/0406196)
 * A highly-optimized full state vector simulator for fermionic Hamiltonians
 
-#### For More Information
+### For More Information
 
 See the [Microsoft Research project page on LIQUi|>](http://research.microsoft.com/en-us/projects/liquid/)
 and the paper, [LIQUi|>: A Software Design Architecture and Domain-Specific Language for Quantum Computing](http://research.microsoft.com/pubs/209634/1402.4467.pdf).
 
-#### How To Cite LIQUi|>
+### How To Cite LIQUi|>
 
 If you use LIQUi|> in your research, please cite it as follows: *TBD (Krysta)*.
 
-### What Can I Do With It?
+## What Can I Do With It?
 
 You can use LIQUi|> to define quantum circuits, render them into a variety of graphical formats, and execute them
 using an appropriate simulator.
@@ -38,6 +38,9 @@ All of these algorithms, and many more, are included as samples with LIQUi|>.
 
 ## How Do I Use It?
 
+LIQUi|> is being made available for use on Microsoft Azure virtual machines. 
+THis version will not run on a desktop machine or other non-Azure system.
+
 See the [users' guide](https://msr-quarc.github.io/Liquid/LIQUiD.pdf) and the [full help documentation](https://msr-quarc.github.io/Liquid/).
 The help may also be dowloaded as a [single file](https://msr-quarc.github.io/Liquid/Liquid.chm), if desired.
 
@@ -47,10 +50,7 @@ If you run into a problem or have a question, you can [post an issue](https://gi
 
 ## How Do I Get It?
 
-LIQUi|> is available as an Azure virtual machine image.
-The VM incldues the Community Edition of Visual Studio 2015 in addition to LIQUi|>.
+LIQUi|> is available from this repository for use on an Azure virtual machine image.
+We recommend using the a VM image that includes the free Community Edition of Visual Studio 2015.
 
-To set up and use your own Azure virtual machine with LIQUi|>:
-1. Get a free [Microsoft account](http://windows.microsoft.com/en-US/windows-live/sign-up-create-account-how) if you don't already have one. You can use an existing email address for this, if you want, such as your institutional account or an existing Gmail or Yahoo! email account.
-2. Sign up for a free [Azure trial](https://azure.microsoft.com/en-us/pricing/free-trial/) account.
-3. Search for the LIQUi|> virtual machine image in the [Azure Marketplace](http://azure.microsoft.com/en-us/marketplace/virtual-machines/all/). Click on the listing for the LIQUi|> quantum simulator to go to the LIQUi|> VM page, and click on the "Create Virtual Machine" link.
+To set up and use your own Azure virtual machine with LIQUi|>, check out the [Quick Start Guide](QuickStart.md).
