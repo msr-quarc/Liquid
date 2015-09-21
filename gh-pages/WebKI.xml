@@ -75,6 +75,7 @@
   <HelpKINode Title="Circuit.Run method" Url="html/077731e9-9f42-9305-fad3-46dac78fb3df.htm" />
   <HelpKINode Title="Circuit.ToString method" Url="html/353bb2bc-5c8e-ca93-15d3-24747cf7a3f7.htm" />
   <HelpKINode Title="Circuit.Wires method" Url="html/a6c0e6d3-4aa5-ca6d-c827-38c47309016d.htm" />
+  <HelpKINode Title="citation property" Url="html/9c82af12-dc7e-138f-6494-522241adaaff.htm" />
   <HelpKINode Title="Clean method" Url="html/7b643af4-3a1a-635f-2d98-de7a4ce12881.htm" />
   <HelpKINode Title="Clear method">
     <HelpKINode Title="CMat.Clear Method " Url="html/9f3ae4c4-464f-f9c7-3a75-5d10421f6d03.htm" />
@@ -96,17 +97,26 @@
   <HelpKINode Title="CMat.Copy method" Url="html/b6701797-09fa-3b01-c008-240df4b12a43.htm" />
   <HelpKINode Title="CMat.CreMat method" Url="html/fbb07cf9-a571-480b-1c4d-6c4e38ef9dc8.htm" />
   <HelpKINode Title="CMat.CreZer method" Url="html/5630e9d7-4d6f-9404-63dc-ff9391fa5fd6.htm" />
+  <HelpKINode Title="CMat.Div method" Url="html/91f3b313-9830-3f28-08d8-924c0c6761d2.htm" />
+  <HelpKINode Title="CMat.DivisionAssignment operator" Url="html/b6a64078-053a-a8e7-515c-d9185845942b.htm" />
   <HelpKINode Title="CMat.Dump method" Url="html/b1da42d8-1f8f-6625-85ca-7c4d339809a8.htm" />
   <HelpKINode Title="CMat.DumpML method" Url="html/9b341e95-761d-0b07-7d97-2245e383f090.htm" />
   <HelpKINode Title="CMat.DumpNarrow method" Url="html/28ca5e7d-cceb-663a-f55a-83b0fdafaa33.htm" />
+  <HelpKINode Title="CMat.FixUnitary method" Url="html/ee357967-a3fd-e090-e097-2fe0ffc439f5.htm" />
   <HelpKINode Title="CMat.Item property" Url="html/523a78d9-12cf-e338-dc7b-9566b0465b8a.htm" />
+  <HelpKINode Title="CMat.Kron method" Url="html/c660d648-cd5d-3276-bf11-9ba6886e6ce3.htm" />
   <HelpKINode Title="CMat.Length property" Url="html/ac2e9c3f-4726-1c14-f9bd-c671352df267.htm" />
   <HelpKINode Title="CMat.LengthC property" Url="html/6e36d94f-f836-a953-4c9b-14d0d0341ec3.htm" />
   <HelpKINode Title="CMat.LengthR property" Url="html/462ec465-d302-756a-5185-aefc9f04fbba.htm" />
   <HelpKINode Title="CMat.Mul method" Url="html/eb7681b5-69d2-1cfa-7ae3-1ed2aad0ef15.htm" />
   <HelpKINode Title="CMat.Multiply operator" Url="html/b4ceb93c-f2c9-82da-cfa8-d759dd206704.htm" />
   <HelpKINode Title="CMat.MultiplyAssignment operator" Url="html/26864957-e4cc-700e-5778-1a002eaed859.htm" />
+  <HelpKINode Title="CMat.MultiplyBang operator" Url="html/8c6eee20-5644-49f5-82bb-48bc5764b95e.htm" />
+  <HelpKINode Title="CMat.Power method" Url="html/e1799065-c456-c2aa-d60f-9d4959b85d3a.htm" />
+  <HelpKINode Title="CMat.Read method" Url="html/1fff6e9f-22a3-03b0-5253-b816677f5947.htm" />
   <HelpKINode Title="CMat.ToString method" Url="html/35c834cd-095e-bf35-79ee-60288565385c.htm" />
+  <HelpKINode Title="CMat.UnitaryError method" Url="html/22b0c89a-01a6-8f98-b3e5-8072a7b057e9.htm" />
+  <HelpKINode Title="CMat.Write method" Url="html/19040f20-4b98-7f90-1b96-2994668cafe5.htm" />
   <HelpKINode Title="CNOT method" Url="html/5ee2203f-4195-4301-1619-0790c52ba9c2.htm" />
   <HelpKINode Title="Coalesce property" Url="html/caaa3991-c27c-3e31-044e-ff0d150c634f.htm" />
   <HelpKINode Title="Compile method">
@@ -149,8 +159,9 @@
     <HelpKINode Title="Ket.Copy Method " Url="html/45935a9a-2e51-38e5-09df-f56dea14fabb.htm" />
     <HelpKINode Title="Spin.Copy Method " Url="html/0391d2be-c314-d15b-f7d8-e5396eba1af0.htm" />
   </HelpKINode>
-  <HelpKINode Title="count property" Url="html/a5d54801-ef17-0710-3a9c-9242690e26da.htm" />
+  <HelpKINode Title="copyright property" Url="html/966ce531-169d-ac19-d449-049519fd9515.htm" />
   <HelpKINode Title="Count property" Url="html/1fb4b1c4-dd35-db6f-9b99-9645233401b6.htm" />
+  <HelpKINode Title="count property" Url="html/a5d54801-ef17-0710-3a9c-9242690e26da.htm" />
   <HelpKINode Title="CreMat method" Url="html/fbb07cf9-a571-480b-1c4d-6c4e38ef9dc8.htm" />
   <HelpKINode Title="CreZer method" Url="html/5630e9d7-4d6f-9404-63dc-ff9391fa5fd6.htm" />
   <HelpKINode Title="CRx method" Url="html/c5131064-57ef-4b68-6ce3-9244155caf3b.htm" />
@@ -173,12 +184,16 @@
   <HelpKINode Title="CSMat.DumpDense method" Url="html/95dc3a93-1758-6fa9-9a8c-9f570ecfbf4c.htm" />
   <HelpKINode Title="CSMat.DumpMCC method" Url="html/b17b05a2-708f-1c31-58c2-26d18c5d235b.htm" />
   <HelpKINode Title="CSMat.DumpML method" Url="html/41750a72-855b-be1d-4b64-2c10db2902f9.htm" />
+  <HelpKINode Title="CSMat.Equals method" Url="html/d13f0933-e684-6e52-4a98-5316881d05b3.htm" />
   <HelpKINode Title="CSMat.Item property" Url="html/72715da5-1f89-b601-0047-390e0bdda6c8.htm" />
+  <HelpKINode Title="CSMat.Kron method" Url="html/31dd4def-5d71-afd7-c6c9-fd4155fdef8b.htm" />
   <HelpKINode Title="CSMat.Length property" Url="html/7284a1d0-7a21-6349-1ebc-0d9cf848c4f9.htm" />
   <HelpKINode Title="CSMat.Mul method" Url="html/77b0b14a-86e9-0f76-728b-b983a88ee78e.htm" />
   <HelpKINode Title="CSMat.Multiply operator" Url="html/9addc2b3-7af6-02e0-e0f7-4f4eb4becbb5.htm" />
+  <HelpKINode Title="CSMat.MultiplyBang operator" Url="html/4610ca81-5456-90af-c176-8721757bdc80.htm" />
   <HelpKINode Title="CSMat.Read method" Url="html/b58a9a45-cea7-fce9-7820-58cdf20bb6cb.htm" />
   <HelpKINode Title="CSMat.ToString method" Url="html/4beb5b15-3128-0d0c-a096-c88963b8887d.htm" />
+  <HelpKINode Title="CSMat.UnitaryError method" Url="html/f7b34f48-a92b-f05b-64df-e19a231b2c62.htm" />
   <HelpKINode Title="CSMat.Write method" Url="html/c947d007-ec3b-bddd-16f8-f3bf12c5814f.htm" />
   <HelpKINode Title="CTtheta method" Url="html/466c53f8-791b-c7d0-d051-8f2a8a6c6122.htm" />
   <HelpKINode Title="currentCirc property">
@@ -198,7 +213,9 @@
   <HelpKINode Title="CVec.CVec constructor" Url="html/758af9ba-1896-2a9b-9b2e-c4fe66ff4ab4.htm" />
   <HelpKINode Title="CVec.Dump method" Url="html/b599014e-42d0-3a01-ce4c-e1ca46ac1329.htm" />
   <HelpKINode Title="CVec.DumpMCC method" Url="html/65c95d72-f81f-951f-ef6f-e48b6e2b5a60.htm" />
+  <HelpKINode Title="CVec.GlobalPhase method" Url="html/886401f3-de4f-e4aa-0e0e-7880c17a2b61.htm" />
   <HelpKINode Title="CVec.iSafe property" Url="html/4e03febb-f29e-dff6-54ef-2684555d0e28.htm" />
+  <HelpKINode Title="CVec.Kron method" Url="html/92a43eac-a201-3c92-66af-eed3ed187083.htm" />
   <HelpKINode Title="CVec.Length property" Url="html/ed686628-605a-2388-739f-d0b477ff92c0.htm" />
   <HelpKINode Title="CVec.MultiplyBang operator" Url="html/6f8e1240-4dc2-fec0-b5f4-4f14860a7735.htm" />
   <HelpKINode Title="CVec.Normalize method" Url="html/f642b691-d9a5-e2ad-972b-a9a7852f1362.htm" />
@@ -226,6 +243,8 @@
   <HelpKINode Title="Dense method" Url="html/06f2b318-7201-e8f9-8b74-c8aea4515887.htm" />
   <HelpKINode Title="detail property" Url="html/53456946-5361-a0b9-47f4-13041364efd9.htm" />
   <HelpKINode Title="Diff property" Url="html/2f69f801-b4a1-1a62-e1d4-50cef61cd2e8.htm" />
+  <HelpKINode Title="Div method" Url="html/91f3b313-9830-3f28-08d8-924c0c6761d2.htm" />
+  <HelpKINode Title="DivisionAssignment operator" Url="html/b6a64078-053a-a8e7-515c-d9185845942b.htm" />
   <HelpKINode Title="Draw property" Url="html/8c1c91a6-a421-e1ec-8cd3-8260477468df.htm" />
   <HelpKINode Title="Dump method">
     <HelpKINode Title="Bit.Dump Method " Url="html/2257608b-f3b3-fa4a-5873-d72620957dbb.htm" />
@@ -263,7 +282,10 @@
   <HelpKINode Title="Entangle method" Url="html/15829146-327a-1ae2-de8f-acc9fc80e125.htm" />
   <HelpKINode Title="Entangled property" Url="html/b2eb1393-0807-d0ef-4ba6-8b084a9df593.htm" />
   <HelpKINode Title="Entropy method" Url="html/4b4eb681-4588-6a7a-af13-36046b62b490.htm" />
-  <HelpKINode Title="Equals method" Url="html/1770fdc6-5196-85be-3520-e8a5d9452500.htm" />
+  <HelpKINode Title="Equals method">
+    <HelpKINode Title="CSMat.Equals Method " Url="html/d13f0933-e684-6e52-4a98-5316881d05b3.htm" />
+    <HelpKINode Title="Gate.Equals Method " Url="html/1770fdc6-5196-85be-3520-e8a5d9452500.htm" />
+  </HelpKINode>
   <HelpKINode Title="events property" Url="html/409a5986-155f-cb3d-1203-811c375a32b7.htm" />
   <HelpKINode Title="Fermion class">
     <HelpKINode Title="Fermion Class" Url="html/efa7d183-d5ad-d201-b63c-85ebf181375f.htm" />
@@ -295,6 +317,7 @@
   <HelpKINode Title="Fermion.Ua property" Url="html/2eccdbc0-3056-3c3c-17e2-e6b0234c01d6.htm" />
   <HelpKINode Title="Ferro method" Url="html/e8b167d9-8b4a-07bf-4b4a-c8d8505bdd81.htm" />
   <HelpKINode Title="FindIds method" Url="html/cb59bcd7-1472-cdc6-cc41-6ce36b27d89b.htm" />
+  <HelpKINode Title="FixUnitary method" Url="html/ee357967-a3fd-e090-e097-2fe0ffc439f5.htm" />
   <HelpKINode Title="Fold method" Url="html/1e2bd177-d7aa-d609-f506-1d6af21e8829.htm" />
   <HelpKINode Title="func property" Url="html/fbd31e9e-75fc-6461-ebd0-35ba144395ce.htm" />
   <HelpKINode Title="Gate class">
@@ -345,6 +368,7 @@
   <HelpKINode Title="GetMeasured method" Url="html/fec2ff48-2042-b9f4-1c22-bc633e4839bf.htm" />
   <HelpKINode Title="getStrPar method" Url="html/fc5d9465-af27-0d4e-4503-8dc01a45bf56.htm" />
   <HelpKINode Title="get_Normal method" Url="html/3047b00c-2cf3-8f12-e354-4e8f94d000ae.htm" />
+  <HelpKINode Title="GlobalPhase method" Url="html/886401f3-de4f-e4aa-0e0e-7880c17a2b61.htm" />
   <HelpKINode Title="GreaterBangLess(Of a) operator" Url="html/b6035e7d-95a9-fe48-ab90-84e42502c7d3.htm" />
   <HelpKINode Title="GreaterBangLess&lt;a&gt; operator" Url="html/b6035e7d-95a9-fe48-ab90-84e42502c7d3.htm" />
   <HelpKINode Title="GreaterLess operator" Url="html/1aaaefe5-7336-8cb3-0826-3d734310c203.htm" />
@@ -462,6 +486,11 @@
   <HelpKINode Title="Ket.ToString method" Url="html/215c86b4-b8a1-1dca-a739-b9a28cb4e663.htm" />
   <HelpKINode Title="Ket.TraceRun property" Url="html/ec64fce7-988e-742c-5097-af6ed612994a.htm" />
   <HelpKINode Title="Ket.Write method" Url="html/8abefbf9-acb4-f444-27e9-a722d76577a2.htm" />
+  <HelpKINode Title="Kron method">
+    <HelpKINode Title="CMat.Kron Method " Url="html/c660d648-cd5d-3276-bf11-9ba6886e6ce3.htm" />
+    <HelpKINode Title="CSMat.Kron Method " Url="html/31dd4def-5d71-afd7-c6c9-fd4155fdef8b.htm" />
+    <HelpKINode Title="CVec.Kron Method " Url="html/92a43eac-a201-3c92-66af-eed3ed187083.htm" />
+  </HelpKINode>
   <HelpKINode Title="Label method" Url="html/4794a0e3-9e29-5eff-9e0a-1b389a2d5c29.htm" />
   <HelpKINode Title="LabelC method" Url="html/0ede74cb-c3e0-4fc5-7d15-51ac194ecc21.htm" />
   <HelpKINode Title="LabelCD method" Url="html/37607b04-2531-2738-8185-3641a74b7ce8.htm" />
@@ -541,7 +570,11 @@
     <HelpKINode Title="CSMat.Multiply Operator " Url="html/9addc2b3-7af6-02e0-e0f7-4f4eb4becbb5.htm" />
   </HelpKINode>
   <HelpKINode Title="MultiplyAssignment operator" Url="html/26864957-e4cc-700e-5778-1a002eaed859.htm" />
-  <HelpKINode Title="MultiplyBang operator" Url="html/6f8e1240-4dc2-fec0-b5f4-4f14860a7735.htm" />
+  <HelpKINode Title="MultiplyBang operator">
+    <HelpKINode Title="CMat.MultiplyBang Operator " Url="html/8c6eee20-5644-49f5-82bb-48bc5764b95e.htm" />
+    <HelpKINode Title="CSMat.MultiplyBang Operator " Url="html/4610ca81-5456-90af-c176-8721757bdc80.htm" />
+    <HelpKINode Title="CVec.MultiplyBang Operator " Url="html/6f8e1240-4dc2-fec0-b5f4-4f14860a7735.htm" />
+  </HelpKINode>
   <HelpKINode Title="Name property" Url="html/94622816-dfac-11ae-12e2-d04ff98f079f.htm" />
   <HelpKINode Title="Narrow method" Url="html/0e359d12-8764-22e2-45b9-3d6c4f9ba509.htm" />
   <HelpKINode Title="Native method" Url="html/084d84de-7992-9a59-e6ee-45f8b5b3b419.htm" />
@@ -690,6 +723,7 @@
   <HelpKINode Title="PermAry method" Url="html/5960bcda-06f6-0f01-1aca-14c1f37a57cc.htm" />
   <HelpKINode Title="Phase property" Url="html/f5239b2a-7f77-52c4-1296-b83529e56d32.htm" />
   <HelpKINode Title="PhaseSetup method" Url="html/44890045-f880-67ea-88d4-014051e81faf.htm" />
+  <HelpKINode Title="Power method" Url="html/e1799065-c456-c2aa-d60f-9d4959b85d3a.htm" />
   <HelpKINode Title="Prep method">
     <HelpKINode Title="Fermion.Prep Method " Url="html/f91fcd8a-d645-b67e-efb9-4c1754111e04.htm" />
     <HelpKINode Title="QECC.Prep Method " Url="html/71889cde-c639-02bc-0d7b-db6cb58ed57d.htm" />
@@ -754,6 +788,7 @@
   <HelpKINode Title="r property" Url="html/f0ea3d8d-ef5d-d323-ad87-5b34f0c58e9b.htm" />
   <HelpKINode Title="RandSeed property" Url="html/d881e8b4-6f60-3079-fa09-5a0073c5759f.htm" />
   <HelpKINode Title="Read method">
+    <HelpKINode Title="CMat.Read Method " Url="html/1fff6e9f-22a3-03b0-5253-b816677f5947.htm" />
     <HelpKINode Title="CSMat.Read Method " Url="html/b58a9a45-cea7-fce9-7820-58cdf20bb6cb.htm" />
     <HelpKINode Title="CVec.Read Method " Url="html/ad4f37b6-233e-0ce5-1968-903a851e07d2.htm" />
     <HelpKINode Title="Ket.Read Method " Url="html/6528f6b2-b3eb-ddcc-bd84-2ace1f60793a.htm" />
@@ -952,6 +987,10 @@
   <HelpKINode Title="Ua property" Url="html/2eccdbc0-3056-3c3c-17e2-e6b0234c01d6.htm" />
   <HelpKINode Title="UnaryNegation operator" Url="html/f9c03291-6f0b-f9a2-6ba1-c66b3126eaad.htm" />
   <HelpKINode Title="UnEntangle method" Url="html/f1330cfc-4764-1b17-e433-c405404f9670.htm" />
+  <HelpKINode Title="UnitaryError method">
+    <HelpKINode Title="CMat.UnitaryError Method " Url="html/22b0c89a-01a6-8f98-b3e5-8072a7b057e9.htm" />
+    <HelpKINode Title="CSMat.UnitaryError Method " Url="html/f7b34f48-a92b-f05b-64df-e19a231b2c62.htm" />
+  </HelpKINode>
   <HelpKINode Title="User property" Url="html/764cb2ad-205b-9fb7-0f6f-08b074827621.htm" />
   <HelpKINode Title="Util class">
     <HelpKINode Title="Util Class" Url="html/8873372a-11a9-8c80-5b25-f652a61c634a.htm" />
@@ -959,6 +998,8 @@
     <HelpKINode Title="methods" Url="html/49c37259-7ea8-476b-2e4b-2f1123694ae7.htm" />
     <HelpKINode Title="properties" Url="html/fd9c9dc7-bceb-de09-778a-151a7e3754bc.htm" />
   </HelpKINode>
+  <HelpKINode Title="Util.citation property" Url="html/9c82af12-dc7e-138f-6494-522241adaaff.htm" />
+  <HelpKINode Title="Util.copyright property" Url="html/966ce531-169d-ac19-d449-049519fd9515.htm" />
   <HelpKINode Title="Util.getFlgPar method" Url="html/0f2e09c1-869a-317e-2166-e2852a0f5368.htm" />
   <HelpKINode Title="Util.getFltPar method" Url="html/d414c41a-2a16-8cf8-5acd-2fe970ebbedf.htm" />
   <HelpKINode Title="Util.getIntPar method" Url="html/97307da3-2d75-1376-7395-088f2d2458d4.htm" />
@@ -1002,6 +1043,7 @@
   <HelpKINode Title="Wide method" Url="html/70f4fbea-9e4e-ed4a-7c16-e569e5a8bd6b.htm" />
   <HelpKINode Title="Wires method" Url="html/a6c0e6d3-4aa5-ca6d-c827-38c47309016d.htm" />
   <HelpKINode Title="Write method">
+    <HelpKINode Title="CMat.Write Method " Url="html/19040f20-4b98-7f90-1b96-2994668cafe5.htm" />
     <HelpKINode Title="CSMat.Write Method " Url="html/c947d007-ec3b-bddd-16f8-f3bf12c5814f.htm" />
     <HelpKINode Title="CVec.Write Method " Url="html/aff4e977-6678-eb09-a2a8-e8832047e36b.htm" />
     <HelpKINode Title="Ket.Write Method " Url="html/8abefbf9-acb4-f444-27e9-a722d76577a2.htm" />
