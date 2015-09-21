@@ -24,7 +24,8 @@ If you use LIQUi|> in your research, please cite it as follows:
 ```
 @misc{1402.4467,
   author = {Dave Wecker and Krysta M.~Svore},
-  title = {{LIQU}i|>: {A} {S}oftware {D}esign {A}rchitecture and {D}omain-{S}pecific {L}anguage for {Q}uantum {C}omputing},
+  title = {{LIQU}i|>: {A} {S}oftware {D}esign {A}rchitecture and {D}omain-{S}pecific 
+            {L}anguage for {Q}uantum {C}omputing},
   year = {2014},
   eprint = {1402.4467},
   url = {arXiv:1402.4467v1}
@@ -32,7 +33,9 @@ If you use LIQUi|> in your research, please cite it as follows:
 ```
 * Text: 
 ```
-D. Wecker and K. M. Svore, “LIQUi|>: A Software Design Architecure and Domain-Speciﬁc Language for Quantum Computing,” (2014), arXiv:1402.4467v1 [quant-ph], http://arxiv.org/abs/1402.4467.
+D. Wecker and K. M. Svore, “LIQUi|>: A Software Design Architecure and Domain-Speciﬁc 
+    Language for Quantum Computing,” (2014), arXiv:1402.4467v1 [quant-ph], 
+    http://arxiv.org/abs/1402.4467.
 ```
 
 ## What Can I Do With It?
