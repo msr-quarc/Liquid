@@ -4,4 +4,4 @@
 2. Sign up for a free [Azure trial](https://azure.microsoft.com/en-us/pricing/free-trial/) account.
 3. Go to the [Visual Studio Community 2015](http://azure.microsoft.com/en-us/marketplace/partners/microsoft/visualstudiocommunity2015withazuresdk27onwindowsserver2012r2/) page in the Azure Virtual Machine Marketplace, and click on the "Create Virtual Machine" link. If requested, log in to the Microsoft account you set up in step 1.
 4. This should bring you to the Azure Portal, pictured here. Clck on the "Create" button as indicated in the picture.
-![Azure Portal](img/CreateVM)
+![Azure Portal](/img/CreateVM)
