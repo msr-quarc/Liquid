@@ -160,8 +160,8 @@
     <HelpKINode Title="Spin.Copy Method " Url="html/0391d2be-c314-d15b-f7d8-e5396eba1af0.htm" />
   </HelpKINode>
   <HelpKINode Title="copyright property" Url="html/966ce531-169d-ac19-d449-049519fd9515.htm" />
-  <HelpKINode Title="Count property" Url="html/1fb4b1c4-dd35-db6f-9b99-9645233401b6.htm" />
   <HelpKINode Title="count property" Url="html/a5d54801-ef17-0710-3a9c-9242690e26da.htm" />
+  <HelpKINode Title="Count property" Url="html/1fb4b1c4-dd35-db6f-9b99-9645233401b6.htm" />
   <HelpKINode Title="CreMat method" Url="html/fbb07cf9-a571-480b-1c4d-6c4e38ef9dc8.htm" />
   <HelpKINode Title="CreZer method" Url="html/5630e9d7-4d6f-9404-63dc-ff9391fa5fd6.htm" />
   <HelpKINode Title="CRx method" Url="html/c5131064-57ef-4b68-6ce3-9244155caf3b.htm" />
@@ -435,8 +435,8 @@
   <HelpKINode Title="HamiltonianGates.ZZR method" Url="html/66ccb69b-ce6a-75a1-2e7c-b628000c32f5.htm" />
   <HelpKINode Title="Help property" Url="html/1a419642-2cf7-6e3b-5a43-2c1c8affdada.htm" />
   <HelpKINode Title="I method" Url="html/baa55539-dba2-71ca-6ea3-71d550c46b2c.htm" />
-  <HelpKINode Title="i property" Url="html/d917c6d3-bb62-88b4-2b39-4a9d692ef3dc.htm" />
   <HelpKINode Title="I property" Url="html/8448fbad-8d12-f539-6d1a-b5b8915d26d0.htm" />
+  <HelpKINode Title="i property" Url="html/d917c6d3-bb62-88b4-2b39-4a9d692ef3dc.htm" />
   <HelpKINode Title="Id property" Url="html/b9e58d73-b983-88c2-fd1f-d8364b4051fa.htm" />
   <HelpKINode Title="Idle property" Url="html/54493482-287f-d156-04c9-f0025e7da081.htm" />
   <HelpKINode Title="Inject method" Url="html/c450b01f-3740-00db-ab82-adb32efd90fe.htm" />

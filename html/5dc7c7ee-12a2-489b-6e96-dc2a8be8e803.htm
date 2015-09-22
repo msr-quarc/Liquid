@@ -16,7 +16,8 @@
  Creates an array filled with zeros that can be filled in and passed to the 
  <a href="4e1f5613-27fe-108f-c2d2-50f8a7853850.htm">array-based CMat constructor</a>.
  </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="91f3b313-9830-3f28-08d8-924c0c6761d2.htm">Div</a></td><td><div class="summary">
- Divides matrix by constant (in place)
+ Scales this matrix by a constant divisor.
+ This matrix is updated in place, rather than a new matrix being created.
  </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="b1da42d8-1f8f-6625-85ca-7c4d339809a8.htm">Dump</a></td><td><div class="summary">
  Dumps this matrix.
  Note that there is no limit on the size of the result; every row and column entry is included.
@@ -26,14 +27,14 @@
  Dumps this matrix.
  This method will produce a relatively compact representation of the matrix.
  </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/bsc2ak47" target="_blank">Equals</a></td><td><div class="summary">Determines whether the specified object is equal to the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="ee357967-a3fd-e090-e097-2fe0ffc439f5.htm">FixUnitary</a></td><td><div class="summary">
- Make Unitary better (move singualar values toward the unit circle)
+ Makes this matrix closer to being unitary by applying an iterative correction.
  </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/zdee4b3y" target="_blank">GetHashCode</a></td><td><div class="summary">Serves as the default hash function. </div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/dfwy45w9" target="_blank">GetType</a></td><td><div class="summary">Gets the <a href="http://msdn2.microsoft.com/en-us/library/42892f65" target="_blank">Type</a> of the current instance.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="8ff49425-ad24-ee92-d03f-040be00c9109.htm">Kron(CMat)</a></td><td><div class="summary">
  Computes the Kronecker Product of this matrix with another matrix.
  </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="2cfecd8c-8275-43f5-f167-2e9e2f7d16de.htm">Kron(Int32, FSharpOption<span id="LSTCA313E48_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCA313E48_0?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>Boolean<span id="LSTCA313E48_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCA313E48_1?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>)</a></td><td><div class="summary">
- Kronecker Product with an identity matrix
+ Computes the Kronecker Product of this matrix with an identity matrix
  </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="f1eb07d9-57d2-25cf-74b0-e1587fa1c824.htm">Mul(Double)</a></td><td><div class="summary">
- Multiplies this matrix by a constant.
- This modifies this matrix in place, rather than creating a new matrix.
+ Scales this matrix by a constant multiplier.
+ This matrix is updated in place, rather than a new matrix being created.
  </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="ee20e6f5-ab19-7763-cde0-be2a5654931e.htm">Mul(CMat)</a></td><td><div class="summary">
  Computes the product of this matrix with another matrix.
  This matrix is on the left-hand side of the product, 
@@ -42,13 +43,21 @@
  </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="1f402946-c5ec-55fb-d554-2e0a35352087.htm">Mul(CVec)</a></td><td><div class="summary">
  Calculates the product of this matrix and a vector.
  The vector's length must match the numder of columns in this matrix.
- </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="e1799065-c456-c2aa-d60f-9d4959b85d3a.htm">Power</a></td><td /></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="1fff6e9f-22a3-03b0-5253-b816677f5947.htm">Read</a></td><td><div class="summary">
- Read in a CMat from a file
+ </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="e1799065-c456-c2aa-d60f-9d4959b85d3a.htm">Power</a></td><td><div class="summary">
+ Computes an integer power of this matrix.
+ NOTE: This destroys the contents of the current matrix.
+ </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="1fff6e9f-22a3-03b0-5253-b816677f5947.htm">Read</a></td><td><div class="summary">
+ Reads a matrix from a stream.
  </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="35c834cd-095e-bf35-79ee-60288565385c.htm">ToString</a></td><td><div class="summary">
  Gets a string representation of this matrix.
  Note that there is no limit on the size of the result; every row and column entry is included.
  </div> (Overrides <a href="http://msdn2.microsoft.com/en-us/library/7bxwbwt2" target="_blank">Object<span id="LSTCA313E48_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCA313E48_2?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>ToString<span id="LSTCA313E48_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTCA313E48_3?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="22b0c89a-01a6-8f98-b3e5-8072a7b057e9.htm">UnitaryError</a></td><td><div class="summary">
- Check if matrix is really unitary (just check diagonal error)
+ Performs a rough check to see if this matrix is actually unitary.
+ It calculates the biggest deviation from 1 of the diagonal elements
+ of (this adj)*this.
+ In other words, it calculates the largest deviation of the length of a row,
+ viewed as a complex vector, from 1.
+ The orthogonality of different rows is not checked.
  </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="19040f20-4b98-7f90-1b96-2994668cafe5.htm">Write</a></td><td><div class="summary">
- Write CMat to file for serialization
+ Writes this matrix to a stream for serialization.
  </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID1RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="81ed4258-40d8-b93b-ac05-637ee8a6a974.htm">CMat Class</a></div><div class="seeAlsoStyle"><a href="a6076d35-ee7e-167b-2eac-3d47c563f37e.htm">Microsoft.Research.Liquid Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p>Copyright (c) 2015 Microsoft Corporation (all rights reserved)</p> </div></body></html>
