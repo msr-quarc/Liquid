@@ -56,7 +56,7 @@ All of these algorithms, and many more, are included as samples with LIQUi|>.
 ## How Do I Use It?
 
 LIQUi|> is being made available for use on Microsoft Azure virtual machines. 
-THis version will not run on a desktop machine or other non-Azure system.
+This version will not run on a desktop machine or other non-Azure system.
 
 See the [users' guide](https://msr-quarc.github.io/Liquid/LIQUiD.pdf) and the [full help documentation](https://msr-quarc.github.io/Liquid/).
 The help may also be dowloaded as a [single file](https://msr-quarc.github.io/Liquid/Liquid.chm), if desired.
