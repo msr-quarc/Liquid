@@ -71,3 +71,15 @@ LIQUi|> is available from this repository for use on an Azure virtual machine im
 We recommend using the a VM image that includes the free Community Edition of Visual Studio 2015.
 
 To set up and use your own Azure virtual machine with LIQUi|>, check out the [Quick Start Guide](QuickStart.md).
+
+### Microsoft Azure Information and Cost
+
+An Azure basic-tier A2 instance is appropriate for most uses of LIQUi|>.
+This VM type, if located in the south central US region, costs $0.148 per hour.
+At 8 hours per day for 21 weekdays in a month, this comes to $24.86 per month.
+See the []Microsoft Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) for details.
+
+A new Microsoft Azure account comes with a one month free trial for up to $100 of usage.
+
+If you are teaching a course using LIQUi|>, the [Microsoft Educator Grant Program](https://www.microsoftazurepass.com/azureu) may be applicable.
+It will provide Microsoft Azure funding for you and your students that will more than cover their LIQUi|> usage.
