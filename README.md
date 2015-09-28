@@ -77,7 +77,7 @@ To set up and use your own Azure virtual machine with LIQUi|>, check out the [Qu
 An Azure basic-tier A2 instance is appropriate for most uses of LIQUi|>.
 This VM type, if located in the south central US region, costs $0.148 per hour.
 At 8 hours per day for 21 weekdays in a month, this comes to $24.86 per month.
-See the []Microsoft Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) for details.
+See the [Microsoft Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) for details.
 
 A new Microsoft Azure account comes with a one month free trial for up to $100 of usage.
 
