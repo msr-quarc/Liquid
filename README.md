@@ -79,7 +79,7 @@ This VM type, if located in the south central US region, costs $0.148 per hour.
 At 8 hours per day for 21 weekdays in a month, this comes to $24.86 per month.
 See the [Microsoft Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) for details.
 
-A new Microsoft Azure account comes with a one month free trial for up to $100 of usage.
+A new Microsoft Azure account comes with a one month free trial for up to $200 of usage.
 
 If you are teaching a course using LIQUi|>, the [Microsoft Educator Grant Program](https://www.microsoftazurepass.com/azureu) may be applicable.
 It will provide Microsoft Azure funding for you and your students that will more than cover their LIQUi|> usage.
