@@ -18,7 +18,7 @@ See the [Microsoft Research project page on LIQUi|>](http://research.microsoft.c
 and the paper, [LIQUi|>: A Software Design Architecture and Domain-Specific Language for Quantum Computing](http://research.microsoft.com/pubs/209634/1402.4467.pdf).
 
 To stay up to date on what we're doing with LIQUi|>, please watch our repository and sign up for the LIQUi|> email list.
-To sign up, send an [email to the LISTSERV](mailto:LISTSERV@lists.research.microsoft.com) with a one-line body reading "SUB Liquid *your name*".
+To sign up, send an email to LISTSERV@lists.research.microsoft.com with a one-line body reading "SUB Liquid *your name*".
 
 ### How To Cite LIQUi|>
 
