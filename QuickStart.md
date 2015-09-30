@@ -37,7 +37,7 @@ You might need to wait several minutes for this status.
 17. Open up a web browser on the VM by hitting the Windows key and then clicking on the IE icon. Click on the OK button to use recommended settings. Navigate to <a href="http://github.com" target="_blank">github.com</a> to sign in to your account, and then go to <a href="http://desktop.github.com/" target="_blank">desktop.github.com</a> to download and install the GitHub Desktop client; installation may require clicking through multiple dialogs. 
 18. Open the GitHub client on your VM and log in to GitHub.
 19. In your VM web browser, open the LIQUi|> GitHub site, <a href="https://github.com/msr-quarc/Liquid" target="_blank">github.com/msr-quarc/Liquid</a>. Click on the "Clone in Desktop" button on the right-hand side of the window. Accept the default file location and any security notifications that open up.  
-![Clone in Desktop](/img/CloneInDesktop.jpg)
+![Clone in Desktop](/img/CloneInDesktop.jpg)  
     In some cases, it seems that the handoff from the browser to the GitHub client doesn't work properly and the clone does not succeed. If that happens, you can clone directly from the GitHub desktop client by clicking on the "+" in the top left corner, clicking on "Clone", and then selecting "msr-quarc" on the left and "Liquid" from the lst of repositories, and then clicking on "Clone repository".
 20. Open up a command prompt by right-clicking on the Windows icon in the bottom-left corner of the VM remote desktop. Change directory to "Documents\GitHub\Liquid\bin" and type "Liquid.exe __Entangle1(12)" (*Note*: there are **two** underscores before the E). You should see output similar to the following:  
 ![Command Prompt](/img/Command.jpg)
