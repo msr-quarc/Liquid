@@ -1,5 +1,12 @@
 # LIQUi|> Quick Start Guide
 
+**NOTE:** If you are using a non-Windows computer, you will need to install a Remote Desktop Client to complete this Quick Start.
+Links to supported clients is available [here for Mac, iOS, and Android](https://technet.microsoft.com/en-us/library/dn473009.aspx).
+For Linux, you might try [FreeRDP](http://www.freerdp.com/), but we haven't tested it.
+
+To stay up to date on what we're doing with LIQUi|>, please watch our repository and sign up for the LIQUi|> email list.
+To sign up, send an (email to the LISTSERV)[mailto:LISTSERV@lists.research.microsoft.com] with a one-line body reading "SUB Liquid *your name*".
+
 1. Get a free <a href="http://windows.microsoft.com/en-US/windows-live/sign-up-create-account-how" target="_blank">Microsoft account</a> if you don't already have one. You can use an existing email address for this, if you want, such as your institutional account or an existing Gmail or Yahoo! email account.
 2. Sign up for a free <a href="https://azure.microsoft.com/en-us/pricing/free-trial/" target="_blank">Azure trial</a> account.
 3. Go to the <a href="http://azure.microsoft.com/en-us/marketplace/partners/microsoft/visualstudiocommunity2015withazuresdk27onwindowsserver2012r2/" target="_blank">Visual Studio Community 2015</a> page in the Azure Virtual Machine Marketplace, and click on the "Create Virtual Machine" link. If requested, log in to the Microsoft account you set up in step 1.  
@@ -22,8 +29,9 @@ You might need to wait several minutes for this status.
 ![Status: Running](/img/StatusRunning.jpg)
 12. Click on the "Connect" icon at the top of the panel:  
 ![Connect](/img/Connect.jpg)
-13. At the bottom of your browser window, you should get a notification asking you if you want to open or save an RDP file from ms.portal.azure.com. Click on the "Open" button.
-14. Windows will pop up a notification from Remote Desktop COnnection, "The publisher of this remote connection can't be identified. Do you want to connect anyway?". Click on the "Connect" button.
+13. At the bottom of your browser window, you should get a notification asking you if you want to open or save an RDP file from ms.portal.azure.com. Click on the "Open" button.  
+**NOTE**: If you are not on a Windows client, the next two steps may be slightly different.
+14. Windows will pop up a notification from Remote Desktop Connection, "The publisher of this remote connection can't be identified. Do you want to connect anyway?". Click on the "Connect" button.
 15. Windows will pop up a login dialog from Windows Security asking you to enter your credentials for the VM. Select "Use another account" and enter the user name and password you entered in step 5. A progress window will pop up, then that will close and another notification will appear from Remote Desktop Connection, "The identity of the remote computer cannot be verified. Do you want to connect anyway?". Click on the "Yes" button. The progress will reappear until your remote desktop session starts.
 16. The remote desktop session will start full screen. While your login is being set up, the screen may be black for several minutes. Once the remote desktop session starts, you may get a notification on the right-hand side of the screen asking whether you want to enable network discovery. Click on the "No" button.
 17. Open up a web browser on the VM by hitting the Windows key and then clicking on the IE icon. Click on the OK button to use recommended settings. Navigate to <a href="http://github.com" target="_blank">github.com</a> to sign in to your account, and then go to <a href="http://desktop.github.com/" target="_blank">desktop.github.com</a> to download and install the GitHub Desktop client; installation may require clicking through multiple dialogs. 
