@@ -1,31 +1,46 @@
 # LIQUi|> Quick Start Guide
 
-**NOTE:** If you are using a non-Windows computer, you will need to install a Remote Desktop Client to complete this Quick Start.
-Links to supported clients is available [here for Mac, iOS, and Android](https://technet.microsoft.com/en-us/library/dn473009.aspx).
-For Linux, you might try [FreeRDP](http://www.freerdp.com/), but we haven't tested it.
+**SUMMARY**
+This guide takes you through the steps of 
+- creating an Azure VM, 
+- acquiring the GitHub Desktop, 
+- loading the Liquid programming environment
+- running a test program, 
+- shutting down the VM.
+When you come back again, you will only have to 
 
-To stay up to date on what we're doing with LIQUi|>, please watch our repository and sign up for the LIQUi|> email list.
-To sign up, send an (email to the LISTSERV)[mailto:LISTSERV@lists.research.microsoft.com] with a one-line body reading "SUB Liquid *your name*".
+**WHAT YOU WILL NEED** 
+If you are using a non-Windows computer, you will need to install a Remote Desktop Client to complete this Quick Start. Links to supported clients are available [here for Mac, iOS, and Android](https://technet.microsoft.com/en-us/library/dn473009.aspx). For Linux, you might try [FreeRDP](http://www.freerdp.com/), but we haven't tested it yet.
+One of the following browsers: xxxxxxx
+About 45 minutes, though you can carry on working while things happen in the background.
 
-1. Get a free <a href="http://windows.microsoft.com/en-US/windows-live/sign-up-create-account-how" target="_blank">Microsoft account</a> if you don't already have one. You can use an existing email address for this, if you want, such as your institutional account or an existing Gmail or Yahoo! email account.
+**STAY UP TO DATE**
+Please watch our repository and sign up for the LIQUi|> email list liquid@lists.research.microsoft.com] with a one-line body reading "SUB Liquid *your name*".
+
+** Create an Azure Virtual Machine (VM)**
+1. Get a free <a href="http://windows.microsoft.com/en-US/windows-live/sign-up-create-account-how" target="_blank">Microsoft account</a> if you don't already have one. 
+TIP: You can use an existing email address for this, if you want, such as your institutional account or an existing Gmail or Yahoo! email account.
 2. Sign up for a free <a href="https://azure.microsoft.com/en-us/pricing/free-trial/" target="_blank">Azure trial</a> account.
-3. Go to the <a href="http://azure.microsoft.com/en-us/marketplace/partners/microsoft/visualstudiocommunity2015withazuresdk27onwindowsserver2012r2/" target="_blank">Visual Studio Community 2015</a> page in the Azure Virtual Machine Marketplace, and click on the "Create Virtual Machine" link. If requested, log in to the Microsoft account you set up in step 1.  
+3. Go to the <a href="http://azure.microsoft.com/en-us/marketplace/partners/microsoft/visualstudiocommunity2015withazuresdk27onwindowsserver2012r2/" target="_blank">Visual Studio Community 2015</a> page in the Azure Virtual Machine Marketplace, and click on the "Create Virtual Machine" link. If requested, log in to the Microsoft account you set up in step 1.  This brings you to the Azure Portal.
+TIP: If you are using a different log in for Azure to the one you are using on your machine, then you might need to ensure you have a "clean" browser window in order to sign in. On the Edge browser, click the ... on the right and select New InPrivate Window". For IE, close all windows, the shift-right click on the IE icon and choose “Run as different user”.
 ![Azure Portal](/img/CreateVM.jpg)
-4. This should bring you to the Azure Portal, pictured here. Clck on the "Create" button as indicated in the picture above. This will open the "Create VM" panel, pictured below.  
+4. Click on the "Create" button as indicated in the picture above. This will open the "Create VM" panel, pictured below.  
 ![Create VM Panel](/img/CreateVMPanel.jpg)
-5. Fill in a host name, user name, and password in the Create VM panel. The host name will be the name of your new VM; the user name and password will be for a new administrator account set up on the machine. Make sure you know the name and password because you will use them to log in to your VM later.
-6. Click on the "Pricing Tier" item in the panel to open up the "Choose your pricing tier" panel, and click on the "View all" link to see all virtual machine options:  
+5. Fill in a host name, user name, and password in the Create VM panel. The host name will be the name of your new VM; the user name and password will be for a new administrator account set up on the machine. The region is the data center where your VM will reside and you should choose somewhere close to you.
+TIP: Make a note of the name and password you choose because you will use them to log in to your VM later.
+6. Click on the "Pricing Tier" item in the panel which opens up the "Choose your pricing tier" panel, and click on the "View all" link to see all virtual machine options:  
 ![Pricing Tier Panel](/img/PricingTierPanel.jpg)
 7. Scroll down and click on the "A2 Basic" entry to select it, and then click on the "Select" button at the bottom of the panel. This will close the pricing tier panel.  
 ![A2 Basics](/img/SelectA2Basic.jpg)
-8. Click on the "Create" button at the Create VM panel to create and start your virtual machine. After the creation process has finished, this will close the Create VM panel and bring you to the Azure Portal front page. Be patient: creating your VM can take 5-10 minutes.
+8. Click on the "Create" button at the Create VM panel to create and start your virtual machine. After the creation process has finished, this will close the Create VM panel and bring you back to the Azure Portal front page. 
+TIP: Creation could take anything from 2-20 minutes depending on load. Be patient. You can use your computer for other work while waiting.
 ![Click to create](/img/ClickToCreate.jpg)
 9. Click on the "Virtual machines (classic)" link on in the portal navigation menu. This will open the "Virtual machines (classic)" panel.  
 ![Portal navigation](/img/PortalNav.jpg)
 10. In the Virtual machines panel, click on the row with the virtual machine name you used in step 5. This will open the management panel for your VM.  
 ![VM Panel](/img/VMPanel.jpg)
 11. Wait until the Status field says "Running" (it might say Provisioning or Starting or another variation when you first navigate to this panel).
-You might need to wait several minutes for this status.  
+TIP: You might need to wait several minutes for this status.  
 ![Status: Running](/img/StatusRunning.jpg)
 12. Click on the "Connect" icon at the top of the panel:  
 ![Connect](/img/Connect.jpg)
