@@ -18,7 +18,8 @@ See the [Microsoft Research project page on LIQUi|>](http://research.microsoft.c
 and the paper, [LIQUi|>: A Software Design Architecture and Domain-Specific Language for Quantum Computing](http://research.microsoft.com/pubs/209634/1402.4467.pdf).
 
 To stay up to date on what we're doing with LIQUi|>, please watch our repository and sign up for the LIQUi|> email list.
-To sign up, send an email to LISTSERV@lists.research.microsoft.com with a one-line body reading "SUB Liquid *your name*".
+To sign up, send an email to LISTSERV@lists.research.microsoft.com with a one-line body reading "SUB Liquid-news *your name*".
+If you prefer to remain anonymous, you may instead send an email containing "SUB Liquid-news anonymous".
 
 ### How To Cite LIQUi|>
 
@@ -56,10 +57,11 @@ Some of the specific algorithms you can simulate with LIQUi|> are:
 
 All of these algorithms, and many more, are included as samples with LIQUi|>.
 
-## How Do I Use It?
+## How Do I Get It?
 
-LIQUi|> is being made available for use on Microsoft Azure virtual machines. 
-This version will not run on a desktop machine or other non-Azure system.
+You can download the LIQUi|> executable, libraries, sample scripts, and documentation from this site.
+
+## How Do I Use It?
 
 See the [users' guide](https://msr-quarc.github.io/Liquid/LIQUiD.pdf) and the [full help documentation](https://msr-quarc.github.io/Liquid/).
 The help may also be dowloaded as a [single file](https://msr-quarc.github.io/Liquid/Liquid.chm), if desired.
@@ -68,21 +70,51 @@ Note that this version of LIQUi|> is limited to a maximum of 22 physical qubits 
 
 If you run into a problem or have a question, you can [post an issue](https://github.com/msr-quarc/Liquid/issues).
 
-## How Do I Get It?
+## Registration
 
-LIQUi|> is available from this repository for use on an Azure virtual machine image.
-We recommend using the a VM image that includes the free Community Edition of Visual Studio 2015.
+While LIQUi|> is free, we do require that you register so that we can track how many people are using it.
+To do this you will need to submit a request email to a registration LISTSERV, which will reply with a license key.
 
-To set up and use your own Azure virtual machine with LIQUi|>, check out the [Quick Start Guide](QuickStart.md).
+The LISTSERV is at LISTSERV@lists.research.microsoft.com.
+The email body should contain:
+    JOIN liquid-reg *your name*
+If you prefer to remain anonymous, you may replace your name with the string "anonymous" (no quoteation marks).
 
-### Microsoft Azure Information and Cost
+You will receive a reply email that will contain a command you can copy and paste into a command window to register your copy of LIQUi|>.
+The command will look something like:
+    Liquid.exe /reg test@microsoft.com`2015-10-06T00:00:00`O6K7yUcYnKdjfis2I05vXA== 1
 
-An Azure basic-tier A2 instance is appropriate for most uses of LIQUi|>.
-This VM type, if located in the south central US region, costs $0.148 per hour.
-At 8 hours per day for 21 weekdays in a month, this comes to $24.86 per month.
-See the [Microsoft Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) for details.
+Your registration is good for 6 months.
+You may re-register at any time, which will give you a new license for 6 months starting at the time you send the new registration email.
+LIQUi|> will remind you to reregister when your license is within one month of expiration.
+There is no limit on how frequently or how many times you may reregister, nor on the number of copies of LIQUi|> that you may have simultaneously registered.
 
-A new Microsoft Azure account comes with a one month free trial for up to $200 of usage.
+## Prerequisites
 
-If you are teaching a course using LIQUi|>, the [Microsoft Educator Grant Program](https://www.microsoftazurepass.com/azureu) may be applicable.
-It will provide Microsoft Azure funding for you and your students that will more than cover their LIQUi|> usage.
+### .NET 4.6
+
+A Windows environment with .NET 4.6 or later installed is required.
+If you don't have .NET 4.6, it may be installed from http://www.microsoft.com/en-us/download/details.aspx?id=48130.
+
+### BLAS (optional)
+
+If you want to use the quantum random walk sample or compute state vector entanglement entropies,
+you will need a BLAS library.
+
+**If you don't use these functions, then LIQUi|> will work fine with no BLAS implementation available.
+THe BLAS library is dynamically loaded before use, and is not required for LIQUi|> to operate.**
+
+We have tested with OpenBLAS, which is available from http://www.openblas.net/.
+
+OpenBLAS requires two additional DLLs, libgfortran-3.dll and libquadmath-0.dll.
+These are most easily obtained as part of the MinGW-w64 package, available at http://mingw-w64.org/doku.php.
+You will need to build the FORTRAN comppiler to create these DLLs.
+
+There are some helpful hints at http://icl.cs.utk.edu/lapack-for-windows/lapack/index.html and at http://www.r-bloggers.com/an-openblas-based-rblas-for-windows-64-step-by-step/.
+
+LIQUi|> looks for a library named "libopenblas.dll" in either the same directory as the LIQUi|> executable,
+or in a directory on your PATH, or in the C:\Liquid\bin directory (if it exists).
+If you are using OpenBLAS, the other two libraries should be placed in the same directory as libopenblas.dll.
+
+If you are using a different BLAS implementation, you will need to rename the DLL to libopenblas.dll and place it,
+along with any required supporting DLLs, into one of the valid directories.
