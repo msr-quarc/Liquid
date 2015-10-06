@@ -77,11 +77,14 @@ To do this you will need to submit a request email to a registration LISTSERV, w
 
 The LISTSERV is at LISTSERV@lists.research.microsoft.com.
 The email body should contain:
+
     JOIN liquid-reg *your name*
+
 If you prefer to remain anonymous, you may replace your name with the string "anonymous" (no quoteation marks).
 
 You will receive a reply email that will contain a command you can copy and paste into a command window to register your copy of LIQUi|>.
 The command will look something like:
+
     Liquid.exe /reg test@microsoft.com`2015-10-06T00:00:00`O6K7yUcYnKdjfis2I05vXA== 1
 
 Your registration is good for 6 months.
