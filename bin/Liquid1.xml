@@ -202,7 +202,7 @@
  <param name="br">A BinaryReader to deserialize a matrix from.</param>
  <returns>The new mnatrix</returns>
 </member>
-<member name="M:Microsoft.Research.Liquid.CMat.Power(System.Int32)">
+<member name="M:Microsoft.Research.Liquid.CMat.Power(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
  <summary>
  Computes an integer power of this matrix.
  NOTE: This destroys the contents of the current matrix.
@@ -6251,7 +6251,7 @@
  The default is <see cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">showLogInd</see>.</param>
  <param name="l0">The optional indentation level. The default is 0.</param>
 </member>
-<member name="M:Microsoft.Research.Liquid.Util.showBareLogInd(System.Int32,System.String)">
+<member name="P:Microsoft.Research.Liquid.Util.showBareLogInd">
  <summary>
  Shows an indented line of output, with no prefix, to the log file.
  This routine is used by or with various Dump() routines.
@@ -6263,7 +6263,7 @@
  <seealso cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)"/>
  <seealso cref="M:Microsoft.Research.Liquid.Util.showBareInd(System.Int32,System.String)"/>
 </member>
-<member name="M:Microsoft.Research.Liquid.Util.showBareInd(System.Int32,System.String)">
+<member name="P:Microsoft.Research.Liquid.Util.showBareInd">
  <summary>
  Shows an indented line of output, with no prefix, to the console and log file.
  This routine is used by or with various Dump() routines.
@@ -6275,7 +6275,7 @@
  <seealso cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)"/>
  <seealso cref="M:Microsoft.Research.Liquid.Util.showBareLogInd(System.Int32,System.String)"/>
 </member>
-<member name="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">
+<member name="P:Microsoft.Research.Liquid.Util.showLogInd">
  <summary>
  Shows an indented line of output to the log file.
  This routine is used by or with various Dump() routines.
@@ -6287,7 +6287,7 @@
  <seealso cref="M:Microsoft.Research.Liquid.Util.showBareInd(System.Int32,System.String)"/>
  <seealso cref="M:Microsoft.Research.Liquid.Util.showBareLogInd(System.Int32,System.String)"/>
 </member>
-<member name="M:Microsoft.Research.Liquid.Util.showInd(System.Int32,System.String)">
+<member name="P:Microsoft.Research.Liquid.Util.showInd">
  <summary>
  Shows an indented line of output to the console and log file.
  This routine is used by or with various Dump() routines.
