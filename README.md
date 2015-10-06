@@ -96,8 +96,17 @@ There is no limit on how frequently or how many times you may reregister, nor on
 
 ### .NET 4.6
 
-A Windows environment with .NET 4.6 or later installed is required.
+A Windows environment with the .NET Framework 4.6 or later installed is required.
 If you don't have .NET 4.6, it may be installed from http://www.microsoft.com/en-us/download/details.aspx?id=48130.
+Alternatively, installing Visual Studio 2015 will also install .NET 4.6.
+
+### Visual Studio
+
+Visual Studio 2015 Community Edition is free for individuals and for academic use.
+It is available at https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx.
+
+While Visual Studio is not required to use LIQUi|>, it is necessary if you want to write your own algorithms as compiled F# code.
+It also makes development of F# scripts for algorithms much easier.
 
 ### BLAS (optional)
 
@@ -111,7 +120,7 @@ We have tested with OpenBLAS, which is available from http://www.openblas.net/.
 
 OpenBLAS requires two additional DLLs, libgfortran-3.dll and libquadmath-0.dll.
 These are most easily obtained as part of the MinGW-w64 package, available at http://mingw-w64.org/doku.php.
-You will need to build the FORTRAN comppiler to create these DLLs.
+You will need to build the FORTRAN compiler to create these DLLs.
 
 There are some helpful hints at http://icl.cs.utk.edu/lapack-for-windows/lapack/index.html and at http://www.r-bloggers.com/an-openblas-based-rblas-for-windows-64-step-by-step/.
 
