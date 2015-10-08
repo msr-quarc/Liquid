@@ -2,33 +2,36 @@
 
 ## Prerequisites
 
-### .NET 4.6
-
-A Windows environment with the .NET Framework 4.6 or later installed is required.
-If you don't have .NET 4.6, it may be installed from http://www.microsoft.com/en-us/download/details.aspx?id=48130.
-Alternatively, installing Visual Studio 2015 will also install .NET 4.6.
-
 ### Visual Studio
 
 Visual Studio 2015 Community Edition is free for individuals and for academic use.
 It is available at https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx.
 
-While Visual Studio is not required to use LIQUi|>, it is necessary if you want to write your own algorithms as compiled F# code.
-It also makes development of F# scripts for algorithms much easier.
+While Visual Studio is not required to run the LIQUi|> samples, it is necessary if you want to write your own algorithms.
+
+### .NET 4.6
+
+The .NET Framework 4.6 or later is required.
+Installing Visual Studio 2015 will install .NET 4.6.
+
+If you are only running the samples and aren't installing Visual Studio, you can install .NET 4.6 from http://www.microsoft.com/en-us/download/details.aspx?id=48130 if it isn't already installed.
 
 ## Downloading LIQUi|>
 
+We recommend placing the download into a folder named c:\Liquid.
+If you choose a different folder, you will need to create a c:\Liquid folder and copy LiquidTikZ.tex from your LIQUi|> folder into c:\Liquid.
+
 There are three ways to download LIQUi|>:
 
-* Click on the button to the right labeled **Download ZIP**. This will download LIQUi|> and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your system. We recommend extracting into a folder named c:\Liquid; the TikZ rendering requires this path.
+* Click on the button on the main project page to the right labeled **Download ZIP**. This will download LIQUi|> and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your system. 
 * If you have a GitHub command-line client installed, you may instead change directory to the c:\Liquid directory and use the command:
 ```
 git clone https://github.com/msr-quarc/Liquid
 ```
-* If you have the GitHub desktop application installed, you may click on the button to the right labeled **Clone in Desktop**.
+* If you have the GitHub desktop application installed, you may click on the button on the main project page to the right labeled **Clone in Desktop**.
 
 The first time you run LIQUi|>, you may get a security warning telling you that the program was downloaded from another system and may not be safe.
-Once you grant LIQUi|> permission to run, the warning should not recur.
+Once you grant LIQUi|> permission to run by clicking the appropriate button, the warning should not recur.
 
 ## Registration
 
@@ -42,10 +45,12 @@ The email body for your registration should contain:
 /REG
 ```
 You will receive a reply email that will contain a command you can copy and paste into a command window to register your copy of LIQUi|>.
-The command will look something like:
+The response will look something like:
 ```
+> /REG
 Liquid.exe /reg test@microsoft.com`2015-10-06T00:00:00`O6K7yUcYnKdjfis2I05vXA== 1
 ```
+The command to execute is the line starting with "Liquid.exe".
 Make sure you're in the c:\Liquid\bin directory before entering this command.
 
 Registering your copy of LIQUi|> does not subscribe you to the liquid-news email list.
@@ -67,14 +72,13 @@ Liquid.exe
 
 Your should see the following:
 ```
-LIQUi|> -- Language Integrated Quantum Operations
-Copyright (c) 2015, Microsoft Corporation
-
-
-If you use LIQUi|> in your research, please follow the guidelines at 
-https://github.com/msr-quarc/Liquid for citing LIQUi|> in your publications.
-
-
+0:0000.0/
+0:0000.0/ LIQUi|> -- Language Integrated Quantum Operations
+0:0000.0/     Copyright (c) 2015, Microsoft Corporation
+0:0000.0/     If you use LIQUi|> in your research, please follow the guidelines at
+0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQUi|> in your publications.
+0:0000.0/
+0:0000.0/
 0:0000.0/TESTS (all start with two underscores):
 0:0000.0/   __Big()             Try to run large entanglement tests (16 through 33 qubits)
 0:0000.0/   __Chem(m)           Solve Ground State for molecule m (e.g., H2O)
@@ -135,17 +139,13 @@ Liquid.exe __Entangle1(10)
 ```
 you should see:
 ```
-LIQUi|> -- Language Integrated Quantum Operations
-Copyright (c) 2015, Microsoft Corporation
-
-
-If you use LIQUi|> in your research, please follow the guidelines at 
-https://github.com/msr-quarc/Liquid for citing LIQUi|> in your publications.
-
-
-The license for this copy of LIQUi|> will expire on 4/5/2016 at 5:00 PM Pacific Standard Time.
-
-
+0:0000.0/
+0:0000.0/ LIQUi|> -- Language Integrated Quantum Operations
+0:0000.0/     Copyright (c) 2015, Microsoft Corporation
+0:0000.0/     If you use LIQUi|> in your research, please follow the guidelines at
+0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQUi|> in your publications.
+0:0000.0/
+0:0000.0/
 0:0000.0/=============== Logging to: Liquid.log opened ================
 0:0000.0/
 0:0000.0/ Secs/Op  S/Qubit  Mem(GB) Operation
