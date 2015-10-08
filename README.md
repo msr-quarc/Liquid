@@ -70,6 +70,9 @@ You can download the LIQUi|> executable, libraries, sample scripts, and document
 
 See the [Getting Started](GettingStarted.md) page for directions on how to download, register, and start using LIQUi|>.
 
+If you don't have access to a Windows environment, you can use LIQUi|> on a Windows virtual machine.
+See the [Using LIQUi|> on Microsoft Azure](AzureGuide.md) page for directions.
+
 ## How Do I Use It?
 
 See the [users' guide](https://msr-quarc.github.io/Liquid/LIQUiD.pdf) and the [full help documentation](https://msr-quarc.github.io/Liquid/).
@@ -78,7 +81,4 @@ The help may also be dowloaded as a [single file](https://msr-quarc.github.io/Li
 Note that this version of LIQUi|> is limited to a maximum of 22 physical qubits for full state vector simulation.
 
 If you run into a problem or have a question, you can [post an issue](https://github.com/msr-quarc/Liquid/issues).
-
-If you don't have access to a WIndows environment, you can use LIQUi|> on a Windows virtual machine.
-See the [Using LIQUi|> on Microsoft Azure](AzureGuide.md) page for directions.
 

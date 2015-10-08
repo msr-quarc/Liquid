@@ -6,6 +6,18 @@ These instructions walk you through creating and connecting to a VM and setting 
 Setting up a VM for the first time will take about 45 minutes, though you can carry on working while things happen in the background.
 Once you have created a VM, restarting it usually takes 2 or 3 minutes.
 
+## Microsoft Azure Information and Cost
+
+An Azure basic-tier A2 instance is appropriate for most uses of LIQUi|>.
+This VM type, if located in the south central US region, costs $0.148 per hour.
+At 8 hours per day for 21 weekdays in a month, this comes to $24.86 per month.
+See the [Microsoft Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) for details.
+
+A new Microsoft Azure account comes with a one month free trial for up to $100 of usage.
+
+If you are teaching a course using LIQUi|> and you and your students will be using LIQUi|> on Microsoft Azure, the [Microsoft Educator Grant Program](https://www.microsoftazurepass.com/azureu) may be applicable.
+It will provide Microsoft Azure funding for you and your students that will more than cover their LIQUi|> usage.
+
 ## Prerequisites
 
 If you are using a non-Windows computer, you will need to install a Remote Desktop Client to complete this Quick Start. 

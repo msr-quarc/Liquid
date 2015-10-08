@@ -34,9 +34,10 @@ Once you grant LIQUi|> permission to run, the warning should not recur.
 
 While LIQUi|> is free, we do request that you register so that we can track how many people are using it.
 To do this you will need to submit a registration request email to our LISTSERV, which will reply with a registration command.
+If you don't register, your copy of LIQUi|> will run, but will print a nag message at the top of every run.
 
 The LISTSERV is at LISTSERV@lists.research.microsoft.com.
-The email body should contain:
+The email body for your registration should contain:
 ```
 /REG
 ```
@@ -46,8 +47,6 @@ The command will look something like:
 Liquid.exe /reg test@microsoft.com`2015-10-06T00:00:00`O6K7yUcYnKdjfis2I05vXA== 1
 ```
 Make sure you're in the c:\Liquid\bin directory before entering this command.
-
-If you don't register, your copy of LIQUi|> will run, but will print a nag message at the top of every run.
 
 Registering your copy of LIQUi|> does not subscribe you to the liquid-news email list.
 If you wish, you can do both at the same time by sending a single email with both commends in the body:
