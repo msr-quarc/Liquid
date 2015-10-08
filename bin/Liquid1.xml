@@ -6310,6 +6310,11 @@
  <seealso cref="M:Microsoft.Research.Liquid.Util.logOpen"/>
  <seealso cref="M:Microsoft.Research.Liquid.Util.logClose"/>
 </member>
+<member name="P:Microsoft.Research.Liquid.Util.copyright">
+ <summary>
+ Copyright notice for Liquid.
+ </summary>
+</member>
 <member name="M:Microsoft.Research.Liquid.Util.__show(System.String)">
  <summary>
  Shows a line of output.
@@ -6376,11 +6381,6 @@
  <seealso cref="M:Microsoft.Research.Liquid.Util.show``1(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,Microsoft.FSharp.Core.Unit})"/>
  <seealso cref="M:Microsoft.Research.Liquid.Util.showLog``1(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,Microsoft.FSharp.Core.Unit})"/>
  <seealso cref="M:Microsoft.Research.Liquid.Util.logClose"/>
-</member>
-<member name="P:Microsoft.Research.Liquid.Util.copyright">
- <summary>
- Copyright notice for Liquid.
- </summary>
 </member>
 <member name="P:Microsoft.Research.Liquid.Util.outputPrefix">
 <summary>
