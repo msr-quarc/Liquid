@@ -79,3 +79,6 @@ Note that this version of LIQUi|> is limited to a maximum of 22 physical qubits 
 
 If you run into a problem or have a question, you can [post an issue](https://github.com/msr-quarc/Liquid/issues).
 
+If you don't have access to a WIndows environment, you can use LIQUi|> on a Windows virtual machine.
+See the [Using LIQUi|> on Microsoft Azure](AzureGuide.md) page for directions.
+

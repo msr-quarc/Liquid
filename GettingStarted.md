@@ -32,7 +32,7 @@ Once you grant LIQUi|> permission to run, the warning should not recur.
 
 ## Registration
 
-While LIQUi|> is free, we do require that you register so that we can track how many people are using it.
+While LIQUi|> is free, we do request that you register so that we can track how many people are using it.
 To do this you will need to submit a registration request email to our LISTSERV, which will reply with a registration command.
 
 The LISTSERV is at LISTSERV@lists.research.microsoft.com.
@@ -47,10 +47,7 @@ Liquid.exe /reg test@microsoft.com`2015-10-06T00:00:00`O6K7yUcYnKdjfis2I05vXA== 
 ```
 Make sure you're in the c:\Liquid\bin directory before entering this command.
 
-Your registration is good for 6 months.
-You may re-register at any time, which will give you a new license for 6 months starting at the time you send the new registration email.
-LIQUi|> will remind you to reregister when your license is within one month of expiration.
-There is no limit on how frequently or how many times you may reregister, nor on the number of copies of LIQUi|> that you may have simultaneously registered.
+If you don't register, your copy of LIQUi|> will run, but will print a nag message at the top of every run.
 
 Registering your copy of LIQUi|> does not subscribe you to the liquid-news email list.
 If you wish, you can do both at the same time by sending a single email with both commends in the body:
@@ -170,9 +167,7 @@ The license for this copy of LIQUi|> will expire on 4/5/2016 at 5:00 PM Pacific 
 0:0000.0/=============== Logging to: Liquid.log closed ================
 ```
 
-## Extras
-
-### BLAS (optional)
+## BLAS (optional)
 
 If you want to use the quantum random walk sample or compute state vector entanglement entropies,
 you will need a BLAS library.
