@@ -2,10 +2,6 @@
 
 ## Prerequisites
 
-These directions assume you're running on a Windows environment, such as a Windows PC or using an emulator on another operating system.
-If you don't have access to a Windows environment, you can use LIQUi|> on a Windows virtual machine.
-See the [Using LIQUi|> on Microsoft Azure](AzureGuide.md) page for directions.
-
 ### Visual Studio
 
 Visual Studio 2015 Community Edition is free for individuals and for academic use.
