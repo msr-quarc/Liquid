@@ -58,9 +58,14 @@ The command to execute is the line starting with "Liquid.exe".
 Make sure you're in the c:\Liquid\bin directory before entering this command.
 
 Registering your copy of LIQUi|> does not subscribe you to the liquid-news email list.
-If you wish, you can do both at the same time by sending a single email with both commends in the body:
+If you wish, you can do both at the same time by sending a single email with both commands in the body:
 ```
 SUB Liquid-news FirstName LastName
+/REG
+```
+To subscribe anonymously and register your copy of LIQUi|> at the same time, you can send a single email with both these commands in the body:
+```
+SUB Liquid-news anonymous
 /REG
 ```
 
