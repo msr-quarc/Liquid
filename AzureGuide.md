@@ -92,7 +92,7 @@ TIP: You can use an existing email address for this, if you want, such as your i
 
 ### Run a Test
 
-* If you don't have the command window open from the previous step, open up a command prompt by right-clicking on the Windows icon in the bottom-left corner of the VM remote desktop. Change directory to "Documents\GitHub\Liquid\bin" and type "Liquid.exe __Entangle1(12)" (*Note*: there are **two** underscores before the E). You should see output similar to the following:  
+* If you don't have the command window open from the previous step, open up a command prompt by right-clicking on the Windows icon in the bottom-left corner of the VM remote desktop. Change directory to "c:\Liquid" and type "Liquid.exe __Entangle1(12)" (*Note*: there are **two** underscores before the E). You should see output similar to the following:  
 ```
 0:0000.0/
 0:0000.0/ LIQUi|> -- Language Integrated Quantum Operations
