@@ -88,17 +88,7 @@ TIP: You can use an existing email address for this, if you want, such as your i
 
 ### Accept the License
 
-* Open up a command prompt by right-clicking on the Windows icon in the bottom-left corner of the VM remote desktop. Change directory to "Documents\GitHub\Liquid\bin" and type "Liquid.exe". You should see output similar to the following:  
-```
-0:0000.0/LIQUi|> is made available under license by Microsoft Corporation
-0:0000.0/License terms may be viewed at https://github.com/msr-quarc/Liquid/blob/master/LICENSE.md
-0:0000.0/Please type Y, followed by return, to indicate your acceptance of these terms
-```
-If you type Y (or y) and then return, you will see:
-```
-0:0000.0/Thank you for accepting the license terms
-```
-LIQUi||> will then exit.
+* Follow the instructions on the [Getting Started page](GettingStarted.md#accepting-the-license) to accept the LIQUi|> license terms.
 
 ### Run a Test
 
