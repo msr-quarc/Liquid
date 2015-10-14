@@ -86,21 +86,36 @@ TIP: You can use an existing email address for this, if you want, such as your i
 
 * Click on the button to the right labeled **Download ZIP**. This will download LIQUi|> and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your VM. We recommend extracting into a folder named c:\Liquid; the TikZ rendering requires this path.
 
+### Accept the License
+
+* Open up a command prompt by right-clicking on the Windows icon in the bottom-left corner of the VM remote desktop. Change directory to "Documents\GitHub\Liquid\bin" and type "Liquid.exe". You should see output similar to the following:  
+```
+0:0000.0/LIQUi|> is made available under license by Microsoft Corporation
+0:0000.0/License terms may be viewed at https://github.com/msr-quarc/Liquid/blob/master/LICENSE.md
+0:0000.0/Please type Y, followed by return, to indicate your acceptance of these terms
+```
+If you type Y (or y) and then return, you will see:
+```
+0:0000.0/Thank you for accepting the license terms
+```
+LIQUi||> will then exit.
+
 ### Run a Test
 
-* Open up a command prompt by right-clicking on the Windows icon in the bottom-left corner of the VM remote desktop. Change directory to "Documents\GitHub\Liquid\bin" and type "Liquid.exe __Entangle1(12)" (*Note*: there are **two** underscores before the E). You should see output similar to the following:  
+* If you don't have the command window open from the previous step, open up a command prompt by right-clicking on the Windows icon in the bottom-left corner of the VM remote desktop. Change directory to "Documents\GitHub\Liquid\bin" and type "Liquid.exe __Entangle1(12)" (*Note*: there are **two** underscores before the E). You should see output similar to the following:  
 ```
-LIQUi|> -- Language Integrated Quantum Operations
-Copyright (c) 2015, Microsoft Corporation
-
-
-If you use LIQUi|> in your research, please follow the guidelines at 
-https://github.com/msr-quarc/Liquid for citing LIQUi|> in your publications.
-
-
-The license for this copy of LIQUi|> will expire on 4/5/2016 at 5:00 PM Pacific Standard Time.
-
-
+0:0000.0/
+0:0000.0/ LIQUi|> -- Language Integrated Quantum Operations
+0:0000.0/     Copyright (c) 2015, Microsoft Corporation
+0:0000.0/     If you use LIQUi|> in your research, please follow the guidelines at
+0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQUi|> in your publications.
+0:0000.0/
+0:0000.0/
+0:0000.0/##########################################################################################
+0:0000.0/# This is an unregistered copy of LIQUi|>.                                               #
+0:0000.0/# Please follow the instructions at "http://github.com/msr-quarc/Liquid" to register.    #
+0:0000.0/##########################################################################################
+0:0000.0/
 0:0000.0/=============== Logging to: Liquid.log opened ================
 0:0000.0/
 0:0000.0/ Secs/Op  S/Qubit  Mem(GB) Operation
@@ -123,6 +138,8 @@ The license for this copy of LIQUi|> will expire on 4/5/2016 at 5:00 PM Pacific 
 * To see all of the available samples, just type "Liquid.exe" at the command prompt.
 
 **That's it -- LIQUi|> is now installed on your virtual machine.**
+
+* If you like, you may register your copy of LIQUi|> following the procedure in the [Getting Started page](GettingStarted.md#registration-optional)
 
 ### Stopping the VM
 

@@ -24,6 +24,7 @@ If you are only running the samples and aren't installing Visual Studio, you can
 
 We recommend placing the download into a folder named c:\Liquid.
 If you choose a different folder, you will need to create a c:\Liquid folder and copy LiquidTikZ.tex from your LIQUi|> folder into c:\Liquid.
+The samples and directions below assume that you have installed into the c:\Liquid directory.
 
 There are three ways to download LIQUi|>:
 
@@ -37,7 +38,29 @@ git clone https://github.com/msr-quarc/Liquid
 The first time you run LIQUi|>, you may get a security warning telling you that the program was downloaded from another system and may not be safe.
 Once you grant LIQUi|> permission to run by clicking the appropriate button, the warning should not recur.
 
-## Registration
+## Accepting the License
+
+You have to accept the license terms the first time you run LIQUi|> on a new PC.
+
+To do so, open a command window and enter the following commands:
+```
+c:
+cd \Liquid
+Liquid.exe
+```
+You should see:
+```
+0:0000.0/LIQUi|> is made available under license by Microsoft Corporation
+0:0000.0/License terms may be viewed at https://github.com/msr-quarc/Liquid/blob/master/LICENSE.md
+0:0000.0/Please type Y, followed by return, to indicate your acceptance of these terms
+```
+If you type Y (or y) and then return, you will see:
+```
+0:0000.0/Thank you for accepting the license terms
+```
+LIQUi||> will then exit. After this, you should not be asked to accept the license again on that PC.
+
+## Registration (Optional)
 
 While LIQUi|> is free, we do request that you register so that we can track how many people are using it.
 To do this you will need to submit a registration request email to our LISTSERV, which will reply with a registration command.
@@ -78,8 +101,7 @@ c:
 cd \Liquid
 Liquid.exe
 ```
-
-Your should see the following:
+You should see the following:
 ```
 0:0000.0/
 0:0000.0/ LIQUi|> -- Language Integrated Quantum Operations

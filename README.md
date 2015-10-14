@@ -12,7 +12,9 @@ LIQUi|> includes three simulators:
 * A stabilizer simulator based on CHP (Aaronson and Gottesman, http://arXiv.org/abs/quant-ph/0406196)
 * A highly-optimized full state vector simulator for fermionic Hamiltonians
 
-### For More Information
+LIQUi|> is available under a [Microsoft Research license](LICENSE.md). 
+
+## For More Information
 
 See the [Microsoft Research project page on LIQUi|>](http://research.microsoft.com/en-us/projects/liquid/)
 and the paper, [LIQUi|>: A Software Design Architecture and Domain-Specific Language for Quantum Computing](http://research.microsoft.com/pubs/209634/1402.4467.pdf).
@@ -28,7 +30,7 @@ If you prefer to remain anonymous, you may instead send an email containing:
 SUB Liquid-news anonymous
 ```
 
-### How To Cite LIQUi|>
+## How To Cite LIQUi|>
 
 If you use LIQUi|> in your research, please cite it as follows:
 * bibTex:
