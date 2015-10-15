@@ -40,12 +40,12 @@ Once you grant LIQUi|> permission to run by clicking the appropriate button, the
 
 ## Accepting the License
 
-You have to accept the license terms the first time you run LIQUi|> on a new PC.
+You have to accept the license terms the first time you run LIQUi|> on a new environment.
 
 To do so, open a command window and enter the following commands:
 ```
 c:
-cd \Liquid
+cd \Liquid\bin
 Liquid.exe
 ```
 You should see:
@@ -58,7 +58,7 @@ If you type Y (or y) and then return, you will see:
 ```
 0:0000.0/Thank you for accepting the license terms
 ```
-LIQUi||> will then exit. After this, you should not be asked to accept the license again on that PC.
+LIQUi||> will then exit. After this, you should not be asked to accept the license again on that environment.
 
 ## Registration (Optional)
 
@@ -98,7 +98,7 @@ LIQUi|> is a command-line program, so you need to open a command window to use i
 Once you have a command window open, enter the following commands:
 ```
 c:
-cd \Liquid
+cd \Liquid\bin
 Liquid.exe
 ```
 You should see the following:
