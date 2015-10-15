@@ -1,22 +1,22 @@
-# Using LIQUi|> on Microsoft Azure
+# Using LIQ𝑈𝑖|⟩ on Microsoft Azure
 
-If you don't have access to a Windows environment, using a Microsoft Azure virtual machine (VM) is a good way to use LIQUi|>.
-These instructions walk you through creating and connecting to a VM and setting it up with LIQUi|>.
+If you don't have access to a Windows environment, using a Microsoft Azure virtual machine (VM) is a good way to use LIQ𝑈𝑖|⟩.
+These instructions walk you through creating and connecting to a VM and setting it up with LIQ𝑈𝑖|⟩.
 
 Setting up a VM for the first time will take about 45 minutes, though you can carry on working while things happen in the background.
 Once you have created a VM, restarting it usually takes 2 or 3 minutes.
 
 ## Microsoft Azure Information and Cost
 
-An Azure basic-tier A2 instance is appropriate for most uses of LIQUi|>.
+An Azure basic-tier A2 instance is appropriate for most uses of LIQ𝑈𝑖|⟩.
 This VM type, if located in the south central US region, costs $0.148 per hour.
 At 8 hours per day for 21 weekdays in a month, this comes to $24.86 per month.
 See the [Microsoft Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) for details.
 
 A new Microsoft Azure account comes with a one month free trial for up to $100 of usage.
 
-If you are teaching a course using LIQUi|> and you and your students will be using LIQUi|> on Microsoft Azure, the [Microsoft Educator Grant Program](https://www.microsoftazurepass.com/azureu) may be applicable.
-It will provide Microsoft Azure funding for you and your students that will more than cover their LIQUi|> usage.
+If you are teaching a course using LIQ𝑈𝑖|⟩ and you and your students will be using LIQ𝑈𝑖|⟩ on Microsoft Azure, the [Microsoft Educator Grant Program](https://www.microsoftazurepass.com/azureu) may be applicable.
+It will provide Microsoft Azure funding for you and your students that will more than cover their LIQ𝑈𝑖|⟩ usage.
 
 ## Prerequisites
 
@@ -80,29 +80,29 @@ TIP: You can use an existing email address for this, if you want, such as your i
 
 * The remote desktop session will start full screen. While your login is being set up, the screen may be black for several minutes. Once the remote desktop session starts, you may get a notification on the right-hand side of the screen asking whether you want to enable network discovery. Click on the "No" button.
 
-### Download LIQUi|>
+### Download LIQ𝑈𝑖|⟩
 
-* Open up a web browser on the VM by hitting the Windows key and then clicking on the IE icon. Click on the OK button to use recommended settings. Navigate to the LIQUi|> GitHub page in the VM browser.
+* Open up a web browser on the VM by hitting the Windows key and then clicking on the IE icon. Click on the OK button to use recommended settings. Navigate to the LIQ𝑈𝑖|⟩ GitHub page in the VM browser.
 
-* Click on the button to the right labeled **Download ZIP**. This will download LIQUi|> and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your VM. We recommend extracting into a folder named c:\Liquid; the TikZ rendering requires this path.
+* Click on the button to the right labeled **Download ZIP**. This will download LIQ𝑈𝑖|⟩ and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your VM. We recommend extracting into a folder named c:\Liquid; the TikZ rendering requires this path.
 
 ### Accept the License
 
-* Follow the instructions on the [Getting Started page](GettingStarted.md#accepting-the-license) to accept the LIQUi|> license terms.
+* Follow the instructions on the [Getting Started page](GettingStarted.md#accepting-the-license) to accept the LIQ𝑈𝑖|⟩ license terms.
 
 ### Run a Test
 
 * If you don't have the command window open from the previous step, open up a command prompt by right-clicking on the Windows icon in the bottom-left corner of the VM remote desktop. Change directory to "c:\Liquid\bin" and type "Liquid.exe __Entangle1(12)" (*Note*: there are **two** underscores before the E). You should see output similar to the following:  
 ```
 0:0000.0/
-0:0000.0/ LIQUi|> -- Language Integrated Quantum Operations
+0:0000.0/ LIQ𝑈𝑖|⟩ -- Language Integrated Quantum Operations
 0:0000.0/     Copyright (c) 2015, Microsoft Corporation
-0:0000.0/     If you use LIQUi|> in your research, please follow the guidelines at
-0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQUi|> in your publications.
+0:0000.0/     If you use LIQ𝑈𝑖|⟩ in your research, please follow the guidelines at
+0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQ𝑈𝑖|⟩ in your publications.
 0:0000.0/
 0:0000.0/
 0:0000.0/##########################################################################################
-0:0000.0/# This is an unregistered copy of LIQUi|>.                                               #
+0:0000.0/# This is an unregistered copy of LIQ𝑈𝑖|⟩.                                               #
 0:0000.0/# Please follow the instructions at "http://github.com/msr-quarc/Liquid" to register.    #
 0:0000.0/##########################################################################################
 0:0000.0/
@@ -127,9 +127,9 @@ TIP: You can use an existing email address for this, if you want, such as your i
 ```
 * To see all of the available samples, just type "Liquid.exe" at the command prompt.
 
-**That's it -- LIQUi|> is now installed on your virtual machine.**
+**That's it -- LIQ𝑈𝑖|⟩ is now installed on your virtual machine.**
 
-* If you like, you may register your copy of LIQUi|> following the procedure in the [Getting Started page](GettingStarted.md#registration-optional)
+* If you like, you may register your copy of LIQ𝑈𝑖|⟩ following the procedure in the [Getting Started page](GettingStarted.md#registration-optional)
 
 ### Stopping the VM
 
@@ -142,5 +142,5 @@ You can restart your VM by going to the management panel and clicking on the "St
 
 **TIP**: If you've closed the portal in your browser, you can always get to it as <a href="http://azure.com/portal" target="_blank">azure.com/portal</a>.
 
-**TIP**: The disk image is saved when you stop and restart, so you will not need to reinstall GitHub or LIQUi|>.
+**TIP**: The disk image is saved when you stop and restart, so you will not need to reinstall GitHub or LIQ𝑈𝑖|⟩.
 

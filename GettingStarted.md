@@ -3,15 +3,15 @@
 ## Prerequisites
 
 These directions assume you're running on a Windows environment, such as a Windows PC or using an emulator on another operating system.
-If you don't have access to a Windows environment, you can use LIQUi|> on a Windows virtual machine.
-See the [Using LIQUi|> on Microsoft Azure](AzureGuide.md) page for directions.
+If you don't have access to a Windows environment, you can use LIQ𝑈𝑖|⟩ on a Windows virtual machine.
+See the [Using LIQ𝑈𝑖|⟩ on Microsoft Azure](AzureGuide.md) page for directions.
 
 ### Visual Studio
 
 Visual Studio 2015 Community Edition is free for individuals and for academic use.
 It is available at https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx.
 
-While Visual Studio is not required to run the LIQUi|> samples, it is necessary if you want to write your own algorithms.
+While Visual Studio is not required to run the LIQ𝑈𝑖|⟩ samples, it is necessary if you want to write your own algorithms.
 
 ### .NET 4.6
 
@@ -20,27 +20,27 @@ Installing Visual Studio 2015 will install .NET 4.6.
 
 If you are only running the samples and aren't installing Visual Studio, you can install .NET 4.6 from http://www.microsoft.com/en-us/download/details.aspx?id=48130 if it isn't already installed.
 
-## Downloading LIQUi|>
+## Downloading LIQ𝑈𝑖|⟩
 
 We recommend placing the download into a folder named c:\Liquid.
-If you choose a different folder, you will need to create a c:\Liquid folder and copy LiquidTikZ.tex from your LIQUi|> folder into c:\Liquid.
+If you choose a different folder, you will need to create a c:\Liquid folder and copy LiquidTikZ.tex from your LIQ𝑈𝑖|⟩ folder into c:\Liquid.
 The samples and directions below assume that you have installed into the c:\Liquid directory.
 
-There are three ways to download LIQUi|>:
+There are three ways to download LIQ𝑈𝑖|⟩:
 
-* Click on the button on the main project page to the right labeled **Download ZIP**. This will download LIQUi|> and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your system. 
+* Click on the button on the main project page to the right labeled **Download ZIP**. This will download LIQ𝑈𝑖|⟩ and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your system. 
 * If you have a GitHub command-line client installed, you may instead change directory to the c:\Liquid directory and use the command:
 ```
 git clone https://github.com/msr-quarc/Liquid
 ```
 * If you have the GitHub desktop application installed, you may click on the button on the main project page to the right labeled **Clone in Desktop**.
 
-The first time you run LIQUi|>, you may get a security warning telling you that the program was downloaded from another system and may not be safe.
-Once you grant LIQUi|> permission to run by clicking the appropriate button, the warning should not recur.
+The first time you run LIQ𝑈𝑖|⟩, you may get a security warning telling you that the program was downloaded from another system and may not be safe.
+Once you grant LIQ𝑈𝑖|⟩ permission to run by clicking the appropriate button, the warning should not recur.
 
 ## Accepting the License
 
-You have to accept the license terms the first time you run LIQUi|> on a new environment.
+You have to accept the license terms the first time you run LIQ𝑈𝑖|⟩ on a new environment.
 
 To do so, open a command window and enter the following commands:
 ```
@@ -50,7 +50,7 @@ Liquid.exe
 ```
 You should see:
 ```
-0:0000.0/LIQUi|> is made available under license by Microsoft Corporation
+0:0000.0/LIQ𝑈𝑖|⟩ is made available under license by Microsoft Corporation
 0:0000.0/License terms may be viewed at https://github.com/msr-quarc/Liquid/blob/master/LICENSE.md
 0:0000.0/Please type Y, followed by return, to indicate your acceptance of these terms
 ```
@@ -62,16 +62,16 @@ LIQUi||> will then exit. After this, you should not be asked to accept the licen
 
 ## Registration (Optional)
 
-While LIQUi|> is free, we do request that you register so that we can track how many people are using it.
+While LIQ𝑈𝑖|⟩ is free, we do request that you register so that we can track how many people are using it.
 To do this you will need to submit a registration request email to our LISTSERV, which will reply with a registration command.
-If you don't register, your copy of LIQUi|> will run, but will print a nag message at the top of every run.
+If you don't register, your copy of LIQ𝑈𝑖|⟩ will run, but will print a nag message at the top of every run.
 
 The LISTSERV is at LISTSERV@lists.research.microsoft.com.
 The email body for your registration should contain:
 ```
 /REG
 ```
-You will receive a reply email that will contain a command you can copy and paste into a command window to register your copy of LIQUi|>.
+You will receive a reply email that will contain a command you can copy and paste into a command window to register your copy of LIQ𝑈𝑖|⟩.
 The response will look something like:
 ```
 > /REG
@@ -80,21 +80,21 @@ Liquid.exe /reg test@microsoft.com`2015-10-06T00:00:00`O6K7yUcYnKdjfis2I05vXA== 
 The command to execute is the line starting with "Liquid.exe".
 Make sure you're in the c:\Liquid\bin directory before entering this command.
 
-Registering your copy of LIQUi|> does not subscribe you to the liquid-news email list.
+Registering your copy of LIQ𝑈𝑖|⟩ does not subscribe you to the liquid-news email list.
 If you wish, you can do both at the same time by sending a single email with both commands in the body:
 ```
 SUB Liquid-news FirstName LastName
 /REG
 ```
-To subscribe anonymously and register your copy of LIQUi|> at the same time, you can send a single email with both these commands in the body:
+To subscribe anonymously and register your copy of LIQ𝑈𝑖|⟩ at the same time, you can send a single email with both these commands in the body:
 ```
 SUB Liquid-news anonymous
 /REG
 ```
 
-## Running LIQUi|>
+## Running LIQ𝑈𝑖|⟩
 
-LIQUi|> is a command-line program, so you need to open a command window to use it.
+LIQ𝑈𝑖|⟩ is a command-line program, so you need to open a command window to use it.
 Once you have a command window open, enter the following commands:
 ```
 c:
@@ -104,10 +104,10 @@ Liquid.exe
 You should see the following:
 ```
 0:0000.0/
-0:0000.0/ LIQUi|> -- Language Integrated Quantum Operations
+0:0000.0/ LIQ𝑈𝑖|⟩ -- Language Integrated Quantum Operations
 0:0000.0/     Copyright (c) 2015, Microsoft Corporation
-0:0000.0/     If you use LIQUi|> in your research, please follow the guidelines at
-0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQUi|> in your publications.
+0:0000.0/     If you use LIQ𝑈𝑖|⟩ in your research, please follow the guidelines at
+0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQ𝑈𝑖|⟩ in your publications.
 0:0000.0/
 0:0000.0/
 0:0000.0/TESTS (all start with two underscores):
@@ -152,7 +152,7 @@ You should see the following:
 0:0000.0/    /s        ""                   Compile and load script file
 0:0000.0/    /l        ""                   Load compiled script file
 0:0000.0/
-0:0000.0/    /reg      ""                   Register this copy of LIQUi|>
+0:0000.0/    /reg      ""                   Register this copy of LIQ𝑈𝑖|⟩
 0:0000.0/
 0:0000.0/ Final arg is the function to call:
 0:0000.0/   function(pars,...)
@@ -171,10 +171,10 @@ Liquid.exe __Entangle1(10)
 you should see:
 ```
 0:0000.0/
-0:0000.0/ LIQUi|> -- Language Integrated Quantum Operations
+0:0000.0/ LIQ𝑈𝑖|⟩ -- Language Integrated Quantum Operations
 0:0000.0/     Copyright (c) 2015, Microsoft Corporation
-0:0000.0/     If you use LIQUi|> in your research, please follow the guidelines at
-0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQUi|> in your publications.
+0:0000.0/     If you use LIQ𝑈𝑖|⟩ in your research, please follow the guidelines at
+0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQ𝑈𝑖|⟩ in your publications.
 0:0000.0/
 0:0000.0/
 0:0000.0/=============== Logging to: Liquid.log opened ================
@@ -202,8 +202,8 @@ you should see:
 If you want to use the quantum random walk sample or compute state vector entanglement entropies,
 you will need a BLAS library.
 
-**If you don't use these functions, then LIQUi|> will work fine with no BLAS implementation available.
-THe BLAS library is dynamically loaded before use, and is not required for LIQUi|> to operate.**
+**If you don't use these functions, then LIQ𝑈𝑖|⟩ will work fine with no BLAS implementation available.
+THe BLAS library is dynamically loaded before use, and is not required for LIQ𝑈𝑖|⟩ to operate.**
 
 We have tested with OpenBLAS, which is available from http://www.openblas.net/.
 
@@ -213,7 +213,7 @@ You will need to build the FORTRAN compiler to create these DLLs.
 
 There are some helpful hints at http://icl.cs.utk.edu/lapack-for-windows/lapack/index.html and at http://www.r-bloggers.com/an-openblas-based-rblas-for-windows-64-step-by-step/.
 
-LIQUi|> looks for a library named "libopenblas.dll" in either the same directory as the LIQUi|> executable,
+LIQ𝑈𝑖|⟩ looks for a library named "libopenblas.dll" in either the same directory as the LIQ𝑈𝑖|⟩ executable,
 or in a directory on your PATH, or in the C:\Liquid\bin directory (if it exists).
 If you are using OpenBLAS, the other two libraries should be placed in the same directory as libopenblas.dll.
 
