@@ -495,12 +495,21 @@
       <param name="m2">The right matrix</param>
       <returns>The result of the Kronecker product</returns>
     </member>
-    <member name="M:Microsoft.Research.Liquid.CMat.Power(System.Int32)">
+    <member name="M:Microsoft.Research.Liquid.CMat.Power(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
       <summary>
  Computes an integer power of this matrix.
  NOTE: This destroys the contents of the current matrix.
  </summary>
       <param name="n">The power to raise this matrix to; must be greater than 0.</param>
+      <param name="verbose">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>verbose</parameter>
+            <parameter>M:Microsoft.Research.Liquid.CMat.Power(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})</parameter>
+          </include>
+        </markup>
+      </param>
       <returns>The resulting matrix</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.CMat.Read(System.IO.BinaryReader)">
@@ -3830,16 +3839,6 @@
  </summary>
       <param name="str">String argument to show</param>
     </member>
-    <member name="P:Microsoft.Research.Liquid.Util.citation">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Microsoft.Research.Liquid.Util.citation</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
     <member name="P:Microsoft.Research.Liquid.Util.copyright">
       <summary>
  Copyright notice for Liquid.
@@ -3943,7 +3942,7 @@
       <typeparam name="a">Internal type of the printf string. The F# compiler will deduce this.</typeparam>
       <returns>Internal printformat.</returns>
     </member>
-    <member name="M:Microsoft.Research.Liquid.Util.showBareInd(System.Int32,System.String)">
+    <member name="P:Microsoft.Research.Liquid.Util.showBareInd">
       <summary>
  Shows an indented line of output, with no prefix, to the console and log file.
  This routine is used by or with various Dump() routines.
@@ -3952,7 +3951,7 @@
  Each level represents a two space indent.</param>
       <param name="line">The text to show.</param>
     </member>
-    <member name="M:Microsoft.Research.Liquid.Util.showBareLogInd(System.Int32,System.String)">
+    <member name="P:Microsoft.Research.Liquid.Util.showBareLogInd">
       <summary>
  Shows an indented line of output, with no prefix, to the log file.
  This routine is used by or with various Dump() routines.
@@ -3988,7 +3987,7 @@
         </markup>
       </param>
     </member>
-    <member name="M:Microsoft.Research.Liquid.Util.showInd(System.Int32,System.String)">
+    <member name="P:Microsoft.Research.Liquid.Util.showInd">
       <summary>
  Shows an indented line of output to the console and log file.
  This routine is used by or with various Dump() routines.
@@ -4005,7 +4004,7 @@
       <typeparam name="a">Internal type of the printf string. The F# compiler will deduce this.</typeparam>
       <returns>Internal printformat</returns>
     </member>
-    <member name="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">
+    <member name="P:Microsoft.Research.Liquid.Util.showLogInd">
       <summary>
  Shows an indented line of output to the log file.
  This routine is used by or with various Dump() routines.

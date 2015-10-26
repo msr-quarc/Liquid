@@ -306,6 +306,14 @@
       <param name="lenC">The number of columns</param>
       <returns>The new array</returns>
     </member>
+    <member name="M:Microsoft.Research.Liquid.CMat.Div(System.Double)">
+      <summary>
+ Scales this matrix by a constant divisor.
+ This matrix is updated in place, rather than a new matrix being created.
+ </summary>
+      <param name="div">The scale divisor. The matrix is multiplied by 1/div.</param>
+      <returns>This matrix, as updated after scaling</returns>
+    </member>
     <member name="M:Microsoft.Research.Liquid.CMat.Dump(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
       <summary>
  Dumps this matrix.
@@ -342,6 +350,18 @@
  The default is <see cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">showLogInd</see>.</param>
       <param name="level">The optional indentation level. The default is 0.</param>
     </member>
+    <member name="M:Microsoft.Research.Liquid.CMat.FixUnitary(Microsoft.FSharp.Core.FSharpOption{System.Double},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+      <summary>
+ Makes this matrix closer to being unitary by applying an iterative correction.
+ </summary>
+      <param name="tol">An optional desired tolerance for the deviation from unitarity,
+ as measured by <see cref="M:Microsoft.Research.Liquid.CMat.UnitaryError"></see>. 
+ The default is 1.0e-13.</param>
+      <param name="maxIter">An optional maximum number of iterations to perform.
+ The default is 5.</param>
+      <returns>A tuple of the number of iterations performed, for cost estimates, 
+ and the final deviation from unitarity.</returns>
+    </member>
     <member name="P:Microsoft.Research.Liquid.CMat.Item(System.Int32,System.Int32)">
       <summary>
  Gets an individual element of the matrix, as a Complex number.
@@ -349,6 +369,23 @@
       <param name="i">The row index.</param>
       <param name="j">The column index.</param>
       <returns>The complex value of the matrix element.</returns>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CMat.Kron(Microsoft.Research.Liquid.CMat)">
+      <summary>
+ Computes the Kronecker Product of this matrix with another matrix.
+ </summary>
+      <param name="m2">The right-hand side matrix in the Kronecker product.</param>
+      <returns>The result of the Kronecker product</returns>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CMat.Kron(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+      <summary>
+ Computes the Kronecker Product of this matrix with an identity matrix
+ </summary>
+      <param name="len">The dimension of the identity matrix (N of NxN).</param>
+      <param name="left">An option that, if true, specifies that the identity matrix
+ should be on the left side of the Kronecker product.
+ The default is false, which means that the identity is on the right.</param>
+      <returns>The result of the Kronecker product</returns>
     </member>
     <member name="P:Microsoft.Research.Liquid.CMat.Length">
       <summary>
@@ -385,18 +422,35 @@
     </member>
     <member name="M:Microsoft.Research.Liquid.CMat.Mul(System.Double)">
       <summary>
- Multiplies this matrix by a constant.
- This modifies this matrix in place, rather than creating a new matrix.
+ Scales this matrix by a constant multiplier.
+ This matrix is updated in place, rather than a new matrix being created.
  </summary>
-      <param name="mul">The constant to multiply by.</param>
-      <returns>This matrix</returns>
+      <param name="mul">The scale factor to multiply by.</param>
+      <returns>This matrix, as updated after scaling</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.CMat.op_AdditionAssignment(Microsoft.Research.Liquid.CMat,Microsoft.Research.Liquid.CMat)">
       <summary>
- Adds one matrix to 
+ Adds one matrix to another.
  </summary>
-      <param name="m1">Left matrix</param>
-      <param name="m2">Right matrix</param>
+      <param name="m1">The left matrix. This matrix is modified.</param>
+      <param name="m2">The right matrix</param>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CMat.op_DivisionAssignment(Microsoft.Research.Liquid.CMat,System.Double)">
+      <summary>
+ Scales a matrix by a constant divisor.
+ The matrix is updated in place, rather than a new matrix being created.
+ </summary>
+      <param name="m1">The matrix to scale.</param>
+      <param name="v">The scale divisor. The matrix is multiplied by 1/div.</param>
+      <param name="div">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>div</parameter>
+            <parameter>M:Microsoft.Research.Liquid.CMat.op_DivisionAssignment(Microsoft.Research.Liquid.CMat,System.Double)</parameter>
+          </include>
+        </markup>
+      </param>
     </member>
     <member name="M:Microsoft.Research.Liquid.CMat.op_Multiply(Microsoft.Research.Liquid.CMat,Microsoft.Research.Liquid.CMat)">
       <summary>
@@ -418,9 +472,10 @@
     </member>
     <member name="M:Microsoft.Research.Liquid.CMat.op_MultiplyAssignment(Microsoft.Research.Liquid.CMat,System.Double)">
       <summary>
- Multiplies a matrix by a constant, modifying the matrix in place.
+ Scales a matrix by a constant multiplier.
+ The matrix is updated in place, rather than a new matrix being created.
  </summary>
-      <param name="m1">The matrix to modify.</param>
+      <param name="m1">The matrix to scale.</param>
       <param name="v">The constant to multiply by.</param>
       <param name="mul">
         <markup>
@@ -432,12 +487,61 @@
         </markup>
       </param>
     </member>
+    <member name="M:Microsoft.Research.Liquid.CMat.op_MultiplyBang(Microsoft.Research.Liquid.CMat,Microsoft.Research.Liquid.CMat)">
+      <summary>
+ Computes the Kronecker product of two matrices
+ </summary>
+      <param name="m1">The left matrix</param>
+      <param name="m2">The right matrix</param>
+      <returns>The result of the Kronecker product</returns>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CMat.Power(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+      <summary>
+ Computes an integer power of this matrix.
+ NOTE: This destroys the contents of the current matrix.
+ </summary>
+      <param name="n">The power to raise this matrix to; must be greater than 0.</param>
+      <param name="verbose">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>verbose</parameter>
+            <parameter>M:Microsoft.Research.Liquid.CMat.Power(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>The resulting matrix</returns>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CMat.Read(System.IO.BinaryReader)">
+      <summary>
+ Reads a matrix from a stream.
+ </summary>
+      <param name="br">A BinaryReader to deserialize a matrix from.</param>
+      <returns>The new mnatrix</returns>
+    </member>
     <member name="M:Microsoft.Research.Liquid.CMat.ToString">
       <summary>
  Gets a string representation of this matrix.
  Note that there is no limit on the size of the result; every row and column entry is included.
  </summary>
       <returns>The string representation</returns>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CMat.UnitaryError">
+      <summary>
+ Performs a rough check to see if this matrix is actually unitary.
+ It calculates the biggest deviation from 1 of the diagonal elements
+ of (this adj)*this.
+ In other words, it calculates the largest deviation of the length of a row,
+ viewed as a complex vector, from 1.
+ The orthogonality of different rows is not checked.
+ </summary>
+      <returns>The worst deviation from 1.</returns>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CMat.Write(System.IO.BinaryWriter)">
+      <summary>
+ Writes this matrix to a stream for serialization.
+ </summary>
+      <param name="bw">A BinaryWriter to serialize this matrix to.</param>
     </member>
     <member name="T:Microsoft.Research.Liquid.Complex">
       <summary>Data type for complex numbers.</summary>
@@ -679,6 +783,16 @@
         </markup>
       </param>
     </member>
+    <member name="M:Microsoft.Research.Liquid.CSMat.Equals(Microsoft.Research.Liquid.CSMat,Microsoft.FSharp.Core.FSharpOption{System.Double})">
+      <summary>
+ Determines whether this matrix is equal to another.
+ </summary>
+      <param name="m2">The sparse matrix to compare to.</param>
+      <param name="tol">An optional tolerance for considering real or imaginary parts equal.
+ The default is Complex.Tol.</param>
+      <returns>true if the matrices are equal, within the tolerance limit, or 
+ false otherwise.</returns>
+    </member>
     <member name="P:Microsoft.Research.Liquid.CSMat.Item(System.Int32,System.Int32)">
       <summary>
  Gets an element of the matrix.
@@ -686,6 +800,30 @@
       <param name="x">The row index of the desired element.</param>
       <param name="y">The column index of the desired element.</param>
       <returns>The matrix element, as a Complex number</returns>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CSMat.Kron(Microsoft.Research.Liquid.CSMat)">
+      <summary>
+ Computes the Kronecker Product of this matrix with another matrix.
+ </summary>
+      <param name="m2">The right-hand side matrix in the Kronecker product.</param>
+      <returns>The result of the Kronecker product</returns>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CSMat.Kron(System.Int32)">
+      <summary>
+ Computes the Kronecker Product of this matrix with an identity matrix.
+ The identity matrix is on the right-hand side of the product.
+ </summary>
+      <param name="len">The dimension of the identity matrix (N of NxN).</param>
+      <param name="lenI">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>lenI</parameter>
+            <parameter>M:Microsoft.Research.Liquid.CSMat.Kron(System.Int32)</parameter>
+          </include>
+        </markup>
+      </param>
+      <returns>The result of the Kronecker product</returns>
     </member>
     <member name="P:Microsoft.Research.Liquid.CSMat.Length">
       <summary>
@@ -724,6 +862,14 @@
       <param name="v">The vector</param>
       <returns>The resulting vector</returns>
     </member>
+    <member name="M:Microsoft.Research.Liquid.CSMat.op_MultiplyBang(Microsoft.Research.Liquid.CSMat,Microsoft.Research.Liquid.CSMat)">
+      <summary>
+ Computes the Kronecker product of two matrices
+ </summary>
+      <param name="m1">The left matrix</param>
+      <param name="m2">The right matrix</param>
+      <returns>The result of the Kronecker product</returns>
+    </member>
     <member name="M:Microsoft.Research.Liquid.CSMat.Read(System.IO.BinaryReader)">
       <summary>
  Reads a matrix from a stream.
@@ -739,6 +885,17 @@
  Note that all non-zero elements are listed, so this string may be quite long.
  </summary>
       <returns>The string representation</returns>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CSMat.UnitaryError">
+      <summary>
+ Performs a rough check to see if this matrix is actually unitary.
+ It calculates the biggest deviation from 1 of the diagonal elements
+ of (this adj)*this.
+ In other words, it calculates the largest deviation of the length of a row,
+ viewed as a complex vector, from 1.
+ The orthogonality of different rows is not checked.
+ </summary>
+      <returns>The worst deviation from 1.</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.CSMat.Write(System.IO.BinaryWriter)">
       <summary>
@@ -819,12 +976,29 @@
       <param name="both">Output complex value as well (optional=false)</param>
       <param name="maxNZ">Max non-zeros to dump (optional=256)</param>
     </member>
+    <member name="M:Microsoft.Research.Liquid.CVec.GlobalPhase">
+      <summary>
+ Estimates the global phase of a vector that represents a quantum state.
+ The estimate is computed as the complex phase of the vector element with
+ the greatest amplitude.
+ </summary>
+      <returns>A tuple whose first element is the estimated phase angle, in radians,
+ and whose second element is the unit-magnitude Complex number with the 
+ opposite phase.</returns>
+    </member>
     <member name="P:Microsoft.Research.Liquid.CVec.iSafe(System.UInt64)">
       <summary>
  Gets the imaginary part of an element of this vector by index.
  </summary>
       <param name="i">The index of the element to get</param>
       <returns>The imaginary part of the Complex value of the element</returns>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.CVec.Kron(Microsoft.Research.Liquid.CVec)">
+      <summary>
+ Computes the Kronecker product of this vector and another.
+ </summary>
+      <param name="v2">Vector to multiply this one by</param>
+      <returns>The result vector</returns>
     </member>
     <member name="P:Microsoft.Research.Liquid.CVec.Length">
       <summary>
@@ -845,7 +1019,7 @@
  </summary>
       <param name="v1">Left vector</param>
       <param name="v2">Right vector</param>
-      <returns>result vector</returns>
+      <returns>The result vector</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.CVec.Read(System.IO.BinaryReader)">
       <summary>
@@ -3665,6 +3839,11 @@
  </summary>
       <param name="str">String argument to show</param>
     </member>
+    <member name="P:Microsoft.Research.Liquid.Util.copyright">
+      <summary>
+ Copyright notice for Liquid.
+ </summary>
+    </member>
     <member name="M:Microsoft.Research.Liquid.Util.getFlgPar(System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Boolean)">
       <summary>
  Extracts a boolean macro definition from a command option dictionary.
@@ -3763,7 +3942,7 @@
       <typeparam name="a">Internal type of the printf string. The F# compiler will deduce this.</typeparam>
       <returns>Internal printformat.</returns>
     </member>
-    <member name="M:Microsoft.Research.Liquid.Util.showBareInd(System.Int32,System.String)">
+    <member name="P:Microsoft.Research.Liquid.Util.showBareInd">
       <summary>
  Shows an indented line of output, with no prefix, to the console and log file.
  This routine is used by or with various Dump() routines.
@@ -3772,7 +3951,7 @@
  Each level represents a two space indent.</param>
       <param name="line">The text to show.</param>
     </member>
-    <member name="M:Microsoft.Research.Liquid.Util.showBareLogInd(System.Int32,System.String)">
+    <member name="P:Microsoft.Research.Liquid.Util.showBareLogInd">
       <summary>
  Shows an indented line of output, with no prefix, to the log file.
  This routine is used by or with various Dump() routines.
@@ -3808,7 +3987,7 @@
         </markup>
       </param>
     </member>
-    <member name="M:Microsoft.Research.Liquid.Util.showInd(System.Int32,System.String)">
+    <member name="P:Microsoft.Research.Liquid.Util.showInd">
       <summary>
  Shows an indented line of output to the console and log file.
  This routine is used by or with various Dump() routines.
@@ -3825,7 +4004,7 @@
       <typeparam name="a">Internal type of the printf string. The F# compiler will deduce this.</typeparam>
       <returns>Internal printformat</returns>
     </member>
-    <member name="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">
+    <member name="P:Microsoft.Research.Liquid.Util.showLogInd">
       <summary>
  Shows an indented line of output to the log file.
  This routine is used by or with various Dump() routines.
