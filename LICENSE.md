@@ -1,4 +1,4 @@
-# Microsoft Research License Agreement for LIQ𝑈𝑖|⟩ quantum operation simulator
+# Microsoft Research License Agreement for LIQ𝑈𝑖|⟩ quantum operations simulator
 
 This Microsoft Research License Agreement (“Agreement”) is a legal agreement between you and Microsoft Corporation. Please read it.  It applies to the Microsoft Research software named above, which may include executable code. libraries, samples, documentation (together, the “Software”). For the purposes of this Agreement, the Software also includes any Microsoft (i) updates, (ii) supplements, (iii) internet-based services, and (iv) support services for the Software, unless other terms accompany those items. If so, those other terms apply.
 

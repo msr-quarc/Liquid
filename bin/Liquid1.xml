@@ -1729,51 +1729,6 @@
  </summary>
  <param name="iniSiz">Initial size (optional=10)</param>
 </member>
-<member name="P:Microsoft.Research.Liquid.Ensemble.Info">
- <summary>
- Property to get the EnsembleInfo inner object.
- </summary>
-</member>
-<member name="M:Microsoft.Research.Liquid.Ensemble.SC(System.String)">
- <summary>
- Execute an sc.exe (service control) command
- </summary>
- <param name="cmd">create, start, query, stop, delete</param>
-</member>
-<member name="M:Microsoft.Research.Liquid.Ensemble.Run(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
- <summary>
- Run configuration loaded by .Load command
- </summary>
- <param name="port">Port to run service with</param>
- <param name="svcManual">Don't Auto start stop service (optional=false)</param>
-</member>
-<member name="M:Microsoft.Research.Liquid.Ensemble.HPC">
- <summary>
- Run configuration loaded by .Load command on an HPC cluster
- </summary>
-</member>
-<member name="M:Microsoft.Research.Liquid.Ensemble.AzureCommand(System.Int32)">
- <summary>
- Gets the command for a specific run within the ensemble.
- </summary>
- <param name="run">The run number, 0-based.</param>
-</member>
-<member name="M:Microsoft.Research.Liquid.Ensemble.#ctor(System.String,System.String)">
- <summary>
- Load an ensemble configuration from a file.
- Note that this version always compiles any associated scripts.
- <param name="xmlPath">Path to the file to read</param>
- <param name="runName">Name of tag to run</param>
- </summary>
-</member>
-<member name="T:Microsoft.Research.Liquid.Ensemble">
- <summary>
- Load an ensemble configuration from a stream
- </summary>
- <param name="xtr">XML text reader opened on the input stream</param>
- <param name="runName">Name of tag to run</param>
- <param name="compile">true to compile scripts, false to skip</param>
-</member>
 <member name="P:Microsoft.Research.Liquid.EnsembleInfo.headNode">
 <summary>
  Working directory for HPC
