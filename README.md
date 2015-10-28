@@ -1,4 +1,4 @@
-# LIQ𝑈𝑖|⟩: Language-Integrated Quantum Operations
+# The Language-Integrated Quantum Operations (LIQ𝑈𝑖|⟩) simulator: 
 
 ## What Is LIQ𝑈𝑖|⟩?
 
