@@ -95,16 +95,18 @@ TIP: You can use an existing email address for this, if you want, such as your i
 * If you don't have the command window open from the previous step, open up a command prompt by right-clicking on the Windows icon in the bottom-left corner of the VM remote desktop. Change directory to "c:\Liquid\bin" and type "Liquid.exe __Entangle1(12)" (*Note*: there are **two** underscores before the E). You should see output similar to the following:  
 ```
 0:0000.0/
-0:0000.0/ LIQ𝑈𝑖|⟩ -- Language Integrated Quantum Operations
-0:0000.0/     Copyright (c) 2015, Microsoft Corporation
-0:0000.0/     If you use LIQ𝑈𝑖|⟩ in your research, please follow the guidelines at
-0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQ𝑈𝑖|⟩ in your publications.
+0:0000.0/===========================================================================================
+0:0000.0/=    The Language-Integrated Quantum Operations (LIQUi|>) Simulator                       =
+0:0000.0/=        Copyright (c) 2015, Microsoft Corporation                                        =
+0:0000.0/=        If you use LIQUi|> in your research, please follow the guidelines at             =
+0:0000.0/=        https://github.com/msr-quarc/Liquid for citing LIQUi|> in your publications.     =
+0:0000.0/===========================================================================================
 0:0000.0/
 0:0000.0/
-0:0000.0/##########################################################################################
-0:0000.0/# This is an unregistered copy of LIQ𝑈𝑖|⟩.                                               #
-0:0000.0/# Please follow the instructions at "http://github.com/msr-quarc/Liquid" to register.    #
-0:0000.0/##########################################################################################
+0:0000.0/===========================================================================================
+0:0000.0/=    This is an unregistered copy of LIQUi|>.                                             =
+0:0000.0/=    Please follow the instructions at http://github.com/msr-quarc/Liquid to register.    =
+0:0000.0/===========================================================================================
 0:0000.0/
 0:0000.0/=============== Logging to: Liquid.log opened ================
 0:0000.0/
