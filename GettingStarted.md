@@ -50,9 +50,12 @@ Liquid.exe
 ```
 You should see:
 ```
-0:0000.0/LIQ𝑈𝑖|⟩ is made available under license by Microsoft Corporation
-0:0000.0/License terms may be viewed at https://github.com/msr-quarc/Liquid/blob/master/LICENSE.md
-0:0000.0/Please type Y, followed by return, to indicate your acceptance of these terms
+0:0000.0/===================================================================================================
+0:0000.0/=    The Language-Integrated Quantum Operations (LIQUi|>) Simulator                               =
+0:0000.0/=    is made available under license by Microsoft Corporation                                     =
+0:0000.0/=    License terms may be viewed at https://github.com/msr-quarc/Liquid/blob/master/LICENSE.md    =
+0:0000.0/=    Please type Y, followed by return, to indicate your acceptance of these terms                =
+0:0000.0/===================================================================================================
 ```
 If you type Y (or y) and then return, you will see:
 ```
@@ -104,10 +107,12 @@ Liquid.exe
 You should see the following:
 ```
 0:0000.0/
-0:0000.0/ LIQ𝑈𝑖|⟩ -- Language Integrated Quantum Operations
-0:0000.0/     Copyright (c) 2015, Microsoft Corporation
-0:0000.0/     If you use LIQ𝑈𝑖|⟩ in your research, please follow the guidelines at
-0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQ𝑈𝑖|⟩ in your publications.
+0:0000.0/===========================================================================================
+0:0000.0/=    The Language-Integrated Quantum Operations (LIQUi|>) Simulator                       =
+0:0000.0/=        Copyright (c) 2015, Microsoft Corporation                                        =
+0:0000.0/=        If you use LIQUi|> in your research, please follow the guidelines at             =
+0:0000.0/=        https://github.com/msr-quarc/Liquid for citing LIQUi|> in your publications.     =
+0:0000.0/===========================================================================================
 0:0000.0/
 0:0000.0/
 0:0000.0/TESTS (all start with two underscores):
@@ -171,10 +176,12 @@ Liquid.exe __Entangle1(10)
 you should see:
 ```
 0:0000.0/
-0:0000.0/ LIQ𝑈𝑖|⟩ -- Language Integrated Quantum Operations
-0:0000.0/     Copyright (c) 2015, Microsoft Corporation
-0:0000.0/     If you use LIQ𝑈𝑖|⟩ in your research, please follow the guidelines at
-0:0000.0/     "https://github.com/msr-quarc/Liquid" for citing LIQ𝑈𝑖|⟩ in your publications.
+0:0000.0/===========================================================================================
+0:0000.0/=    The Language-Integrated Quantum Operations (LIQUi|>) Simulator                       =
+0:0000.0/=        Copyright (c) 2015, Microsoft Corporation                                        =
+0:0000.0/=        If you use LIQUi|> in your research, please follow the guidelines at             =
+0:0000.0/=        https://github.com/msr-quarc/Liquid for citing LIQUi|> in your publications.     =
+0:0000.0/===========================================================================================
 0:0000.0/
 0:0000.0/
 0:0000.0/=============== Logging to: Liquid.log opened ================
