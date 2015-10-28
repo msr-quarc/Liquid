@@ -15,11 +15,11 @@ While Visual Studio is not required to run the LIQ𝑈𝑖|⟩ samples, it is ne
 
 Installation steps:
 
-1. Make sure you select F# as one of the programming languages to install (everything else may be unchecked if desired).
+1. Make sure you select F# as one of the programming languages to install (everything else is optional).
 2. After the installation, follow the steps below to download LIQ𝑈𝑖|⟩ into c:\Liquid
 3. Open the "solution file" at: C:\Liquid\source\Liquid.sln
 4. After you choose your preferences (a few clicks) you'll see the "Solution Explorer" window on the right side. The Liquid project will show up as "unavailable". This is because F# is actually installed on demand. Right click on the project and one of the options will be to install F#.
-5. After F# installs, Select "DEBUG -> Start Without Debugging" from the menu bar. This will re-build the app and then run a small Shor example (just to test that everything is working).
+5. After F# installs you're done.
 
 ### .NET 4.6
 
