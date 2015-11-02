@@ -36,7 +36,7 @@ The samples and directions below assume that you have installed into the c:\Liqu
 
 There are three ways to download LIQ𝑈𝑖|⟩:
 
-* Click on the button on the main project page to the right labeled **Download ZIP**. This will download LIQ𝑈𝑖|⟩ and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your system. 
+* Click on the button on the main project page to the right labeled **Download ZIP**. This will download LIQ𝑈𝑖|⟩ and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your system. If you extract into C:\  you will now have a root folder named Liquid-master. Rename the folder to C:\Liquid and you're done.
 * If you have a GitHub command-line client installed, you may instead change directory to the c:\Liquid directory and use the command:
 ```
 git clone https://github.com/msr-quarc/Liquid
