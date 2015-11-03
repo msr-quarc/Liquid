@@ -1,0 +1,1180 @@
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="----=_NextPart_01D1161E.7D2EE3F0"
+
+This document is a Single File Web Page, also known as a Web Archive file.  If you are seeing this message, your browser or editor doesn't support Web Archive files.  Please download a browser that supports Web Archive, such as Windows� Internet Explorer�.
+
+------=_NextPart_01D1161E.7D2EE3F0
+Content-Location: file:///C:/EC6AB274/WorkshopScript.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8">
+<meta name=3DProgId content=3DOneNote.File>
+<meta name=3DGenerator content=3D"Microsoft OneNote 15">
+<link id=3DMain-File rel=3DMain-File href=3DWorkshopScript.htm>
+<link rel=3DFile-List href=3D"WorkshopScript_files/filelist.xml">
+</head>
+
+<body lang=3Den-US style=3D'font-family:Calibri;font-size:11.0pt'>
+
+<div style=3D'direction:ltr;border-width:100%'>
+
+<div style=3D'direction:ltr;margin-top:0in;margin-left:0in;width:10.002in'>
+
+<div style=3D'direction:ltr;margin-top:0in;margin-left:.0027in;width:2.3833=
+in'>
+
+<p style=3D'margin:0in;font-family:"Calibri Light";font-size:20.0pt'>Worksh=
+op
+Script</p>
+
+</div>
+
+<div style=3D'direction:ltr;margin-top:.0423in;margin-left:.0027in;width:2.=
+5027in'>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:10.0pt;color:gray'>Tue=
+sday,
+October 27, 2015</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:10.0pt;color:gray'>11:=
+05 AM</p>
+
+</div>
+
+<div style=3D'direction:ltr;margin-top:.434in;margin-left:0in;width:10.002i=
+n'>
+
+<ul style=3D'margin-left:.002in;direction:ltr;unicode-bidi:embed;margin-top=
+:0in;
+ margin-bottom:0in'>
+ <p style=3D'margin:0in;font-family:Verdana;font-size:13.0pt'>Workshop flow=
+:</p>
+ <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+  margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+  font-weight:normal;font-style:normal'>
+  <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middle=
+'><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'>Pre workshop
+      (things Dave needs to do):</span></li>
+  <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+   font-weight:normal;font-style:normal'>
+   <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'>Install
+       TexWorks/MikTeX</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Install Notepad++</sp=
+an></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Get rid of
+       HKEY_CURRENT_USER\SOFTWARE\Microsoft\Liquid</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Associate (&quot;defa=
+ult
+       programs&quot;): .txt .log .dat .fsx with NotePad++</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Delete c:\Liquid</spa=
+n></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Make sure to have
+       Liquid-master.zip in the Downloads directory from GitHub </span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Have Task Manager sho=
+wing
+       CPU in the upper right</span></li>
+  </ol>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>If anyone doesn't have=
+ it
+      installed and wants it (Liquid, VS and anything else)… hand out USB
+      sticks with everything they need. They can install while the workshop
+      proceeds.</span></li>
+  <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+   font-weight:bold;font-style:normal'>
+   <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e;
+       font-weight:bold'><span style=3D'font-family:Verdana;font-size:13.0p=
+t;
+       font-weight:bold;font-style:normal;font-weight:bold;font-family:Verd=
+ana;
+       font-size:13.0pt'>Vs2015community\vs_community.exe</span></li>
+   <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embe=
+d;
+    margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+    font-weight:normal;font-style:normal'>
+    <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:midd=
+le'><span
+        style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+        font-style:normal;font-family:Verdana;font-size:13.0pt'>Custom inst=
+all</span></li>
+    <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>Programming language=
+s:
+        Visual F# (uncheck anything else)</span></li>
+    <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>Took me: ~20 minutes=
+ (your
+        mileage may vary). </span></li>
+   </ol>
+  </ol>
+  <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+   font-weight:normal;font-style:normal'>
+   <li value=3D2 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:bold;font-=
+style:
+       normal;font-weight:bold;font-family:Verdana;font-size:13.0pt'>Liquid=
+-master.zip</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'> (may be done
+       while VS is installing):</span></li>
+   <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embe=
+d;
+    margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+    font-weight:normal;font-style:normal'>
+    <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:midd=
+le'><span
+        style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+        font-style:normal;font-family:Verdana;font-size:13.0pt'>Right-click=
+ and
+        select </span><span style=3D'font-family:Verdana;font-size:13.0pt;
+        font-weight:bold;font-style:normal;font-weight:bold;font-family:Ver=
+dana;
+        font-size:13.0pt'>Extract All…</span></li>
+    <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>Extract to </span><s=
+pan
+        style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>C:\=
+</span></li>
+    <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>Rename </span><span
+        style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>c:\=
+Liquid-Master</span><span
+        style=3D'font-family:Verdana;font-size:13.0pt'> folder to </span><s=
+pan
+        style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>c:\=
+Liquid</span></li>
+   </ol>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Once you have everyth=
+ing
+       installed:</span></li>
+   <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embe=
+d;
+    margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+    font-weight:normal;font-style:normal'>
+    <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:midd=
+le'><span
+        style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+        font-style:normal;font-family:Verdana;font-size:13.0pt'>Open </span=
+><span
+        style=3D'font-family:Verdana;font-size:13.0pt;font-weight:bold;
+        font-style:normal;font-weight:bold;font-family:Verdana;font-size:13=
+.0pt'>c:\Liquid\source\Liquid.sln</span></li>
+    <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>Answer any setup dia=
+logs</span></li>
+    <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>Go to Solution Explo=
+rer on
+        the right side and see if it says that Liquid is &quot;</span><span
+        style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>una=
+vailable</span><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>&quot;</span></li>
+    <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>Right click on Liqui=
+d and
+        select &quot;</span><span style=3D'font-weight:bold;font-family:Ver=
+dana;
+        font-size:13.0pt'>install</span><span style=3D'font-family:Verdana;
+        font-size:13.0pt'>&quot; (to get F# which is installed on demand).<=
+/span></li>
+   </ol>
+  </ol>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Starting:</span></li>
+  <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+   font-weight:normal;font-style:normal'>
+   <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'>From Edge, g=
+o to
+       Downloads</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Click on </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Liqu=
+id-Master.zip</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Extract into c:\</spa=
+n></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Rename to </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>c:\L=
+iquid</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show the install dire=
+ctory
+       and basic structure (use File Explorer). Stress where the docs are.<=
+/span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show how to sprout a
+       command windows (Right click Windows -&gt; Command Prompt)</span></l=
+i>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show how to get to C:=
+ and </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>cd
+       \Liquid\bin</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Run </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>liqu=
+id.exe</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt'> (no params) and talk=
+ about
+       the output.</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Respond with a </span=
+><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Y</s=
+pan><span
+       style=3D'font-family:Verdana;font-size:13.0pt'> to the license. Run =
+again,
+       show the output (mention the </span><span style=3D'font-weight:bold;
+       font-family:Verdana;font-size:13.0pt'>listserv</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>)</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Quick overview (stres=
+s the
+       two underscores at the beginning of each)</span></li>
+  </ol>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Shor:</span></li>
+  <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+   font-weight:normal;font-style:normal'>
+   <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'>Run </span><=
+span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:bold;font-=
+style:
+       normal;font-weight:bold;font-family:Verdana;font-size:13.0pt'>liquid
+       __Shor(21,false)</span><span style=3D'font-family:Verdana;font-size:=
+13.0pt;
+       font-weight:normal;font-style:normal;font-family:Verdana;font-size:1=
+3.0pt'>.
+       Explain the time at the beginning of the line and some of the output
+       lines. Note how long it took to run </span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Run </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>liqu=
+id
+       __Shor(63,false)</span><span style=3D'font-family:Verdana;font-size:=
+13.0pt'>.
+       Note how long it's taking and </span><span style=3D'font-weight:bold;
+       font-family:Verdana;font-size:13.0pt'>^C</span><span style=3D'font-f=
+amily:
+       Verdana;font-size:13.0pt'> it</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Run </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>liqu=
+id
+       __Shor(63,true)</span><span style=3D'font-family:Verdana;font-size:1=
+3.0pt'>.
+       Note the run time and explain a little of the optimizations</span></=
+li>
+  </ol>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Run </span><span
+      style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>liquid
+      __Teleport()</span><span style=3D'font-family:Verdana;font-size:13.0p=
+t'>. </span></li>
+  <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
+   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+   font-weight:normal;font-style:normal'>
+   <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'>Talk about t=
+he 3
+       outputs</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show the </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Liqu=
+id.log</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt'> file</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Tele=
+port_CN.htm</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Tele=
+port_CF.htm</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Tele=
+port_GF.htm</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Tele=
+port_CF.tex</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>. </span></li>
+   <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embe=
+d;
+    margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+    font-weight:normal;font-style:normal'>
+    <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:midd=
+le'><span
+        style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+        font-style:normal;font-family:Verdana;font-size:13.0pt'>Explain </s=
+pan><span
+        style=3D'font-family:Verdana;font-size:13.0pt;font-weight:bold;
+        font-style:normal;font-weight:bold;font-family:Verdana;font-size:13=
+.0pt'>LiquidTikZ.tex</span><span
+        style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+        font-style:normal;font-family:Verdana;font-size:13.0pt'> and its
+        location</span></li>
+    <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>Run Texworks and sho=
+w the
+        output</span></li>
+   </ol>
+  </ol>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Programming Intro:</sp=
+an></li>
+  <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+   font-weight:normal;font-style:normal'>
+   <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'>Use File
+       Explorer to bring up </span><span style=3D'font-family:Verdana;font-=
+size:
+       13.0pt;font-weight:bold;font-style:normal;font-weight:bold;font-fami=
+ly:
+       Verdana;font-size:13.0pt'>Liquid.sln</span><span style=3D'font-famil=
+y:
+       Verdana;font-size:13.0pt;font-weight:normal;font-style:normal;
+       font-family:Verdana;font-size:13.0pt'> in the </span><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:bold;font-=
+style:
+       normal;font-weight:bold;font-family:Verdana;font-size:13.0pt'>C:\Liq=
+uid\source</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'> directory</=
+span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show the solution fil=
+es</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Open up </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Main=
+.fs </span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Explain </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>[&lt=
+;LQD&gt;]</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt'> and show</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show how to put </spa=
+n><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>__Us=
+erSample()</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt'> in the Liquid debug
+       properties, switch to </span><span style=3D'font-weight:bold;font-fa=
+mily:
+       Verdana;font-size:13.0pt'>Release</span><span style=3D'font-family:V=
+erdana;
+       font-size:13.0pt'> and run it.</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Create a new function=
+ that
+       will measure a single qubit:</span></li>
+  </ol>
+ </ol>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>    </span>=
+let qfunc
+ (qs:Qubits) =3D</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>M qs</span></p>
+ <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
+  margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+  font-weight:normal;font-style:normal'>
+  <li value=3D7 style=3D'margin-top:0;margin-bottom:0;vertical-align:middle=
+'><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'>Update UserSa=
+mple
+      to call it:</span></li>
+ </ol>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>   
+ </span>[&lt;LQD&gt;]</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>    </span>=
+let
+ __UserSample() =3D</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>let
+ stats<span style=3D'mso-spacerun:yes'>       </span>=3D Array.create=
+ 2 0</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>let
+ k<span style=3D'mso-spacerun:yes'>           </span>=3D Ket(1)</=
+span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>for i
+ in 0..9999 do</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+     </span>let
+ qs<span style=3D'mso-spacerun:yes'>      </span>=3D k.Reset(1)</span>=
+</p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+    
+ </span>qfunc qs</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+     </span>let
+ v<span style=3D'mso-spacerun:yes'>       </span>=3D qs.Head.Bit.v</s=
+pan></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+    
+ </span>stats.[v]<span style=3D'mso-spacerun:yes'>  </span>&lt;- stats.[v]=
+ + 1</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>show
+ &quot;Measured: 0=3D%d, 1=3D%d&quot; stats.[0] stats.[1]</span></p>
+ <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
+  margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+  font-weight:normal;font-style:normal'>
+  <li value=3D8 style=3D'margin-top:0;margin-bottom:0;vertical-align:middle=
+'><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'>Compile and r=
+un
+      and show that you get all zeros.</span></li>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Now add a Hadamard to =
+qfunc
+      and run again:</span></li>
+ </ol>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>    </span>=
+let qfunc
+ (qs:Qubits) =3D</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span></span><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>H qs</sp=
+an></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>M qs</span></p>
+ <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
+  margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+  font-weight:normal;font-style:normal'>
+  <li value=3D10 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'>Explain the <=
+/span><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:bold;font-s=
+tyle:
+      normal;font-weight:bold;font-family:Verdana;font-size:13.0pt'>rotX</s=
+pan><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'> gate in the =
+same
+      file</span></li>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Call with: </span></li>
+ </ol>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>    </span>=
+let qfunc
+ (qs:Qubits) =3D</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span></span><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>rotX
+ (Math.PI/2.) qs</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>M qs</span></p>
+ <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
+  margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+  font-weight:normal;font-style:normal'>
+  <li value=3D12 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'>Show that the
+      result is the same as for a Hadamard</span></li>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Now call with </span><=
+span
+      style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Math.=
+PI/4</span><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>.</span></li>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><img
+      src=3D"WorkshopScript_files/image001.png" width=3D526 height=3D54></l=
+i>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Now change to N qubits=
+ with
+      a CNOT:</span></li>
+ </ol>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>    </span>=
+let qfunc
+ (qs:Qubits) =3D</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>rotX
+ (Math.PI/4.) qs</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span></span><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>for q in
+ qs.Tail do CNOT [qs.Head;q]</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>        </span>M &gt;&lt; qs</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'>&nbsp;</p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>   
+ </span>[&lt;LQD&gt;]</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>    </span>=
+let
+ __UserSample(</span><span style=3D'font-weight:bold;background:yellow;
+ mso-highlight:yellow'>n:int</span><span style=3D'font-weight:bold'>) =3D</=
+span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>let
+ stats<span style=3D'mso-spacerun:yes'>       </span>=3D Array.create=
+ 2 0</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>let
+ k<span style=3D'mso-spacerun:yes'>           </span>=3D Ket(</sp=
+an><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>n</span>=
+<span
+ style=3D'font-weight:bold'>)</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>for i
+ in 0..9999 do</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+     </span>let
+ qs<span style=3D'mso-spacerun:yes'>      </span>=3D k.Reset(</span><s=
+pan
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>n</span>=
+<span
+ style=3D'font-weight:bold'>)</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+    
+ </span>qfunc qs</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+     </span>let
+ v<span style=3D'mso-spacerun:yes'>       </span>=3D qs.Head.Bit.v</s=
+pan></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+    
+ </span>stats.[v]<span style=3D'mso-spacerun:yes'>  </span>&lt;- stats.[v]=
+ + 1</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+     </span></span><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>for q in
+ qs.Tail do</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>                </span>if qs.Hea=
+d.Bit &lt;&gt; q.Bit
+ then</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>                    </span>f=
+ailwith
+ &quot;Different!?!?!?!?&quot;</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>show
+ &quot;Measured: 0=3D%d, 1=3D%d&quot; stats.[0] stats.[1]</span></p>
+ <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
+  margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+  font-weight:normal;font-style:normal'>
+  <li value=3D16 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'>Change Proper=
+ties
+      to run using 10 qubits</span></li>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Compile, run explain (=
+note
+      how long it took)</span></li>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Now change to using a
+      circuit:</span></li>
+ </ol>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>   
+ </span>[&lt;LQD&gt;]</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>    </span>=
+let
+ __UserSample(n:int) =3D</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>let
+ stats<span style=3D'mso-spacerun:yes'>       </span>=3D Array.create=
+ 2 0</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>let
+ k<span style=3D'mso-spacerun:yes'>           </span>=3D Ket(n)</=
+span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span></span><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>let circ=
+<span
+ style=3D'mso-spacerun:yes'>        </span>=3D Circuit.Compile qfunc=
+ k.Qubits</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>for i
+ in 0..9999 do</span></p>
+ <p style=3D'margin:0in;margin-left:1.875in;font-family:Consolas;font-size:=
+11.0pt'><span
+ style=3D'font-weight:bold'>...</span></p>
+ <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
+  margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+  font-weight:normal;font-style:normal'>
+  <li value=3D19 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'>Compile, run.=
+ Not
+      really any faster (still executing the same number of gates) so add a
+      GrowGates():</span></li>
+ </ol>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>let
+ circ<span style=3D'mso-spacerun:yes'>        </span>=3D Circuit.Com=
+pile qfunc
+ k.Qubits</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span></span><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>let circ=
+<span
+ style=3D'mso-spacerun:yes'>        </span>=3D circ.GrowGates(k)</sp=
+an></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>for i
+ in 0..9999 do</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+     </span>let
+ qs<span style=3D'mso-spacerun:yes'>      </span>=3D k.Reset(n)</span>=
+</p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+     </span></span><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>circ.Run=
+ qs</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+     </span>let
+ v<span style=3D'mso-spacerun:yes'>       </span>=3D qs.Head.Bit.v</s=
+pan></p>
+ <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
+  margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+  font-weight:normal;font-style:normal'>
+  <li value=3D20 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'>Show that it's
+      now n times<span style=3D'mso-spacerun:yes'>  </span>faster</span></=
+li>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Generate drawings and
+      circuit dumps:</span></li>
+ </ol>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>let
+ circ<span style=3D'mso-spacerun:yes'>        </span>=3D Circuit.Com=
+pile qfunc
+ k.Qubits</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span></span><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>show
+ &quot;Test1:&quot;</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>        </span>circ.RenderHT(&quot;Test1=
+&quot;)</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>        </span>circ.Dump()</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>let
+ circ<span style=3D'mso-spacerun:yes'>        </span>=3D circ.GrowGa=
+tes(k)</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span></span><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'>show
+ &quot;Test2:&quot;</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>        </span>circ.RenderHT(&quot;Test2=
+&quot;)</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>        </span>circ.Dump()</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
+ </span>for i
+ in 0..9999 do</span></p>
+ <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
+  margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+  font-weight:normal;font-style:normal'>
+  <li value=3D22 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'>Run and show =
+the
+      two drawings</span></li>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Show the dump results =
+from </span><span
+      style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Liqui=
+d.log</span></li>
+ </ol>
+ <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+  margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+  font-weight:normal;font-style:normal'>
+  <li value=3D7 style=3D'margin-top:0;margin-bottom:0;vertical-align:middle=
+'><span
+      style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+      font-style:normal;font-family:Verdana;font-size:13.0pt'>Switch to QCh=
+em:</span></li>
+  <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+   font-weight:normal;font-style:normal'>
+   <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'>cd to<span
+       style=3D'mso-spacerun:yes'>  </span></span><span style=3D'font-fami=
+ly:Verdana;
+       font-size:13.0pt;font-weight:bold;font-style:normal;font-weight:bold;
+       font-family:Verdana;font-size:13.0pt'>\liquid\samples </span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Run: </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>..\b=
+in\Liquid.exe
+       __Chem(H2)</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Talk through the </sp=
+an><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>liqu=
+id.log</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt'> file</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Run: </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>..\b=
+in\Liquid.exe
+       __Chem(H2) | find &quot;CSV&quot; | sort /+25</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Open </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>H2_s=
+to3g_4.dat</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt'> and explain what it =
+is.</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Open </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>H2O_=
+sto6g_14.dat</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt'> and describe it</spa=
+n></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Run: </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>..\b=
+in\Liquid.exe
+       __Chem(H2O)</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Talk about the output=
+ and
+       optimizations</span></li>
+  </ol>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Scripts:</span></li>
+  <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+   font-weight:normal;font-style:normal'>
+   <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'>Show the </s=
+pan><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:bold;font-=
+style:
+       normal;font-weight:bold;font-family:Verdana;font-size:13.0pt'>h2.fsx=
+</span><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'> file and ta=
+lk
+       through it</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Run: </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>..\b=
+in\Liquid.exe
+       /s H2.fsx Test(26) | find &quot;CSV&quot; | sort /+25</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Run: </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>..\b=
+in\Liquid.exe
+       /l H2.dll Test(26) | find &quot;CSV&quot; | sort /+25</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Show the difference w=
+ith
+       Trotterization:</span></li>
+   <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embe=
+d;
+    margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+    font-weight:bold;font-style:normal'>
+    <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:midd=
+le;
+        font-weight:bold'><span style=3D'font-family:Verdana;font-size:13.0=
+pt;
+        font-weight:bold;font-style:normal;font-weight:bold;font-family:Ver=
+dana;
+        font-size:13.0pt'>..\bin\Liquid.exe /l h2.dll Trot(2) | find
+        &quot;CSV&quot; | sort /+25</span></li>
+    <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle;font-we=
+ight:
+        bold'><span style=3D'font-weight:bold;font-family:Verdana;font-size=
+:13.0pt'>..\bin\Liquid.exe
+        /l h2.dll Trot(1024) | find &quot;CSV&quot; | sort /+25</span></li>
+   </ol>
+  </ol>
+  <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+      style=3D'font-family:Verdana;font-size:13.0pt'>Docs:</span></li>
+  <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embed;
+   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+   font-weight:normal;font-style:normal'>
+   <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:middl=
+e'><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+       font-style:normal;font-family:Verdana;font-size:13.0pt'>cd to </span=
+><span
+       style=3D'font-family:Verdana;font-size:13.0pt;font-weight:bold;font-=
+style:
+       normal;font-weight:bold;font-family:Verdana;font-size:13.0pt'>\Liqui=
+d\Help</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Open/walk Contents of=
+ </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Liqu=
+id.pdf</span></li>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Open </span><span
+       style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Liqu=
+id.chm</span></li>
+   <ol type=3Da style=3D'margin-left:.375in;direction:ltr;unicode-bidi:embe=
+d;
+    margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
+    font-weight:normal;font-style:normal'>
+    <li value=3D1 style=3D'margin-top:0;margin-bottom:0;vertical-align:midd=
+le'><span
+        style=3D'font-family:Verdana;font-size:13.0pt;font-weight:normal;
+        font-style:normal;font-family:Verdana;font-size:13.0pt'>Go to </spa=
+n><span
+        style=3D'font-family:Verdana;font-size:13.0pt;font-weight:bold;
+        font-style:normal;font-weight:bold;font-family:Verdana;font-size:13=
+.0pt'>Circuit</span></li>
+    <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>Describe </span><span
+        style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Com=
+pile</span><span
+        style=3D'font-family:Verdana;font-size:13.0pt'>, </span><span
+        style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Dum=
+p</span><span
+        style=3D'font-family:Verdana;font-size:13.0pt'> and </span><span
+        style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Ren=
+derHT</span></li>
+   </ol>
+   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
+       style=3D'font-family:Verdana;font-size:13.0pt'>Online API docs are a=
+lso at
+       the GitHub site</span></li>
+  </ol>
+ </ol>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style=3D'margin:0in'>&nbsp;</p>
+
+<p style=3D'text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with Microsoft OneNote 2016.</p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_01D1161E.7D2EE3F0
+Content-Location: file:///C:/EC6AB274/WorkshopScript_files/image001.png
+Content-Transfer-Encoding: base64
+Content-Type: image/png
+
+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
+RU5ErkJggk==
+
+------=_NextPart_01D1161E.7D2EE3F0
+Content-Location: file:///C:/EC6AB274/WorkshopScript_files/filelist.xml
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/xml; charset="utf-8"
+
+<xml xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+ <o:MainFile HRef=3D"../WorkshopScript.htm"/>
+ <o:File HRef=3D"image001.png"/>
+ <o:File HRef=3D"filelist.xml"/>
+</xml>
+------=_NextPart_01D1161E.7D2EE3F0--
