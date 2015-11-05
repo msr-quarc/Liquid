@@ -1,8 +1,8 @@
-# The Language-Integrated Quantum Operations (LIQ𝑈𝑖|⟩) simulator: 
+# The Language-Integrated Quantum Operations (LIQ𝑈𝑖|⟩) simulator
 
 ## What Is LIQ𝑈𝑖|⟩?
 
-LIQ𝑈𝑖|⟩ is a simulation platform developed by the QuArC team at Microsoft Research to aid in the exploration of quantum computation. 
+LIQ𝑈𝑖|⟩ is a simulation platform developed by the [Quantum Architectures and Computation](http://research.microsoft.com/en-us/groups/quarc/) team at Microsoft Research to aid in the exploration of quantum computation. 
 LIQ𝑈𝑖|⟩ stands for “Language Integrated Quantum Operations”.  
 A quantum operation is usually referred to as a unitary operator (U) applied to a column state vector (also known as a ket: |> ).
 The “i” is just a constant scaling factor, hence the acronym.
