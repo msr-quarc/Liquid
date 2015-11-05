@@ -1,9 +1,9 @@
 MIME-Version: 1.0
-Content-Type: multipart/related; boundary="----=_NextPart_01D116E5.80CE2350"
+Content-Type: multipart/related; boundary="----=_NextPart_01D117B7.18975540"
 
 This document is a Single File Web Page, also known as a Web Archive file.  If you are seeing this message, your browser or editor doesn't support Web Archive files.  Please download a browser that supports Web Archive, such as Windows� Internet Explorer�.
 
-------=_NextPart_01D116E5.80CE2350
+------=_NextPart_01D117B7.18975540
 Content-Location: file:///C:/EC6AB274/Script.htm
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/html; charset="utf-8"
@@ -410,13 +410,13 @@ erdana;
  </ol>
  <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
 .0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>    </span>=
-let qfunc
- (qs:Qubits) =3D</span></p>
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>    </span>let qfunc (qs:Qubits) =3D</span><=
+/p>
  <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
 .0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
- </span>M qs</span></p>
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>        </span>M qs</span></p>
  <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
   font-weight:normal;font-style:normal'>
@@ -429,58 +429,55 @@ mple
  </ol>
  <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
 .0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>   
- </span>[&lt;LQD&gt;]</span></p>
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>    </span>[&lt;LQD&gt;]</span></p>
  <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
 .0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>    </span>=
-let
- __UserSample() =3D</span></p>
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>    </span>let __UserSample() =3D</span></p>
  <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
 .0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
- </span>let
- stats<span style=3D'mso-spacerun:yes'>       </span>=3D Array.create=
- 2 0</span></p>
- <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
-.0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
- </span>let
- k<span style=3D'mso-spacerun:yes'>           </span>=3D Ket(1)</=
-span></p>
- <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
-.0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
- </span>for i
- in 0..9999 do</span></p>
- <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
-.0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
-     </span>let
- qs<span style=3D'mso-spacerun:yes'>      </span>=3D k.Reset(1)</span>=
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>        </span>let stats<span
+ style=3D'mso-spacerun:yes'>       </span>=3D Array.create 2 0</span>=
 </p>
  <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
 .0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
-    
- </span>qfunc qs</span></p>
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>        </span>let k<span
+ style=3D'mso-spacerun:yes'>           </span>=3D Ket(1)</span></=
+p>
  <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
 .0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
-     </span>let
- v<span style=3D'mso-spacerun:yes'>       </span>=3D qs.Head.Bit.v</s=
-pan></p>
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>        </span>for i in 0..9999 do</span=
+></p>
  <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
 .0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
-    
- </span>stats.[v]<span style=3D'mso-spacerun:yes'>  </span>&lt;- stats.[v]=
- + 1</span></p>
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>            </span>let qs<span
+ style=3D'mso-spacerun:yes'>      </span>=3D k.Reset(1)</span></p>
  <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
 .0pt'><span
- style=3D'font-weight:bold'><span style=3D'mso-spacerun:yes'>       =
- </span>show
- &quot;Measured: 0=3D%d, 1=3D%d&quot; stats.[0] stats.[1]</span></p>
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>            </span>qfunc qs</span></=
+p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>            </span>let v<span
+ style=3D'mso-spacerun:yes'>       </span>=3D qs.Head.Bit.v</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>            </span>stats.[v]<span
+ style=3D'mso-spacerun:yes'>  </span>&lt;- stats.[v] + 1</span></p>
+ <p style=3D'margin:0in;margin-left:.75in;font-family:Consolas;font-size:11=
+.0pt'><span
+ style=3D'font-weight:bold;background:yellow;mso-highlight:yellow'><span
+ style=3D'mso-spacerun:yes'>        </span>show &quot;Measured: 0=3D=
+%d, 1=3D%d&quot;
+ stats.[0] stats.[1]</span></p>
  <ol type=3Da style=3D'margin-left:.75in;direction:ltr;unicode-bidi:embed;
   margin-top:0in;margin-bottom:0in;font-family:Verdana;font-size:13.0pt;
   font-weight:normal;font-style:normal'>
@@ -555,9 +552,11 @@ e'><span
   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
       style=3D'font-family:Verdana;font-size:13.0pt'>Now call with </span><=
 span
-      style=3D'font-weight:bold;font-family:Verdana;font-size:13.0pt'>Math.=
-PI/4</span><span
-      style=3D'font-family:Verdana;font-size:13.0pt'>.</span></li>
+      style=3D'font-weight:bold;font-family:Consolas;font-size:11.0pt;backg=
+round:
+      yellow;mso-highlight:yellow'>Math.PI/4</span><span style=3D'font-fami=
+ly:
+      Verdana;font-size:13.0pt'>.</span></li>
   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><img
       src=3D"Script_files/image001.png" width=3D350 height=3D38></li>
   <li style=3D'margin-top:0;margin-bottom:0;vertical-align:middle'><span
@@ -1027,72 +1026,73 @@ color:#969696;direction:ltr'>Created with Microsoft OneNote 2016.</p>
 
 </html>
 
-------=_NextPart_01D116E5.80CE2350
+------=_NextPart_01D117B7.18975540
 Content-Location: file:///C:/EC6AB274/Script_files/image001.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
 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
-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
+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
+rkJggk==
 
-------=_NextPart_01D116E5.80CE2350
+------=_NextPart_01D117B7.18975540
 Content-Location: file:///C:/EC6AB274/Script_files/filelist.xml
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/xml; charset="utf-8"
@@ -1102,4 +1102,4 @@ Content-Type: text/xml; charset="utf-8"
  <o:File HRef=3D"image001.png"/>
  <o:File HRef=3D"filelist.xml"/>
 </xml>
-------=_NextPart_01D116E5.80CE2350--
+------=_NextPart_01D117B7.18975540--
