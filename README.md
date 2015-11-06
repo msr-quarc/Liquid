@@ -78,7 +78,7 @@ See the [Using LIQ𝑈𝑖|⟩ on Microsoft Azure](AzureGuide.md) page for direc
 ## How Do I Use It?
 
 See the [users' guide](https://msr-quarc.github.io/Liquid/LIQUiD.pdf) and the [full help documentation](https://msr-quarc.github.io/Liquid/).
-The help may also be dowloaded as a [single file](https://msr-quarc.github.io/Liquid/Liquid.chm), if desired.
+The help may also be downloaded as a [single file](https://msr-quarc.github.io/Liquid/Liquid.chm), if desired. There is also a [tutorial video](http://research.microsoft.com/apps/video/default.aspx?id=258279) available that will take you through the basics.
 
 Note that this version of LIQ𝑈𝑖|⟩ is limited to a maximum of 23 physical qubits for full state vector simulation.
 
