@@ -83,4 +83,4 @@ The help may also be downloaded as a [single file](https://msr-quarc.github.io/L
 Note that this version of LIQ𝑈𝑖|⟩ is limited to a maximum of 23 physical qubits for full state vector simulation.
 
 If you run into a problem or have a question, you can [post an issue](https://github.com/msr-quarc/Liquid/issues).
-
+If you have other feedback, you can contact the LIQ𝑈𝑖|⟩ team at liquid@microsoft.com.
