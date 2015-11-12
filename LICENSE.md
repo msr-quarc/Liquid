@@ -1,4 +1,4 @@
-# Microsoft Research License Agreement for the Language-Integrated Quantum Operations (LIQ&#x1D61C;&#x1D456;|&#x232A;) Simulator
+# Microsoft Research License Agreement for the Language-Integrated Quantum Operations (LIQ<i>Ui</i>|&#x232A;) Simulator
 
 This Microsoft Research License Agreement (“Agreement”) is a legal agreement between you and Microsoft Corporation. Please read it.  It applies to the Microsoft Research software named above, which may include executable code. libraries, samples, documentation (together, the “Software”). For the purposes of this Agreement, the Software also includes any Microsoft (i) updates, (ii) supplements, (iii) internet-based services, and (iv) support services for the Software, unless other terms accompany those items. If so, those other terms apply.
 

@@ -1,22 +1,22 @@
-# Using LIQ&#x1D61C;&#x1D456;|&#x232A; on Microsoft Azure
+# Using LIQ<i>Ui</i>|&#x232A; on Microsoft Azure
 
-If you don't have access to a Windows environment, using a Microsoft Azure virtual machine (VM) is a good way to use LIQ&#x1D61C;&#x1D456;|&#x232A;.
-These instructions walk you through creating and connecting to a VM and setting it up with LIQ&#x1D61C;&#x1D456;|&#x232A;.
+If you don't have access to a Windows environment, using a Microsoft Azure virtual machine (VM) is a good way to use LIQ<i>Ui</i>|&#x232A;.
+These instructions walk you through creating and connecting to a VM and setting it up with LIQ<i>Ui</i>|&#x232A;.
 
 Setting up a VM for the first time will take about 45 minutes, though you can carry on working while things happen in the background.
 Once you have created a VM, restarting it usually takes 2 or 3 minutes.
 
 ## Microsoft Azure Information and Cost
 
-An Azure basic-tier A2 instance is appropriate for most uses of LIQ&#x1D61C;&#x1D456;|&#x232A;.
+An Azure basic-tier A2 instance is appropriate for most uses of LIQ<i>Ui</i>|&#x232A;.
 This VM type, if located in the south central US region, costs $0.148 per hour.
 At 8 hours per day for 21 weekdays in a month, this comes to $24.86 per month.
 See the [Microsoft Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) for details.
 
 A new Microsoft Azure account comes with a one month free trial for up to $100 of usage.
 
-If you are teaching a course using LIQ&#x1D61C;&#x1D456;|&#x232A; and you and your students will be using LIQ&#x1D61C;&#x1D456;|&#x232A; on Microsoft Azure, the [Microsoft Educator Grant Program](https://www.microsoftazurepass.com/azureu) may be applicable.
-It will provide Microsoft Azure funding for you and your students that will more than cover their LIQ&#x1D61C;&#x1D456;|&#x232A; usage.
+If you are teaching a course using LIQ<i>Ui</i>|&#x232A; and you and your students will be using LIQ<i>Ui</i>|&#x232A; on Microsoft Azure, the [Microsoft Educator Grant Program](https://www.microsoftazurepass.com/azureu) may be applicable.
+It will provide Microsoft Azure funding for you and your students that will more than cover their LIQ<i>Ui</i>|&#x232A; usage.
 
 ## Prerequisites
 
@@ -80,15 +80,15 @@ TIP: You can use an existing email address for this, if you want, such as your i
 
 * The remote desktop session will start full screen. While your login is being set up, the screen may be black for several minutes. Once the remote desktop session starts, you may get a notification on the right-hand side of the screen asking whether you want to enable network discovery. Click on the "No" button.
 
-### Download LIQ&#x1D61C;&#x1D456;|&#x232A;
+### Download LIQ<i>Ui</i>|&#x232A;
 
-* Open up a web browser on the VM by hitting the Windows key and then clicking on the IE icon. Click on the OK button to use recommended settings. Navigate to the LIQ&#x1D61C;&#x1D456;|&#x232A; GitHub page in the VM browser.
+* Open up a web browser on the VM by hitting the Windows key and then clicking on the IE icon. Click on the OK button to use recommended settings. Navigate to the LIQ<i>Ui</i>|&#x232A; GitHub page in the VM browser.
 
-* Click on the button to the right labeled **Download ZIP**. This will download LIQ&#x1D61C;&#x1D456;|&#x232A; and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your VM. We recommend extracting into a folder named c:\Liquid; the TikZ rendering requires this path.
+* Click on the button to the right labeled **Download ZIP**. This will download LIQ<i>Ui</i>|&#x232A; and its supporting files to your system in a file named Liquid-master.zip, which you may then extract to a folder on your VM. We recommend extracting into a folder named c:\Liquid; the TikZ rendering requires this path.
 
 ### Accept the License
 
-* Follow the instructions on the [Getting Started page](GettingStarted.md#accepting-the-license) to accept the LIQ&#x1D61C;&#x1D456;|&#x232A; license terms.
+* Follow the instructions on the [Getting Started page](GettingStarted.md#accepting-the-license) to accept the LIQ<i>Ui</i>|&#x232A; license terms.
 
 ### Run a Test
 
@@ -129,9 +129,9 @@ TIP: You can use an existing email address for this, if you want, such as your i
 ```
 * To see all of the available samples, just type "Liquid.exe" at the command prompt.
 
-**That's it -- LIQ&#x1D61C;&#x1D456;|&#x232A; is now installed on your virtual machine.**
+**That's it -- LIQ<i>Ui</i>|&#x232A; is now installed on your virtual machine.**
 
-* If you like, you may register your copy of LIQ&#x1D61C;&#x1D456;|&#x232A; following the procedure in the [Getting Started page](GettingStarted.md#registration-optional)
+* If you like, you may register your copy of LIQ<i>Ui</i>|&#x232A; following the procedure in the [Getting Started page](GettingStarted.md#registration-optional)
 
 ### Stopping the VM
 
@@ -144,5 +144,5 @@ You can restart your VM by going to the management panel and clicking on the "St
 
 **TIP**: If you've closed the portal in your browser, you can always get to it as <a href="http://azure.com/portal" target="_blank">azure.com/portal</a>.
 
-**TIP**: The disk image is saved when you stop and restart, so you will not need to reinstall GitHub or LIQ&#x1D61C;&#x1D456;|&#x232A;.
+**TIP**: The disk image is saved when you stop and restart, so you will not need to reinstall GitHub or LIQ<i>Ui</i>|&#x232A;.
 
