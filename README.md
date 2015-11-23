@@ -64,7 +64,8 @@ Some of the specific algorithms you can simulate with LIQ<i>Ui</i>|&#x232A; are:
 * Quantum associative memory (Ventura and Martinez, http://arxiv.org/abs/quant-ph/9807053)
 * Quantum linear algebra (Harrow, Hassidim, and Lloyd, http://arxiv.org/abs/0811.3171)
 
-All of these algorithms, and many more, are included as samples with LIQ<i>Ui</i>|&#x232A;.
+All of these algorithms, and many more, are included as samples with LIQ<i>Ui</i>|&#x232A;. 
+A video of a recent talk  at [IQC](https://uwaterloo.ca/institute-for-quantum-computing/) on the reserach we've done with the simulator is at https://youtu.be/Q6M0ueXLTak?t=1s
 
 ## How Do I Get It?
 
