@@ -5719,6 +5719,13 @@
  <param name="b"></param>
  <returns>GCD</returns>
 </member>
+<member name="M:Microsoft.Research.Liquid.Shor.primeFactors(System.Int32)">
+ <summary>
+ Return the prime factors of a number (if the number is the product of two primes)
+ </summary>
+ <param name="n">Number to test</param>
+ <returns>Prime factors (or empty list)<returns>
+</member>
 <member name="M:Microsoft.Research.Liquid.Shor.isPrimePower(System.Int32)">
  <summary>
  Check for prime power
