@@ -71,16 +71,8 @@
  Find Ids below this point and the time needed to execute the circuit (internal)
  </summary>
       <param name="detail">What level of detail for when we hit a "Wrap" gate</param>
-      <param name="empty">Count Empty gates like Native? (optional=false)</param>
-      <param name="cntEmpty">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>cntEmpty</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Circuit.FindIds(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})</parameter>
-          </include>
-        </markup>
-      </param>
+      <param name="cntEmpty">An option allowing Empty gates to be counted like Native
+ The default is false, which is to not count Empty gates as Native.</param>
       <returns>Set of ids,total time to execute</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.Circuit.Fold(Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
@@ -116,14 +108,7 @@
       <param name="k">A Ket this Circuit could be run with.</param>
       <param name="gp">The grow parameters to use.
  See the <see cref="T:Microsoft.Research.Liquid.GrowPars">GrowPars</see> type for details.</param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Circuit.Grow(Microsoft.Research.Liquid.Ket,Microsoft.Research.Liquid.GrowPars)</parameter>
-          </include>
-        </markup>
-      </returns>
+      <returns>A new, optimized Circuit</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.Circuit.GrowGates(Microsoft.Research.Liquid.Ket,Microsoft.FSharp.Core.FSharpOption{Microsoft.Research.Liquid.GrowPars})">
       <summary>
@@ -212,21 +197,9 @@
     </member>
     <member name="M:Microsoft.Research.Liquid.Circuit.ToString">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Circuit.ToString</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Circuit.ToString</parameter>
-          </include>
-        </markup>
-      </returns>
+ Returns a string representing the current circuit element. 
+ </summary>
+      <returns>The string representation</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.Circuit.Wires">
       <summary>
@@ -330,16 +303,7 @@
       <param name="f">The optional output function to use. 
  The default is <see cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">showLogInd</see>.</param>
       <param name="level">The optional indentation level. The default is 0.</param>
-      <param name="wide">precision 0=low 1=normal 2=high 3=full (optional=1)</param>
-      <param name="prec">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>prec</parameter>
-            <parameter>M:Microsoft.Research.Liquid.CMat.DumpML(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})</parameter>
-          </include>
-        </markup>
-      </param>
+      <param name="prec">precision 0=low 1=normal 2=high 3=full (optional=1)</param>
     </member>
     <member name="M:Microsoft.Research.Liquid.CMat.DumpNarrow(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
       <summary>
@@ -441,16 +405,7 @@
  The matrix is updated in place, rather than a new matrix being created.
  </summary>
       <param name="m1">The matrix to scale.</param>
-      <param name="v">The scale divisor. The matrix is multiplied by 1/div.</param>
-      <param name="div">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>div</parameter>
-            <parameter>M:Microsoft.Research.Liquid.CMat.op_DivisionAssignment(Microsoft.Research.Liquid.CMat,System.Double)</parameter>
-          </include>
-        </markup>
-      </param>
+      <param name="div">The scale divisor. The matrix is multiplied by 1/div.</param>
     </member>
     <member name="M:Microsoft.Research.Liquid.CMat.op_Multiply(Microsoft.Research.Liquid.CMat,Microsoft.Research.Liquid.CMat)">
       <summary>
@@ -476,16 +431,7 @@
  The matrix is updated in place, rather than a new matrix being created.
  </summary>
       <param name="m1">The matrix to scale.</param>
-      <param name="v">The constant to multiply by.</param>
-      <param name="mul">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>mul</parameter>
-            <parameter>M:Microsoft.Research.Liquid.CMat.op_MultiplyAssignment(Microsoft.Research.Liquid.CMat,System.Double)</parameter>
-          </include>
-        </markup>
-      </param>
+      <param name="mul">The constant to multiply by.</param>
     </member>
     <member name="M:Microsoft.Research.Liquid.CMat.op_MultiplyBang(Microsoft.Research.Liquid.CMat,Microsoft.Research.Liquid.CMat)">
       <summary>
@@ -495,21 +441,12 @@
       <param name="m2">The right matrix</param>
       <returns>The result of the Kronecker product</returns>
     </member>
-    <member name="M:Microsoft.Research.Liquid.CMat.Power(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+    <member name="M:Microsoft.Research.Liquid.CMat.Power(System.Int32)">
       <summary>
  Computes an integer power of this matrix.
  NOTE: This destroys the contents of the current matrix.
  </summary>
       <param name="n">The power to raise this matrix to; must be greater than 0.</param>
-      <param name="verbose">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>verbose</parameter>
-            <parameter>M:Microsoft.Research.Liquid.CMat.Power(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})</parameter>
-          </include>
-        </markup>
-      </param>
       <returns>The resulting matrix</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.CMat.Read(System.IO.BinaryReader)">
@@ -769,19 +706,10 @@
       <param name="f">The optional output function to use. 
  The default is <see cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">showLogInd</see>.</param>
       <param name="level">The optional indentation level. The default is 0.</param>
-      <param name="name">An optional name for the matrix. The default is A.</param>
+      <param name="nam">An optional name for the matrix. The default is A.</param>
       <param name="idxOffset">An optional number of rows and columns to skip.
  If this is not zero, then the square submatrix starting at this offset is dumped instead of the full matrix.
  The default is 0.</param>
-      <param name="nam">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>nam</parameter>
-            <parameter>M:Microsoft.Research.Liquid.CSMat.DumpML(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Int32})</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="M:Microsoft.Research.Liquid.CSMat.Equals(Microsoft.Research.Liquid.CSMat,Microsoft.FSharp.Core.FSharpOption{System.Double})">
       <summary>
@@ -813,16 +741,7 @@
  Computes the Kronecker Product of this matrix with an identity matrix.
  The identity matrix is on the right-hand side of the product.
  </summary>
-      <param name="len">The dimension of the identity matrix (N of NxN).</param>
-      <param name="lenI">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>lenI</parameter>
-            <parameter>M:Microsoft.Research.Liquid.CSMat.Kron(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+      <param name="lenI">The dimension of the identity matrix (N of NxN).</param>
       <returns>The result of the Kronecker product</returns>
     </member>
     <member name="P:Microsoft.Research.Liquid.CSMat.Length">
@@ -1228,17 +1147,8 @@
  A previous call to Build() or BuildSingle() is required.
  </summary>
       <param name="single">Whether or not this Hamiltonian is built into a single Unitary.</param>
-      <param name="?maxTries">An optional maximum number of measurements to take.
+      <param name="maxTries">An optional maximum number of measurements to take.
  The default is 40.</param>
-      <param name="maxTries">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>maxTries</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Fermion.Run(System.Boolean,Microsoft.FSharp.Core.FSharpOption{System.Int32})</parameter>
-          </include>
-        </markup>
-      </param>
       <returns>None if it succeeded, or Some (int bit position) if it failed.</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.Fermion.Run(System.Collections.Generic.Dictionary{System.String,System.String},Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},Microsoft.Research.Liquid.Ket)">
@@ -1290,13 +1200,8 @@
     </member>
     <member name="P:Microsoft.Research.Liquid.Fermion.Ua">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Microsoft.Research.Liquid.Fermion.Ua</parameter>
-          </include>
-        </markup>
-      </summary>
+ The gate function that implements a full Hamiltonian time step
+</summary>
     </member>
     <member name="T:Microsoft.Research.Liquid.Gate">
       <summary>
@@ -1391,60 +1296,6 @@
  The default is <see cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">showLogInd</see>.</param>
       <param name="level">The optional indentation level. The default is 0.</param>
     </member>
-    <member name="M:Microsoft.Research.Liquid.Gate.Equals(Microsoft.Research.Liquid.Gate)">
-      <summary>
- Tests equality to another Gate.
- Gates are considered equal if their name, arity, operation, and parent gate
- are the same.
- </summary>
-      <param name="g2">The gate to test against.</param>
-      <returns>true if the two Gates are equal, false otherwise.</returns>
-    </member>
-    <member name="M:Microsoft.Research.Liquid.Gate.Equals(System.Object)">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Gate.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="o">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>o</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Gate.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Gate.Equals(System.Object)</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
-    <member name="M:Microsoft.Research.Liquid.Gate.GetHashCode">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Gate.GetHashCode</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Gate.GetHashCode</parameter>
-          </include>
-        </markup>
-      </returns>
-    </member>
     <member name="P:Microsoft.Research.Liquid.Gate.Help">
       <summary>
  The help string for this gate.
@@ -1500,8 +1351,8 @@
  </summary>
       <param name="seconds">A minimum interval between reports.
  If a report was displayed within more recently, then no new report is displayed.</param>
-      <param name="strFn">A function that returns a string to output as a prefix to the report.</param>
-      <param name="circuits">An optional list of Circuits to analyze.
+      <param name="f">A function that returns a string to output as a prefix to the report.</param>
+      <param name="cs">An optional list of Circuits to analyze.
  The count of Circuits in the list is reported.
  If the "deep" parameter is true, then the total count of gates in these Circuits is also reported.
  The default is an empty list, which displays counts of 0.</param>
@@ -1509,24 +1360,6 @@
  The default is false, which indicates that the gates should not be counted and will be reported as 0.</param>
       <param name="collect">An option indicating whether to force a garbage collection.
  The default is false, to not force a collection.</param>
-      <param name="f">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>f</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Gate.ShowMem(System.Int32,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Circuit}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="cs">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>cs</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Gate.ShowMem(System.Int32,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Circuit}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="M:Microsoft.Research.Liquid.Gate.ShowMem(System.Int32,System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Circuit}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
       <summary>
@@ -1535,7 +1368,7 @@
       <param name="seconds">A minimum interval between reports.
  If a report was displayed within more recently, then no new report is displayed.</param>
       <param name="str">A string to output as a prefix to the report.</param>
-      <param name="circuits">An optional list of Circuits to analyze.
+      <param name="cs">An optional list of Circuits to analyze.
  The count of Circuits in the list is reported.
  If the "deep" parameter is true, then the total count of gates in these Circuits is also reported.
  The default is an empty list, which displays counts of 0.</param>
@@ -1543,33 +1376,13 @@
  The default is false, which indicates that the gates should not be counted and will be reported as 0.</param>
       <param name="collect">An option indicating whether to force a garbage collection.
  The default is false, to not force a collection.</param>
-      <param name="cs">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>cs</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Gate.ShowMem(System.Int32,System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Circuit}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="M:Microsoft.Research.Liquid.Gate.ToString">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Gate.ToString</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Gate.ToString</parameter>
-          </include>
-        </markup>
-      </returns>
+ Returns a string representation of this gate, based on the gate's name,
+ help string, and type.
+ </summary>
+      <returns>The string representation</returns>
     </member>
     <member name="P:Microsoft.Research.Liquid.Gate.User">
       <summary>
@@ -1586,14 +1399,7 @@
       <summary>
  Creates a string representation of this gate operation type.
  </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.GateOp.ToString</parameter>
-          </include>
-        </markup>
-      </returns>
+      <returns>The string</returns>
     </member>
     <member name="T:Microsoft.Research.Liquid.GrowPars">
       <summary>
@@ -1747,14 +1553,7 @@
  Creates a new GrowPars with a different verbosity setting.
  <sealso cref="P:Microsoft.Research.Liquid.GrowPars.Verbosity" /></summary>
       <param name="vNew">The new verbosity level</param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.GrowPars.VerboseSet(System.Int32)</parameter>
-          </include>
-        </markup>
-      </returns>
+      <returns>The new GrowPars instance</returns>
     </member>
     <member name="T:Microsoft.Research.Liquid.Hamiltonian">
       <summary>
@@ -1774,6 +1573,9 @@
       <summary>
  The decoherence model for this Hamiltonian.
  </summary>
+    </member>
+    <member name="P:Microsoft.Research.Liquid.Hamiltonian.Ket">
+      <summary>Gets the Ket vector associated with this Hamiltonian</summary>
     </member>
     <member name="T:Microsoft.Research.Liquid.HamiltonianGates">
       <summary>A collection of gates that are useful for Hamiltonian simulation and annealing.</summary>
@@ -2005,16 +1807,8 @@
  The new qubits are unentangled and have the provided state.
  Note that the new qubits are not considered measured.
  </summary>
+      <param name="cnt">The number of qubits to add.</param>
       <param name="b">The initial state of the added qubits.</param>
-      <param name="cnt">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>cnt</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Ket.Add(System.Int32,Microsoft.Research.Liquid.Bit)</parameter>
-          </include>
-        </markup>
-      </param>
       <returns>The new Qubits</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.Ket.Copy">
@@ -2036,14 +1830,7 @@
  </summary>
       <param name="decohere">The function to apply to each qubit.
  This function is allowed to modify the state of the qubit.</param>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Ket.Decohere(Microsoft.FSharp.Core.FSharpFunc{Microsoft.Research.Liquid.Qubit,System.Boolean})</parameter>
-          </include>
-        </markup>
-      </returns>
+      <returns>The list of qubits where the function returned true</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.Ket.Dump(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
       <summary>
@@ -2078,17 +1865,8 @@
  Get the entanglement entropy
  </summary>
       <param name="alpha">Denotes the generalized entropy parameter: 1 for Von Neumann or 2 for Reny</param>
-      <param name="qubit position">0 to nQubits (based on order)</param>
+      <param name="qPos">qubit position, 0 to nQubits (based on order)</param>
       <param name="order">Int list of qubit order to wind up in []=use results of previous call (optional=[0..N-1])</param>
-      <param name="qPos">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>qPos</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Ket.Entropy(System.Int32,System.Int32,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Int32}})</parameter>
-          </include>
-        </markup>
-      </param>
       <returns>Entropy value</returns>
     </member>
     <member name="P:Microsoft.Research.Liquid.Ket.Item(System.Int32)">
@@ -2143,13 +1921,8 @@
     </member>
     <member name="P:Microsoft.Research.Liquid.Ket.RandSeed">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:Microsoft.Research.Liquid.Ket.RandSeed</parameter>
-          </include>
-        </markup>
-      </summary>
+ Force the pseudo-random number gen to a known initial state
+</summary>
     </member>
     <member name="M:Microsoft.Research.Liquid.Ket.Read(System.IO.BinaryReader)">
       <summary>
@@ -2306,18 +2079,9 @@
       <summary>
  Runs a circuit with this noise model.
  </summary>
-      <param name="ket">An optional state vector to use to re-initialize execution.
+      <param name="ket2">An optional state vector to use to re-initialize execution.
  If provided, this Ket is used for the run and all times and statistics are reset.
  If not provided, then execution continues from the state after the last Run.</param>
-      <param name="ket2">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>ket2</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Noise.Run(Microsoft.FSharp.Core.FSharpOption{Microsoft.Research.Liquid.Ket})</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="P:Microsoft.Research.Liquid.Noise.Stats">
       <summary>
@@ -2339,42 +2103,6 @@
       <summary>
  Noise statistics that are tracked for normal and error-correcting gates.
  </summary>
-    </member>
-    <member name="M:Microsoft.Research.Liquid.NoiseEvents.#ctor(System.Int32,System.Int32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Microsoft.Research.Liquid.NoiseEvents</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="count">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>count</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseEvents.#ctor(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="applied">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>applied</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseEvents.#ctor(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="events">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>events</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseEvents.#ctor(System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="M:Microsoft.Research.Liquid.NoiseEvents.Accum(Microsoft.Research.Liquid.NoiseEvents)">
       <summary>Increments this instance with counts from another instance.</summary>
@@ -2398,69 +2126,6 @@
     </member>
     <member name="T:Microsoft.Research.Liquid.NoiseModel">
       <summary>A noise model for a particular type of gate (or set of gates).</summary>
-    </member>
-    <member name="M:Microsoft.Research.Liquid.NoiseModel.#ctor(System.String,System.Int32,System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.FSharpOption{System.String}}}}}},Microsoft.Research.Liquid.NoiseEvents,Microsoft.Research.Liquid.NoiseEvents)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Microsoft.Research.Liquid.NoiseModel</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="gate">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>gate</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseModel.#ctor(System.String,System.Int32,System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.FSharpOption{System.String}}}}}},Microsoft.Research.Liquid.NoiseEvents,Microsoft.Research.Liquid.NoiseEvents)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="maxQs">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>maxQs</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseModel.#ctor(System.String,System.Int32,System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.FSharpOption{System.String}}}}}},Microsoft.Research.Liquid.NoiseEvents,Microsoft.Research.Liquid.NoiseEvents)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="time">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>time</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseModel.#ctor(System.String,System.Int32,System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.FSharpOption{System.String}}}}}},Microsoft.Research.Liquid.NoiseEvents,Microsoft.Research.Liquid.NoiseEvents)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="func">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>func</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseModel.#ctor(System.String,System.Int32,System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.FSharpOption{System.String}}}}}},Microsoft.Research.Liquid.NoiseEvents,Microsoft.Research.Liquid.NoiseEvents)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="gateEvents">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>gateEvents</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseModel.#ctor(System.String,System.Int32,System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.FSharpOption{System.String}}}}}},Microsoft.Research.Liquid.NoiseEvents,Microsoft.Research.Liquid.NoiseEvents)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="ecEvents">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>ecEvents</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseModel.#ctor(System.String,System.Int32,System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.FSharpOption{System.String}}}}}},Microsoft.Research.Liquid.NoiseEvents,Microsoft.Research.Liquid.NoiseEvents)</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="M:Microsoft.Research.Liquid.NoiseModel.Default(Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.FSharpOption{System.String}}}}}})">
       <summary>Creates a default noise model that will apply to all gates.</summary>
@@ -2490,69 +2155,6 @@
     <member name="T:Microsoft.Research.Liquid.NoiseStat">
       <summary>Statistics tracked for each time that noise is applied.</summary>
     </member>
-    <member name="M:Microsoft.Research.Liquid.NoiseStat.#ctor(System.Double,System.Double,Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.Research.Liquid.NoiseModel,System.Boolean,System.String)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Microsoft.Research.Liquid.NoiseStat</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="time">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>time</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseStat.#ctor(System.Double,System.Double,Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.Research.Liquid.NoiseModel,System.Boolean,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="dur">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>dur</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseStat.#ctor(System.Double,System.Double,Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.Research.Liquid.NoiseModel,System.Boolean,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="qs">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>qs</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseStat.#ctor(System.Double,System.Double,Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.Research.Liquid.NoiseModel,System.Boolean,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="model">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>model</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseStat.#ctor(System.Double,System.Double,Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.Research.Liquid.NoiseModel,System.Boolean,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="ecGate">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>ecGate</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseStat.#ctor(System.Double,System.Double,Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.Research.Liquid.NoiseModel,System.Boolean,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="detail">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>detail</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseStat.#ctor(System.Double,System.Double,Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.Research.Liquid.NoiseModel,System.Boolean,System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
     <member name="P:Microsoft.Research.Liquid.NoiseStat.detail">
       <summary>User-defined noise details from the noise function output.</summary>
     </member>
@@ -2573,21 +2175,9 @@
     </member>
     <member name="M:Microsoft.Research.Liquid.NoiseStat.ToString">
       <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseStat.ToString</parameter>
-          </include>
-        </markup>
-      </summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.NoiseStat.ToString</parameter>
-          </include>
-        </markup>
-      </returns>
+ Returns a string representation of this noise statistic.
+ </summary>
+      <returns>The string</returns>
     </member>
     <member name="T:Microsoft.Research.Liquid.NoisyMats">
       <summary>
@@ -2806,18 +2396,9 @@
  commands used to draw the label.
  Note that labels drawn using this gate will only appear when rendered to "qc" format.
  </summary>
-      <param name="nam">The string to use to draw the label.</param>
+      <param name="cmd">The string to use to draw the label.</param>
       <param name="qs">A list of qubits, the first of which determines the
  vertical positioning of the label.</param>
-      <param name="cmd">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>cmd</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Operations.LabelRaw(System.String,Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit})</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="M:Microsoft.Research.Liquid.Operations.LabelU(System.String,Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit})">
       <summary>
@@ -3164,14 +2745,7 @@
  The representation shows the probabilities of measuring this Qubit
  in the computational |0&gt; and |1&gt; states.
  <seealso cref="M:Microsoft.Research.Liquid.Qubit.ToString()" /></summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Qubit.ShowMag</parameter>
-          </include>
-        </markup>
-      </returns>
+      <returns>The string representation</returns>
     </member>
     <member name="P:Microsoft.Research.Liquid.Qubit.State">
       <summary>
@@ -3214,16 +2788,9 @@
     <member name="M:Microsoft.Research.Liquid.Qubit.ToString">
       <summary>
  Creates a string representation of this Qubit.
- The representation shows the state vector.
+ The representation shows the current state of the qubit if it is unentangled.
  <seealso cref="M:Microsoft.Research.Liquid.Qubit.ShowMag()" /></summary>
-      <returns>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>returns</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Qubit.ToString</parameter>
-          </include>
-        </markup>
-      </returns>
+      <returns>The string representation</returns>
     </member>
     <member name="P:Microsoft.Research.Liquid.Qubit.Type">
       <summary>
@@ -3300,16 +2867,7 @@
       <param name="J">coupling: 1=ferro -1=anti 0=none</param>
       <param name="gammalambda">List of (time,gamma,lambda) tuples that define the annealing schedule (optional=[(30,0.0,1.0)])</param>
       <param name="runonce">true=run the simulation once and perform repeated 'virtual measurements'; false=run the simulation and measure each time (optional=false)</param>
-      <param name="decohere">Decoherence probability per qubit per timestep [(gate,prob) list] optional=None</param>
-      <param name="decohereModel">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>decohereModel</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Spin.Ferro(System.Int32,System.Int32,System.Double,System.Double,System.Double,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.Int32,System.Double,System.Double}}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Core.FSharpFunc{Microsoft.Research.Liquid.Qubit,Microsoft.FSharp.Core.Unit},System.Double}}})</parameter>
-          </include>
-        </markup>
-      </param>
+      <param name="decohereModel">Decoherence probability per qubit per timestep [(gate,prob) list] optional=None</param>
     </member>
     <member name="P:Microsoft.Research.Liquid.Spin.lastAnneal">
       <summary>
@@ -3435,86 +2993,6 @@
       <summary>
  A single term in a Spin Hamiltonian.
  </summary>
-    </member>
-    <member name="M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{System.Int32},System.Double)">
-      <summary>
- Initializes a new SpinTerm instance.
- </summary>
-      <param name="schedule">The numerical id, zero-bvased, of the annealing schedule corresponding to this term.</param>
-      <param name="operation">A function which performs the operation of this term over a given angle.</param>
-      <param name="index">A list of integer indices specifying the qubits to apply this term to.</param>
-      <param name="amplitude">The numerical coefficient ('strength') leading this term.</param>
-      <param name="s">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>s</parameter>
-            <parameter>M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{System.Int32},System.Double)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="o">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>o</parameter>
-            <parameter>M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{System.Int32},System.Double)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="idx">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>idx</parameter>
-            <parameter>M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{System.Int32},System.Double)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="a">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>a</parameter>
-            <parameter>M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{System.Int32},System.Double)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
-    <member name="M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},System.Double)">
-      <summary>
- Initializes a new SpinTerm instance.
- </summary>
-      <param name="schedule">The numerical id, zero-bvased, of the annealing schedule corresponding to this term.</param>
-      <param name="operation">A function which performs the operation of this term over a given angle.</param>
-      <param name="amplitude">The numerical coefficient ('strength') leading this term.</param>
-      <param name="s">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>s</parameter>
-            <parameter>M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},System.Double)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="o">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>o</parameter>
-            <parameter>M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},System.Double)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="a">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>a</parameter>
-            <parameter>M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},System.Double)</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="P:Microsoft.Research.Liquid.SpinTerm.Amplitude">
       <summary>The numerical coefficient ('strength') leading this term.</summary>
@@ -3669,32 +3147,14 @@
       <summary>
  Runs a simple gate sequence that entangles all the qubits in the state vector.
  </summary>
-      <param name="entSize">The number of qubits desired in the state vector.</param>
-      <param name="entSiz">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>entSiz</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Tests.__Entangle1(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+      <param name="entSiz">The number of qubits desired in the state vector.</param>
     </member>
     <member name="M:Microsoft.Research.Liquid.Tests.__Entangle2(System.Int32)">
       <summary>
  Runs a simple gate sequence that entangles all the qubits in the state vector.
  The sequence is run three different ways to demonstrate the difference in timings.
  </summary>
-      <param name="entSize">The number of qubits desired in the state vector.</param>
-      <param name="entSiz">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>entSiz</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Tests.__Entangle2(System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
+      <param name="entSiz">The number of qubits desired in the state vector.</param>
     </member>
     <member name="M:Microsoft.Research.Liquid.Tests.__Entangles">
       <summary>
@@ -3774,15 +3234,8 @@
  <see href="http://arxiv.org/abs/1112.2079">Paparo and Martin-Delgado</see>.
  See the Users Manual for more information.
  </summary>
-      <param name="which">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>which</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Tests.__QWalk(System.String)</parameter>
-          </include>
-        </markup>
-      </param>
+      <param name="which">The web graph to use. There are three built-in graphs:
+ tiny, tree, and graph. Alternatively, the path to a .graph file may be provided.</param>
     </member>
     <member name="M:Microsoft.Research.Liquid.Tests.__Ramsey33">
       <summary>
@@ -3901,37 +3354,23 @@
       <param name="doCollect">Do a garbage collection before reporting?</param>
       <returns>procStatsT struct</returns>
     </member>
-    <member name="M:Microsoft.Research.Liquid.Util.Random.get_Normal(System.Random)">
+    <member name="M:Microsoft.Research.Liquid.Util.Random.Normal(System.Random,System.Double,System.Double)">
       <summary>
- Add a Normal distribution to Random
+ Add a Normal distribution to the System.Random class.
+ This is an extension method and may be used as if it were an instance method on Random.
  </summary>
+      <param name="x">The instance of System.Random (ignore)</param>
       <param name="mean">Mean of returned value</param>
       <param name="sd">Standard deviation of returned value</param>
-      <param name="param0">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>param0</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Util.Random.get_Normal(System.Random)</parameter>
-          </include>
-        </markup>
-      </param>
       <returns>Random Gaussian value</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.Util.Random.PermAry(System.Random,System.Int32)">
       <summary>
  Create a random permutation array (call .permute with results)
+ This is an extension method and may be used as if it were an instance method on Random.
  </summary>
+      <param name="x">The instance of System.Random (ignore)</param>
       <param name="len">Length of array to create</param>
-      <param name="x">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>x</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Util.Random.PermAry(System.Random,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
       <returns>Randomized array</returns>
     </member>
     <member name="M:Microsoft.Research.Liquid.Util.show``1(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,Microsoft.FSharp.Core.Unit})">
@@ -3942,7 +3381,7 @@
       <typeparam name="a">Internal type of the printf string. The F# compiler will deduce this.</typeparam>
       <returns>Internal printformat.</returns>
     </member>
-    <member name="P:Microsoft.Research.Liquid.Util.showBareInd">
+    <member name="M:Microsoft.Research.Liquid.Util.showBareInd(System.Int32,System.String)">
       <summary>
  Shows an indented line of output, with no prefix, to the console and log file.
  This routine is used by or with various Dump() routines.
@@ -3951,7 +3390,7 @@
  Each level represents a two space indent.</param>
       <param name="line">The text to show.</param>
     </member>
-    <member name="P:Microsoft.Research.Liquid.Util.showBareLogInd">
+    <member name="M:Microsoft.Research.Liquid.Util.showBareLogInd(System.Int32,System.String)">
       <summary>
  Shows an indented line of output, with no prefix, to the log file.
  This routine is used by or with various Dump() routines.
@@ -3964,30 +3403,12 @@
       <summary>
  Dumps out a string with with an optional indentation.
  </summary>
-      <param name="f0">The optional output function to use. 
+      <param name="fO">The optional output function to use. 
  The default is <see cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">showLogInd</see>.</param>
-      <param name="l0">The optional indentation level. The default is 0.</param>
+      <param name="lO">The optional indentation level. The default is 0.</param>
       <param name="str">String to output</param>
-      <param name="fO">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>fO</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Util.showDump(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpOption{System.Int32},System.String)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="lO">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>lO</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Util.showDump(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpOption{System.Int32},System.String)</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
-    <member name="P:Microsoft.Research.Liquid.Util.showInd">
+    <member name="M:Microsoft.Research.Liquid.Util.showInd(System.Int32,System.String)">
       <summary>
  Shows an indented line of output to the console and log file.
  This routine is used by or with various Dump() routines.
@@ -4004,7 +3425,7 @@
       <typeparam name="a">Internal type of the printf string. The F# compiler will deduce this.</typeparam>
       <returns>Internal printformat</returns>
     </member>
-    <member name="P:Microsoft.Research.Liquid.Util.showLogInd">
+    <member name="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">
       <summary>
  Shows an indented line of output to the log file.
  This routine is used by or with various Dump() routines.
@@ -4043,51 +3464,6 @@
  Current process memory usage statistics.
  Returned by the procStates function.
  </summary>
-    </member>
-    <member name="M:Microsoft.Research.Liquid.Util.procStatsT.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
-      <summary>
-        <markup>
-          <include item="SMCAutoDocConstructor">
-            <parameter>Microsoft.Research.Liquid.Util.procStatsT</parameter>
-          </include>
-        </markup>
-      </summary>
-      <param name="privMB">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>privMB</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Util.procStatsT.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="wsetMB">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>wsetMB</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Util.procStatsT.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="peakWSMB">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>peakWSMB</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Util.procStatsT.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
-      <param name="peakVMMB">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>peakVMMB</parameter>
-            <parameter>M:Microsoft.Research.Liquid.Util.procStatsT.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)</parameter>
-          </include>
-        </markup>
-      </param>
     </member>
     <member name="P:Microsoft.Research.Liquid.Util.procStatsT.peakVMMB">
       <summary>
