@@ -2994,6 +2994,23 @@
  A single term in a Spin Hamiltonian.
  </summary>
     </member>
+    <member name="M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpList{System.Int32},System.Double)">
+      <summary>
+ Initializes a new SpinTerm instance.
+ </summary>
+      <param name="s">The numerical id, zero-based, of the annealing schedule corresponding to this term.</param>
+      <param name="o">A function which performs the operation of this term over a given angle.</param>
+      <param name="idx">A list of integer indices specifying the qubits to apply this term to.</param>
+      <param name="a">The numerical coefficient ('strength') leading this term.</param>
+    </member>
+    <member name="M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},System.Double)">
+      <summary>
+ Initializes a new SpinTerm instance.
+ </summary>
+      <param name="s">The numerical id, zero-based, of the annealing schedule corresponding to this term.</param>
+      <param name="o">A function which performs the operation of this term over a given angle.</param>
+      <param name="a">The numerical coefficient ('strength') leading this term.</param>
+    </member>
     <member name="P:Microsoft.Research.Liquid.SpinTerm.Amplitude">
       <summary>The numerical coefficient ('strength') leading this term.</summary>
     </member>

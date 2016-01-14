@@ -135,8 +135,8 @@
   <HelpKINode Title="Complex.Conj method" Url="html/19fe39df-b17b-8b00-3a83-9f4588056c22.htm" />
   <HelpKINode Title="Complex.Copy method" Url="html/9f94911c-85cf-2ba0-7854-8d79f5b9d722.htm" />
   <HelpKINode Title="Complex.Dump method" Url="html/e7594e80-7db2-d78f-a597-ab698fb9f53a.htm" />
-  <HelpKINode Title="Complex.i property" Url="html/d917c6d3-bb62-88b4-2b39-4a9d692ef3dc.htm" />
   <HelpKINode Title="Complex.I property" Url="html/8448fbad-8d12-f539-6d1a-b5b8915d26d0.htm" />
+  <HelpKINode Title="Complex.i property" Url="html/d917c6d3-bb62-88b4-2b39-4a9d692ef3dc.htm" />
   <HelpKINode Title="Complex.MCC property" Url="html/bba58d8f-050e-f7a2-3f5a-20c7b5648029.htm" />
   <HelpKINode Title="Complex.Multiply operator" Url="html/23180d75-898b-7d15-841e-9d0240f88748.htm" />
   <HelpKINode Title="Complex.Narrow method" Url="html/0e359d12-8764-22e2-45b9-3d6c4f9ba509.htm" />
@@ -159,8 +159,8 @@
     <HelpKINode Title="Spin.Copy Method " Url="html/0391d2be-c314-d15b-f7d8-e5396eba1af0.htm" />
   </HelpKINode>
   <HelpKINode Title="copyright property" Url="html/966ce531-169d-ac19-d449-049519fd9515.htm" />
-  <HelpKINode Title="Count property" Url="html/1fb4b1c4-dd35-db6f-9b99-9645233401b6.htm" />
   <HelpKINode Title="count property" Url="html/a5d54801-ef17-0710-3a9c-9242690e26da.htm" />
+  <HelpKINode Title="Count property" Url="html/1fb4b1c4-dd35-db6f-9b99-9645233401b6.htm" />
   <HelpKINode Title="CreMat method" Url="html/fbb07cf9-a571-480b-1c4d-6c4e38ef9dc8.htm" />
   <HelpKINode Title="CreZer method" Url="html/5630e9d7-4d6f-9404-63dc-ff9391fa5fd6.htm" />
   <HelpKINode Title="CRx method" Url="html/c5131064-57ef-4b68-6ce3-9244155caf3b.htm" />
@@ -862,11 +862,13 @@
   <HelpKINode Title="SpinTerm class">
     <HelpKINode Title="SpinTerm Class" Url="html/c17f9a5b-4a7c-d025-dbe8-ea3a93377a80.htm" />
     <HelpKINode Title="about SpinTerm class" Url="html/c17f9a5b-4a7c-d025-dbe8-ea3a93377a80.htm" />
+    <HelpKINode Title="constructor" Url="html/a5b2009d-cc8a-34d5-fdf9-8bfeb28f93fe.htm" />
     <HelpKINode Title="methods" Url="html/bf3bac87-924c-8ba8-524a-12861201ab9c.htm" />
     <HelpKINode Title="properties" Url="html/0984eac5-98d0-ed50-907c-ae8a819529ec.htm" />
   </HelpKINode>
   <HelpKINode Title="SpinTerm.Amplitude property" Url="html/de08218b-a9f2-a525-a56a-89c01f58dbf3.htm" />
   <HelpKINode Title="SpinTerm.Schedule property" Url="html/56e9f717-367f-c5ad-3e01-91c3bfaa89e2.htm" />
+  <HelpKINode Title="SpinTerm.SpinTerm constructor" Url="html/a5b2009d-cc8a-34d5-fdf9-8bfeb28f93fe.htm" />
   <HelpKINode Title="sqrt2 property" Url="html/70e72928-116e-fa2c-5eac-660440f5ebc7.htm" />
   <HelpKINode Title="Stabilizer class">
     <HelpKINode Title="Stabilizer Class" Url="html/80fe11bf-43b4-550f-9fcf-26302aaacdcb.htm" />
