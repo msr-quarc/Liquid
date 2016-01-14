@@ -77,7 +77,7 @@
  The matrix is updated in place, rather than a new matrix being created.
  </summary>
  <param name="m1">The matrix to scale.</param>
- <param name="v">The constant to multiply by.</param>
+ <param name="mul">The constant to multiply by.</param>
 </member>
 <member name="M:Microsoft.Research.Liquid.CMat.op_Multiply(Microsoft.Research.Liquid.CMat,Microsoft.Research.Liquid.CMat)">
  <summary>
@@ -103,7 +103,7 @@
  The matrix is updated in place, rather than a new matrix being created.
  </summary>
  <param name="m1">The matrix to scale.</param>
- <param name="v">The scale divisor. The matrix is multiplied by 1/div.</param>
+ <param name="div">The scale divisor. The matrix is multiplied by 1/div.</param>
 </member>
 <member name="M:Microsoft.Research.Liquid.CMat.op_AdditionAssignment(Microsoft.Research.Liquid.CMat,Microsoft.Research.Liquid.CMat)">
  <summary>
@@ -202,7 +202,7 @@
  <param name="br">A BinaryReader to deserialize a matrix from.</param>
  <returns>The new mnatrix</returns>
 </member>
-<member name="M:Microsoft.Research.Liquid.CMat.Power(System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+<member name="M:Microsoft.Research.Liquid.CMat.Power(System.Int32)">
  <summary>
  Computes an integer power of this matrix.
  NOTE: This destroys the contents of the current matrix.
@@ -322,7 +322,7 @@
  <param name="f">The optional output function to use. 
  The default is <see cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">showLogInd</see>.</param>
  <param name="level">The optional indentation level. The default is 0.</param>
- <param name="wide">precision 0=low 1=normal 2=high 3=full (optional=1)</param>
+ <param name="prec">precision 0=low 1=normal 2=high 3=full (optional=1)</param>
 </member>
 <member name="M:Microsoft.Research.Liquid.CMat.Dump(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
  <summary>
@@ -662,7 +662,7 @@
  Computes the Kronecker Product of this matrix with an identity matrix.
  The identity matrix is on the right-hand side of the product.
  </summary>
- <param name="len">The dimension of the identity matrix (N of NxN).</param>
+ <param name="lenI">The dimension of the identity matrix (N of NxN).</param>
  <returns>The result of the Kronecker product</returns>
 </member>
 <member name="M:Microsoft.Research.Liquid.CSMat.Kron(Microsoft.Research.Liquid.CSMat)">
@@ -711,7 +711,7 @@
  <param name="f">The optional output function to use. 
  The default is <see cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">showLogInd</see>.</param>
  <param name="level">The optional indentation level. The default is 0.</param>
- <param name="name">An optional name for the matrix. The default is A.</param>   
+ <param name="nam">An optional name for the matrix. The default is A.</param>   
  <param name="idxOffset">An optional number of rows and columns to skip.
  If this is not zero, then the square submatrix starting at this offset is dumped instead of the full matrix.
  The default is 0.</param>   
@@ -1256,6 +1256,12 @@
  </summary>
  <returns>A list of the wires used</returns>
 </member>
+<member name="M:Microsoft.Research.Liquid.Circuit.ToString">
+ <summary>
+ Returns a string representing the current circuit element. 
+ </summary>
+ <returns>The string representation</returns>
+</member>
 <member name="M:Microsoft.Research.Liquid.Circuit.Run(Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit})">
  <summary>
  Runs this Circuit.
@@ -1380,6 +1386,7 @@
  <param name="k">A Ket this Circuit could be run with.</param>
  <param name="gp">The grow parameters to use.
  See the <see cref="T:Microsoft.Research.Liquid.GrowPars">GrowPars</see> type for details.</param>
+ <returns>A new, optimized Circuit</returns>
 </member>
 <member name="M:Microsoft.Research.Liquid.Circuit.GateCount(Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{Microsoft.Research.Liquid.Gate,System.Boolean}})">
  <summary>
@@ -1422,7 +1429,8 @@
  Find Ids below this point and the time needed to execute the circuit (internal)
  </summary>
  <param name="detail">What level of detail for when we hit a "Wrap" gate</param>
- <param name="empty">Count Empty gates like Native? (optional=false)</param>
+ <param name="cntEmpty">An option allowing Empty gates to be counted like Native
+ The default is false, which is to not count Empty gates as Native.</param>
  <returns>Set of ids,total time to execute</returns>
 </member>
 <member name="M:Microsoft.Research.Liquid.Circuit.Final(Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Circuit})">
@@ -1836,6 +1844,11 @@
  This is the bit precision plus two.
  </summary>
 </member>
+<member name="P:Microsoft.Research.Liquid.Fermion.Ua">
+<summary>
+ The gate function that implements a full Hamiltonian time step
+</summary>
+</member>
 <member name="P:Microsoft.Research.Liquid.Fermion.SOs">
  <summary>
  Access built spin orbtial information
@@ -1944,7 +1957,7 @@
  A previous call to Build() or BuildSingle() is required.
  </summary>
  <param name="single">Whether or not this Hamiltonian is built into a single Unitary.</param>
- <param name="?maxTries">An optional maximum number of measurements to take.
+ <param name="maxTries">An optional maximum number of measurements to take.
  The default is 40.</param>
  <returns>None if it succeeded, or Some (int bit position) if it failed.</returns>
 </member>
@@ -2175,14 +2188,21 @@
  The arity of the gate.
  </summary>
 </member>
+<member name="M:Microsoft.Research.Liquid.Gate.ToString">
+ <summary>
+ Returns a string representation of this gate, based on the gate's name,
+ help string, and type.
+ </summary>
+ <returns>The string representation</returns>
+</member>
 <member name="M:Microsoft.Research.Liquid.Gate.ShowMem(System.Int32,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Circuit}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
  <summary>
  Outputs memory and garbage collection statistics to the log and console.
  </summary>
  <param name="seconds">A minimum interval between reports.
  If a report was displayed within more recently, then no new report is displayed.</param>
- <param name="strFn">A function that returns a string to output as a prefix to the report.</param>
- <param name="circuits">An optional list of Circuits to analyze.
+ <param name="f">A function that returns a string to output as a prefix to the report.</param>
+ <param name="cs">An optional list of Circuits to analyze.
  The count of Circuits in the list is reported.
  If the "deep" parameter is true, then the total count of gates in these Circuits is also reported.
  The default is an empty list, which displays counts of 0.</param>
@@ -2198,7 +2218,7 @@
  <param name="seconds">A minimum interval between reports.
  If a report was displayed within more recently, then no new report is displayed.</param>
  <param name="str">A string to output as a prefix to the report.</param>
- <param name="circuits">An optional list of Circuits to analyze.
+ <param name="cs">An optional list of Circuits to analyze.
  The count of Circuits in the list is reported.
  If the "deep" parameter is true, then the total count of gates in these Circuits is also reported.
  The default is an empty list, which displays counts of 0.</param>
@@ -2356,6 +2376,7 @@
  <summary>
  Creates a string representation of this gate operation type.
  </summary>
+ <returns>The string</returns>
 </member>
 <member name="T:Microsoft.Research.Liquid.GateOp">
  <summary>
@@ -2472,6 +2493,7 @@
  <sealso cref="P:Microsoft.Research.Liquid.GrowPars.Verbosity"/>
  </summary>
  <param name="vNew">The new verbosity level</param>
+ <returns>The new GrowPars instance</returns>
 </member>
 <member name="M:Microsoft.Research.Liquid.GrowPars.ToString">
  <summary>
@@ -2569,7 +2591,7 @@
  </remarks>
 </member>
 <member name="P:Microsoft.Research.Liquid.Hamiltonian.Ket(Microsoft.Research.Liquid.Ket)">
-<summary>Get the Ket associated with this Hamiltonian</summary>
+<summary>Gets the Ket vector associated with this Hamiltonian</summary>
 </member>
 <member name="P:Microsoft.Research.Liquid.Hamiltonian.prefixInfo">
 <summary>Get or set the output prefix associated with this Hamiltonian</summary>
@@ -2586,7 +2608,7 @@
  </remarks>
 </member>
 <member name="P:Microsoft.Research.Liquid.Hamiltonian.Ket">
-<summary>Get the Ket associated with this Hamiltonian</summary>
+<summary>Gets the Ket vector associated with this Hamiltonian</summary>
 </member>
 <member name="M:Microsoft.Research.Liquid.Hamiltonian.Coalesce(System.Int32,Microsoft.FSharp.Core.FSharpRef{Microsoft.Research.Liquid.Circuit},Microsoft.Research.Liquid.GrowPars)">
  <summary>
@@ -2646,7 +2668,7 @@
 </member>
 <member name="P:Microsoft.Research.Liquid.Ket.RandSeed(System.Int32)">
 <summary>
- Force random # gen to a known initial state
+ Force the pseudo-random number gen to a known initial state
 </summary>
 </member>
 <member name="P:Microsoft.Research.Liquid.Ket.Quiet(System.Boolean)">
@@ -2692,6 +2714,11 @@
 <member name="P:Microsoft.Research.Liquid.Ket.Rnd">
 <summary>
  Ask for a random number generator
+</summary>
+</member>
+<member name="P:Microsoft.Research.Liquid.Ket.RandSeed">
+<summary>
+ Force the pseudo-random number gen to a known initial state
 </summary>
 </member>
 <member name="P:Microsoft.Research.Liquid.Ket.Quiet">
@@ -2938,7 +2965,7 @@
  Get the entanglement entropy
  </summary>
  <param name="alpha">Denotes the generalized entropy parameter: 1 for Von Neumann or 2 for Reny</param>
- <param name="qubit position">0 to nQubits (based on order)</param>
+ <param name="qPos">qubit position, 0 to nQubits (based on order)</param>
  <param name="order">Int list of qubit order to wind up in []=use results of previous call (optional=[0..N-1])</param>
  <returns>Entropy value</returns>
 </member>
@@ -2983,6 +3010,7 @@
  </summary>
  <param name="decohere">The function to apply to each qubit.
  This function is allowed to modify the state of the qubit.</param>
+ <returns>The list of qubits where the function returned true</returns>
 </member>
 <member name="M:Microsoft.Research.Liquid.Ket.Copy">
  <summary>
@@ -3007,6 +3035,7 @@
  The new qubits are unentangled and have the provided state.
  Note that the new qubits are not considered measured.
  </summary>
+ <param name="cnt">The number of qubits to add.</param>
  <param name="b">The initial state of the added qubits.</param>
  <returns>The new Qubits</returns>
 </member>
@@ -3288,7 +3317,7 @@
  <summary>
  Runs a circuit with this noise model.
  </summary>
- <param name="ket">An optional state vector to use to re-initialize execution.
+ <param name="ket2">An optional state vector to use to re-initialize execution.
  If provided, this Ket is used for the run and all times and statistics are reset.
  If not provided, then execution continues from the state after the last Run.</param>
 </member>
@@ -3410,6 +3439,12 @@
 </member>
 <member name="P:Microsoft.Research.Liquid.NoiseStat.time">
  <summary>When noise was applied during the simulated execution.</summary>
+</member>
+<member name="M:Microsoft.Research.Liquid.NoiseStat.ToString">
+ <summary>
+ Returns a string representation of this noise statistic.
+ </summary>
+ <returns>The string</returns>
 </member>
 <member name="T:Microsoft.Research.Liquid.NoiseStat">
  <summary>Statistics tracked for each time that noise is applied.</summary>
@@ -3695,9 +3730,10 @@
 <member name="M:Microsoft.Research.Liquid.Qubit.ToString">
  <summary>
  Creates a string representation of this Qubit.
- The representation shows the state vector.
+ The representation shows the current state of the qubit if it is unentangled.
  <seealso cref="M:Microsoft.Research.Liquid.Qubit.ShowMag()"/>
  </summary>
+ <returns>The string representation</returns>
 </member>
 <member name="M:Microsoft.Research.Liquid.Qubit.StateSet(Microsoft.Research.Liquid.Complex,Microsoft.Research.Liquid.Complex)">
  <summary>
@@ -3743,6 +3779,7 @@
  in the computational |0> and |1> states.
  <seealso cref="M:Microsoft.Research.Liquid.Qubit.ToString()"/>
  </summary>
+ <returns>The string representation</returns>
 </member>
 <member name="M:Microsoft.Research.Liquid.Qubit.Read(System.IO.BinaryReader,Microsoft.Research.Liquid.Ket)">
  <summary>
@@ -4047,7 +4084,7 @@
  <param name="J">coupling: 1=ferro -1=anti 0=none</param>
  <param name="gammalambda">List of (time,gamma,lambda) tuples that define the annealing schedule (optional=[(30,0.0,1.0)])</param>
  <param name="runonce">true=run the simulation once and perform repeated 'virtual measurements'; false=run the simulation and measure each time (optional=false)</param>
- <param name="decohere">Decoherence probability per qubit per timestep [(gate,prob) list] optional=None</param>
+ <param name="decohereModel">Decoherence probability per qubit per timestep [(gate,prob) list] optional=None</param>
 </member>
 <member name="M:Microsoft.Research.Liquid.Spin.EnergyExpectation(System.Boolean,Microsoft.FSharp.Core.FSharpOption{System.Double[]},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit}})">
  <summary>
@@ -4102,18 +4139,18 @@
  <summary>
  Initializes a new SpinTerm instance.
  </summary>
- <param name="schedule">The numerical id, zero-bvased, of the annealing schedule corresponding to this term.</param>
- <param name="operation">A function which performs the operation of this term over a given angle.</param>
- <param name="index">A list of integer indices specifying the qubits to apply this term to.</param>
- <param name="amplitude">The numerical coefficient ('strength') leading this term.</param>
+ <param name="s">The numerical id, zero-based, of the annealing schedule corresponding to this term.</param>
+ <param name="o">A function which performs the operation of this term over a given angle.</param>
+ <param name="idx">A list of integer indices specifying the qubits to apply this term to.</param>
+ <param name="a">The numerical coefficient ('strength') leading this term.</param>
 </member>
 <member name="M:Microsoft.Research.Liquid.SpinTerm.#ctor(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Double,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{Microsoft.Research.Liquid.Qubit},Microsoft.FSharp.Core.Unit}},System.Double)">
  <summary>
  Initializes a new SpinTerm instance.
  </summary>
- <param name="schedule">The numerical id, zero-bvased, of the annealing schedule corresponding to this term.</param>
- <param name="operation">A function which performs the operation of this term over a given angle.</param>
- <param name="amplitude">The numerical coefficient ('strength') leading this term.</param>
+ <param name="s">The numerical id, zero-based, of the annealing schedule corresponding to this term.</param>
+ <param name="o">A function which performs the operation of this term over a given angle.</param>
+ <param name="a">The numerical coefficient ('strength') leading this term.</param>
 </member>
 <member name="T:Microsoft.Research.Liquid.SpinTerm">
  <summary>
@@ -5048,7 +5085,7 @@
  commands used to draw the label.
  Note that labels drawn using this gate will only appear when rendered to "qc" format.
  </summary>
- <param name="nam">The string to use to draw the label.</param>
+ <param name="cmd">The string to use to draw the label.</param>
  <param name="qs">A list of qubits, the first of which determines the
  vertical positioning of the label.</param>
 </member>
@@ -5724,7 +5761,7 @@
  Return the prime factors of a number (if the number is the product of two primes)
  </summary>
  <param name="n">Number to test</param>
- <returns>Prime factors (or empty list)<returns>
+ <returns>Prime factors (or empty list)</returns>
 </member>
 <member name="M:Microsoft.Research.Liquid.Shor.isPrimePower(System.Int32)">
  <summary>
@@ -5746,6 +5783,8 @@
  <see href="http://arxiv.org/abs/1112.2079">Paparo and Martin-Delgado</see>.
  See the Users Manual for more information.
  </summary>
+ <param name="which">The web graph to use. There are three built-in graphs:
+ tiny, tree, and graph. Alternatively, the path to a .graph file may be provided.</param>
 </member>
 <member name="M:Microsoft.Research.Liquid.Tests.__QuAM">
  <summary>
@@ -5890,7 +5929,7 @@
  Runs a simple gate sequence that entangles all the qubits in the state vector.
  The sequence is run three different ways to demonstrate the difference in timings.
  </summary>
- <param name="entSize">The number of qubits desired in the state vector.</param>
+ <param name="entSiz">The number of qubits desired in the state vector.</param>
  <remarks>
  This test executes the same gate sequence in three different ways:
  <ul>
@@ -5906,7 +5945,7 @@
  <summary>
  Runs a simple gate sequence that entangles all the qubits in the state vector.
  </summary>
- <param name="entSize">The number of qubits desired in the state vector.</param>
+ <param name="entSiz">The number of qubits desired in the state vector.</param>
  <remarks>
  This sample displays detailed timing and memory usage information,
  and so allows you to see how Liquid scales as the state vector size grows.
@@ -6097,14 +6136,18 @@
 <member name="M:Microsoft.Research.Liquid.Util.Random.PermAry(System.Random,System.Int32)">
  <summary>
  Create a random permutation array (call .permute with results)
+ This is an extension method and may be used as if it were an instance method on Random.
  </summary>
+ <param name="x">The instance of System.Random (ignore)</param>
  <param name="len">Length of array to create</param>
  <returns>Randomized array</returns>
 </member>
-<member name="M:Microsoft.Research.Liquid.Util.Random.get_Normal(System.Random)">
+<member name="M:Microsoft.Research.Liquid.Util.Random.Normal(System.Random,System.Double,System.Double)">
  <summary>
- Add a Normal distribution to Random
+ Add a Normal distribution to the System.Random class.
+ This is an extension method and may be used as if it were an instance method on Random.
  </summary>
+ <param name="x">The instance of System.Random (ignore)</param>
  <param name="mean">Mean of returned value</param>
  <param name="sd">Standard deviation of returned value</param>
  <returns>Random Gaussian value</returns>
@@ -6199,9 +6242,9 @@
  <summary>
  Dumps out a string with with an optional indentation.
  </summary>
- <param name="f0">The optional output function to use. 
+ <param name="fO">The optional output function to use. 
  The default is <see cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">showLogInd</see>.</param>
- <param name="l0">The optional indentation level. The default is 0.</param>
+ <param name="lO">The optional indentation level. The default is 0.</param>
  <param name="str">String to output</param>
 </member>
 <member name="M:Microsoft.Research.Liquid.Util.getDumpArgs(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
@@ -6213,7 +6256,7 @@
  The default is <see cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">showLogInd</see>.</param>
  <param name="l0">The optional indentation level. The default is 0.</param>
 </member>
-<member name="P:Microsoft.Research.Liquid.Util.showBareLogInd">
+<member name="M:Microsoft.Research.Liquid.Util.showBareLogInd(System.Int32,System.String)">
  <summary>
  Shows an indented line of output, with no prefix, to the log file.
  This routine is used by or with various Dump() routines.
@@ -6225,7 +6268,7 @@
  <seealso cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)"/>
  <seealso cref="M:Microsoft.Research.Liquid.Util.showBareInd(System.Int32,System.String)"/>
 </member>
-<member name="P:Microsoft.Research.Liquid.Util.showBareInd">
+<member name="M:Microsoft.Research.Liquid.Util.showBareInd(System.Int32,System.String)">
  <summary>
  Shows an indented line of output, with no prefix, to the console and log file.
  This routine is used by or with various Dump() routines.
@@ -6237,7 +6280,7 @@
  <seealso cref="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)"/>
  <seealso cref="M:Microsoft.Research.Liquid.Util.showBareLogInd(System.Int32,System.String)"/>
 </member>
-<member name="P:Microsoft.Research.Liquid.Util.showLogInd">
+<member name="M:Microsoft.Research.Liquid.Util.showLogInd(System.Int32,System.String)">
  <summary>
  Shows an indented line of output to the log file.
  This routine is used by or with various Dump() routines.
@@ -6249,7 +6292,7 @@
  <seealso cref="M:Microsoft.Research.Liquid.Util.showBareInd(System.Int32,System.String)"/>
  <seealso cref="M:Microsoft.Research.Liquid.Util.showBareLogInd(System.Int32,System.String)"/>
 </member>
-<member name="P:Microsoft.Research.Liquid.Util.showInd">
+<member name="M:Microsoft.Research.Liquid.Util.showInd(System.Int32,System.String)">
  <summary>
  Shows an indented line of output to the console and log file.
  This routine is used by or with various Dump() routines.
