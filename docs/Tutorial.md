@@ -67,12 +67,11 @@ Once you have everything installed:
     let qfunc (qs:Qubits) =
         M qs
 ```
-  Update UserSample to call it: 
+* Update UserSample to call it: 
  ```fsharp
     [<LQD>]
     let __UserSample() =
         let stats       = Array.create 2 0
-
         let k           = Ket(1)
 
         for i in 0..9999 do
@@ -83,135 +82,103 @@ Once you have everything installed:
 
         show "Measured: 0=%d, 1=%d" stats.[0] stats.[1]
 ```
-
-Compile and run and show that you get all zeros. 
-Now add a Hadamard to qfunc and run again: 
+* Compile and run and show that you get all zeros. 
+* Now add a Hadamard to qfunc and run again: 
+```fsharp
     let qfunc (qs:Qubits) =
-
         H qs
-
         M qs
-
-Explain the rotX gate in the same file 
-Call with: 
+```
+* Explain the rotX gate in the same file 
+* Call with: 
+```fsharp
     let qfunc (qs:Qubits) =
-
         rotX (Math.PI/2.) qs
-
         M qs
-
-Show that the result is the same as for a Hadamard 
-Now call with Math.PI/4. 
- 
-Now change to N qubits with a CNOT: 
+```
+* Show that the result is the same as for a Hadamard 
+* Now call with Math.PI/4. The probability of 0 should now be cos&sup2;(&pi;/8) &approx; 0.85355.
+* Now change to N qubits with a CNOT: 
+```fsharp
     let qfunc (qs:Qubits) =
-
         rotX (Math.PI/4.) qs
-
         for q in qs.Tail do CNOT [qs.Head;q]
-
-        M >< qs
-
- 
+        M >< qs 
 
     [<LQD>]
-
     let __UserSample(n:int) =
-
         let stats       = Array.create 2 0
-
         let k           = Ket(n)
 
         for i in 0..9999 do
-
             let qs      = k.Reset(n)
-
             qfunc qs
-
             let v       = qs.Head.Bit.v
-
             stats.[v]  <- stats.[v] + 1
-
             for q in qs.Tail do
-
                 if qs.Head.Bit <> q.Bit then
-
                     failwith "Different!?!?!?!?"
 
         show "Measured: 0=%d, 1=%d" stats.[0] stats.[1]
-
-Change Properties to run using 10 qubits 
-Compile, run explain (note how long it took) 
-Now change to using a circuit: 
+```
+* Change Properties to run using 10 qubits 
+* Compile, run, explain (note how long it took) 
+* Now change to using a circuit: 
+```fsharp
     [<LQD>]
-
     let __UserSample(n:int) =
-
         let stats       = Array.create 2 0
-
         let k           = Ket(n)
-
         let circ        = Circuit.Compile qfunc k.Qubits
-
         for i in 0..9999 do
-
+			...
 ...
-
-Compile, run. Not really any faster (still executing the same number of gates) so add a GrowGates(): 
+* Compile, run. Not really any faster (still executing the same number of gates) so add a GrowGates(): 
+```fsharp
         let circ        = Circuit.Compile qfunc k.Qubits
-
         let circ        = circ.GrowGates(k)
 
         for i in 0..9999 do
-
             let qs      = k.Reset(n)
-
             circ.Run qs
-
             let v       = qs.Head.Bit.v
-
-Show that it's now n times  faster 
-Generate drawings and circuit dumps: 
+```
+* Show that it's now n times  faster 
+* Generate drawings and circuit dumps: 
+```fsharp
         let circ        = Circuit.Compile qfunc k.Qubits
-
         show "Test1:"
-
         circ.RenderHT("Test1")
-
         circ.Dump()
-
         let circ        = circ.GrowGates(k)
-
         show "Test2:"
-
         circ.RenderHT("Test2")
-
         circ.Dump()
-
         for i in 0..9999 do
-
-Run and show the two drawings 
-Show the dump results from Liquid.log 
-Switch to QChem: 
-cd to  \liquid\samples 
-Run: ..\bin\Liquid.exe __Chem(H2) 
-Talk through the liquid.log file 
-Run: ..\bin\Liquid.exe __Chem(H2) | find "CSV" | sort /+25 
-Open H2_sto3g_4.dat and explain what it is. 
-Open H2O_sto6g_14.dat and describe it 
-Run: ..\bin\Liquid.exe __Chem(H2O) 
-Talk about the output and optimizations 
-Scripts: 
-Show the h2.fsx file and talk through it 
-Run: ..\bin\Liquid.exe /s H2.fsx Test(26) | find "CSV" | sort /+25 
-Run: ..\bin\Liquid.exe /l H2.dll Test(26) | find "CSV" | sort /+25 
-Show the difference with Trotterization: 
-..\bin\Liquid.exe /l h2.dll Trot(2) | find "CSV" | sort /+25 
-..\bin\Liquid.exe /l h2.dll Trot(1024) | find "CSV" | sort /+25 
-Docs: 
-cd to \Liquid\Help 
-Open/walk Contents of Liquid.pdf 
-Open Liquid.chm 
-Go to Circuit 
-Describe Compile, Dump and RenderHT 
-Online API docs are also at the GitHub site 
+			...
+```
+* Run and show the two drawings 
+* Show the dump results from Liquid.log 
+### Quantum Chemistry
+* cd to  \liquid\samples 
+* Run: ..\bin\Liquid.exe __Chem(H2) 
+* Talk through the liquid.log file 
+* Run: ..\bin\Liquid.exe __Chem(H2) | find "CSV" | sort /+25 
+* Open H2_sto3g_4.dat and explain what it is. 
+* Open H2O_sto6g_14.dat and describe it 
+* Run: ..\bin\Liquid.exe __Chem(H2O) 
+* Talk about the output and optimizations 
+### Scripts:
+* Show the h2.fsx file and talk through it 
+* Run: ..\bin\Liquid.exe /s H2.fsx Test(26) | find "CSV" | sort /+25 
+* Run: ..\bin\Liquid.exe /l H2.dll Test(26) | find "CSV" | sort /+25 
+* Show the difference with Trotterization: 
+** ..\bin\Liquid.exe /l h2.dll Trot(2) | find "CSV" | sort /+25 
+** ..\bin\Liquid.exe /l h2.dll Trot(1024) | find "CSV" | sort /+25 
+### Docs:
+* cd to \Liquid\Help 
+* Open/walk Contents of Liquid.pdf 
+* Open Liquid.chm 
+* Go to Circuit 
+* Describe Compile, Dump and RenderHT 
+* Online API docs are also at the GitHub site 
