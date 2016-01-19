@@ -63,13 +63,13 @@ Once you have everything installed:
 * Explain [<LQD>] and show 
 * Show how to put __UserSample() in the Liquid debug properties, switch to Release and run it. 
 * Create a new function that will measure a single qubit: 
-```
+
 <DIV style="background-color:yellow;">
     let qfunc (qs:Qubits) =
 
         M qs
 </DIV>
-```
+
 Update UserSample to call it: 
     [<LQD>]
 
