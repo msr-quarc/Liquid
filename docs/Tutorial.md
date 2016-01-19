@@ -60,16 +60,14 @@ Once you have everything installed:
 * Use File Explorer to bring up Liquid.sln in the C:\Liquid\source directory 
 * Show the solution files 
 * Open up Main.fs 
-* Explain [<LQD>] and show 
+* Explain &lbrack;&lt;LQD&gt;&rbrack; and show 
 * Show how to put __UserSample() in the Liquid debug properties, switch to Release and run it. 
 * Create a new function that will measure a single qubit: 
-<strong color="blue">
-```
+<blockquote color="blue">
     let qfunc (qs:Qubits) =
 
         M qs
-```
-</strong>
+</blockquote>
 Update UserSample to call it: 
     [<LQD>]
 
