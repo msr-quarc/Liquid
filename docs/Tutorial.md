@@ -63,31 +63,26 @@ Once you have everything installed:
 * Explain &lbrack;&lt;LQD&gt;&rbrack; and show 
 * Show how to put __UserSample() in the Liquid debug properties, switch to Release and run it. 
 * Create a new function that will measure a single qubit: 
-<blockquote color="blue">
+```fsharp
     let qfunc (qs:Qubits) =
-
         M qs
-</blockquote>
-Update UserSample to call it: 
+```
+  Update UserSample to call it: 
+ ```fsharp
     [<LQD>]
-
     let __UserSample() =
-
         let stats       = Array.create 2 0
 
         let k           = Ket(1)
 
         for i in 0..9999 do
-
             let qs      = k.Reset(1)
-
             qfunc qs
-
             let v       = qs.Head.Bit.v
-
             stats.[v]  <- stats.[v] + 1
 
         show "Measured: 0=%d, 1=%d" stats.[0] stats.[1]
+```
 
 Compile and run and show that you get all zeros. 
 Now add a Hadamard to qfunc and run again: 
