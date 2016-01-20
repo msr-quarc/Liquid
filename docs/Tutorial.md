@@ -30,7 +30,7 @@ Once you have everything installed:
 
 ## Tutorial:
 
-### How to Download and set up
+### Basics
 
 * Show the install directory and basic structure (use File Explorer). Stress where the docs are. 
 * Show how to sprout a command windows (Right click Windows -> Command Prompt) 
