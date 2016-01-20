@@ -2,7 +2,7 @@
 
 This outline may be used to help follow along with the [tutorial video](http://research.microsoft.com/apps/video/default.aspx?id=258279).
 
-## Before the tutorial: 
+## Before the tutorial
 
 ### Install Required Software
 
@@ -28,7 +28,7 @@ Once you have everything installed:
 * Go to Solution Explorer on the right side and see if it says that Liquid is "unavailable" 
 * Right click on Liquid and select "install" (to get F# which is installed on demand). 
 
-## Tutorial:
+## Tutorial
 
 ### Basics
 
