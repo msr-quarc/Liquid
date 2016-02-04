@@ -1,4 +1,4 @@
-// Copyright (c) 2015, Microsoft Corporation
+// Copyright (c) 2015,2016 Microsoft Corporation
 
 #if INTERACTIVE
 #r @"..\bin\Liquid1.dll"         // Tell fsi where to find the Liquid dll

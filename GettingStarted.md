@@ -2,8 +2,9 @@
 
 ## Prerequisites
 
-These directions assume you're running on a Windows environment, such as a Windows PC or using an emulator on another operating system.
-If you don't have access to a Windows environment, you can use LIQ<i>Ui</i>|&#x232A; on a Windows virtual machine.
+These directions assume you're running on a Windows environment, such as a Windows PC or using an emulator on another operating system. Please refer to additional instructions for [Linux](#Linux) and [OSX](#OSX) at the end of this file.
+
+If you wish to run on Windows in the cloud, you can use LIQ<i>Ui</i>|&#x232A; on a Windows virtual machine.
 See the [Using LIQ<i>Ui</i>|&#x232A; on Microsoft Azure](AzureGuide.md) page for directions.
 
 ### Visual Studio
@@ -21,14 +22,14 @@ Installation steps:
 4. After you choose your preferences (a few clicks) you'll see the "Solution Explorer" window on the right side. The Liquid project will show up as "unavailable". This is because F# is actually installed on demand. Right click on the project and one of the options will be to install F#.
 5. After F# installs you're done.
 
-### .NET 4.6
+### .NET 4.5.1
 
-The .NET Framework 4.6 or later is required.
+The .NET Framework 4.5.1 or later is required.
 Installing Visual Studio 2015 will install .NET 4.6.
 
 If you are only running the samples and aren't installing Visual Studio, you can install .NET 4.6 from http://www.microsoft.com/en-us/download/details.aspx?id=48130 if it isn't already installed.
 
-## Downloading LIQ<i>Ui</i>|&#x232A;
+## <a name="Downloading"></a>Downloading LIQ<i>Ui</i>|&#x232A;
 
 We recommend placing the download into a folder named c:\Liquid.
 If you choose a different folder, you will need to create a c:\Liquid folder and copy LiquidTikZ.tex from your LIQ<i>Ui</i>|&#x232A; folder into c:\Liquid.
@@ -69,39 +70,7 @@ If you type Y (or y) and then return, you will see:
 ```
 0:0000.0/Thank you for accepting the license terms
 ```
-LIQUi||> will then exit. After this, you should not be asked to accept the license again on that environment.
-
-## Registration (Optional)
-
-While LIQ<i>Ui</i>|&#x232A; is free, we do request that you register so that we can track how many people are using it.
-To do this you will need to submit a registration request email to our LISTSERV, which will reply with a registration command.
-If you don't register, your copy of LIQ<i>Ui</i>|&#x232A; will run, but will print a nag message at the top of every run.
-
-The LISTSERV is at LISTSERV@lists.research.microsoft.com.
-The email body for your registration should contain:
-```
-/REG
-```
-You will receive a reply email that will contain a command you can copy and paste into a command window to register your copy of LIQ<i>Ui</i>|&#x232A;.
-The response will look something like:
-```
-> /REG
-Liquid.exe /reg test@microsoft.com`2015-10-06T00:00:00`O6K7yUcYnKdjfis2I05vXA== 1
-```
-The command to execute is the line starting with "Liquid.exe".
-Make sure you're in the c:\Liquid\bin directory before entering this command.
-
-Registering your copy of LIQ<i>Ui</i>|&#x232A; does not subscribe you to the liquid-news email list.
-If you wish, you can do both at the same time by sending a single email with both commands in the body:
-```
-SUB Liquid-news FirstName LastName
-/REG
-```
-To subscribe anonymously and register your copy of LIQ<i>Ui</i>|&#x232A; at the same time, you can send a single email with both these commands in the body:
-```
-SUB Liquid-news anonymous
-/REG
-```
+LIQUi||> will then exit. After this, you should not be asked to accept the license again.
 
 ## Running LIQ<i>Ui</i>|&#x232A;
 
@@ -117,7 +86,7 @@ You should see the following:
 0:0000.0/
 0:0000.0/===========================================================================================
 0:0000.0/=    The Language-Integrated Quantum Operations (LIQUi|>) Simulator                       =
-0:0000.0/=        Copyright (c) 2015, Microsoft Corporation                                        =
+0:0000.0/=        Copyright (c) 2015,2016 Microsoft Corporation                                    =
 0:0000.0/=        If you use LIQUi|> in your research, please follow the guidelines at             =
 0:0000.0/=        https://github.com/msr-quarc/Liquid for citing LIQUi|> in your publications.     =
 0:0000.0/===========================================================================================
@@ -186,7 +155,7 @@ you should see:
 0:0000.0/
 0:0000.0/===========================================================================================
 0:0000.0/=    The Language-Integrated Quantum Operations (LIQUi|>) Simulator                       =
-0:0000.0/=        Copyright (c) 2015, Microsoft Corporation                                        =
+0:0000.0/=        Copyright (c) 2015,2016 Microsoft Corporation                                    =
 0:0000.0/=        If you use LIQUi|> in your research, please follow the guidelines at             =
 0:0000.0/=        https://github.com/msr-quarc/Liquid for citing LIQUi|> in your publications.     =
 0:0000.0/===========================================================================================
@@ -215,10 +184,10 @@ you should see:
 ## BLAS (optional)
 
 If you want to use the quantum random walk sample or compute state vector entanglement entropies,
-you will need a BLAS library.
+you will need a BLAS library (note: BLAS library loading currently only works on Windows).
 
 **If you don't use these functions, then LIQ<i>Ui</i>|&#x232A; will work fine with no BLAS implementation available.
-THe BLAS library is dynamically loaded before use, and is not required for LIQ<i>Ui</i>|&#x232A; to operate.**
+The BLAS library is dynamically loaded before use, and is not required for LIQ<i>Ui</i>|&#x232A; to operate.**
 
 We have tested with OpenBLAS, which is available from http://www.openblas.net/.
 
@@ -235,3 +204,68 @@ If you are using OpenBLAS, the other two libraries should be placed in the same 
 If you are using a different BLAS implementation, you will need to rename the DLL to libopenblas.dll and place it,
 along with any required supporting DLLs, into one of the valid directories.
 
+## <a name="Linux"></a>Linux
+
+1. Make sure you remove any previous installations of mono or fsharp on your machine to avoid incompatibilities.
+
+1. Depending on your version of Linux you can get [mono](http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives) and [fsharp](http://fsharp.org/use/linux/) installation instructions. However for Ubuntu (we installed on 14.04) the following sufficed (we also tested on Debian 8.2):
+	
+	```
+	$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+	$ echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
+	$ sudo apt-get update
+	$ sudo apt-get install mono-complete fsharp
+	```
+    
+1. Follow the instructions earlier on this page for [Downloading LIQ<i>Ui</i>|&#x232A;](#Downloading) and unpack the file into your home directory (~/Liquid-master) and then copy it up to the root tree:
+	
+    ```
+    $ cd ~/Liquid-master
+    $ sudo mkdir /Liquid
+    $ sudo chown $USER /Liquid
+    $ cp * /Liquid --recursive
+    ```
+    We put it in the root just so rendering will work (as expalined elsewhere). It's 	not strictly necessary (you could run completely out of your home directory instead).
+    
+1. Go to the downloaded /Liquid/linux directory and see that the software runs:
+    
+    ```
+    $ cd /Liquid/linux
+    $ mono Liquid.exe
+    ```
+    
+1. This will run LIQ<i>Ui</i>|&#x232A; and if all is well, will ask for you to accept the license. Type a **Y** (followed by Enter) to accept. Now try running a simulation:
+    
+    ```
+    mono Liquid.exe "__Teleport()"
+    ```
+    
+    This should run the Teleport test and give a bunch of output. Note that you need quotes (single or double) around the command since it has parenthesis which need to be escaped on Linux (you can also use backslash in front of each paren).
+
+    You can now run all the built-in examples. The next step is to get the IDE running so that you can write your own code.
+
+1. Install the IDE (monodevelop):
+    
+    ```
+    sudo apt-get install mono-develop
+    ```
+    
+1. Add F# support to monodevelop via the [add-in](https://github.com/fsharp/xamarin-monodevelop-fsharp-addin):
+	
+    - Run *monodevelop*
+	- Tools -> Add-in Manager -> Gallery -> Language Bindings -> F# Language Binding -> Install
+	
+1. You can now open the solution file (**/Liquid/linux/Liquid.sln**):
+    
+    ```
+    $ cd /Liquid/linux
+    $ monodevelop Liquid.sln
+    ```
+    
+1. Test building and running by pressing Ctrl-F5 (or selecting Run -> Start Without Debugging). The output for Teleport should be in a pop-window or in "Application Output" at the bottom right of the IDE window.
+
+1. Now would be a good time to watch the [tutorial video](http://research.microsoft.com/apps/video/default.aspx?id=258279) and learn how to write and simulate your own quantum circuits.
+
+## <a name="OSX"></a>OSX
+
+*coming soon*

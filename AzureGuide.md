@@ -97,15 +97,9 @@ TIP: You can use an existing email address for this, if you want, such as your i
 0:0000.0/
 0:0000.0/===========================================================================================
 0:0000.0/=    The Language-Integrated Quantum Operations (LIQUi|>) Simulator                       =
-0:0000.0/=        Copyright (c) 2015, Microsoft Corporation                                        =
+0:0000.0/=        Copyright (c) 2015,2016 Microsoft Corporation                                    =
 0:0000.0/=        If you use LIQUi|> in your research, please follow the guidelines at             =
 0:0000.0/=        https://github.com/msr-quarc/Liquid for citing LIQUi|> in your publications.     =
-0:0000.0/===========================================================================================
-0:0000.0/
-0:0000.0/
-0:0000.0/===========================================================================================
-0:0000.0/=    This is an unregistered copy of LIQUi|>.                                             =
-0:0000.0/=    Please follow the instructions at http://github.com/msr-quarc/Liquid to register.    =
 0:0000.0/===========================================================================================
 0:0000.0/
 0:0000.0/=============== Logging to: Liquid.log opened ================
@@ -130,8 +124,6 @@ TIP: You can use an existing email address for this, if you want, such as your i
 * To see all of the available samples, just type "Liquid.exe" at the command prompt.
 
 **That's it -- LIQ<i>Ui</i>|&#x232A; is now installed on your virtual machine.**
-
-* If you like, you may register your copy of LIQ<i>Ui</i>|&#x232A; following the procedure in the [Getting Started page](GettingStarted.md#registration-optional)
 
 ### Stopping the VM
 

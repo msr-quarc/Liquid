@@ -1,4 +1,4 @@
-// Copyright (c) 2015, Microsoft Corporation
+// Copyright (c) 2015,2016 Microsoft Corporation
 
 #if INTERACTIVE
 #r @"..\bin\Liquid1.dll"                 
@@ -69,8 +69,8 @@ module Script =                     // The script module allows for incremental 
         let circ2   = circ.Fold()
         circ2.Dump()
 
-        // Don't do render's if we're really running under HPC
-        if Environment.UserInteractive then 
+        // Don't do render's if we're really running under HPC (wasn't portable)
+        if true then 
             RenderTest "Teleport" circ ket
 
         // Run the circuit
