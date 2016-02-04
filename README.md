@@ -11,7 +11,7 @@ As always, we encourage you to join the mailing list (instructions below) so you
 
 LIQ<i>Ui</i>|&#x232A; is a simulation platform developed by the [Quantum Architectures and Computation](http://research.microsoft.com/en-us/groups/quarc/) team at Microsoft Research to aid in the exploration of quantum computation. 
 LIQ<i>Ui</i>|&#x232A; stands for “Language Integrated Quantum Operations”.  
-A quantum operation is usually referred to as a unitary operator (U) applied to a column state vector (also known as a ket: |> ).
+A quantum operation is usually referred to as a unitary operator (U) applied to a column state vector (also known as a ket: |>).
 The “i” is just a constant scaling factor, hence the acronym.
 
 LIQ<i>Ui</i>|&#x232A; includes three simulators: 
@@ -78,10 +78,10 @@ A video of a recent talk  at [IQC](https://uwaterloo.ca/institute-for-quantum-co
 
 You can download the LIQ<i>Ui</i>|&#x232A; executable, libraries, sample scripts, and documentation from this site.
 
-See the [Getting Started](GettingStarted.md) page for directions on how to download, register, and start using LIQ<i>Ui</i>|&#x232A;.
+See the [Getting Started](GettingStarted.md) page for directions on how to download and start using LIQ<i>Ui</i>|&#x232A;.
 
-If you don't have access to a Windows environment, you can use LIQ<i>Ui</i>|&#x232A; on a Windows virtual machine.
-See the [Using LIQ<i>Ui</i>|&#x232A; on Microsoft Azure](AzureGuide.md) page for directions.
+If you wish to use LIQ<i>Ui</i>|&#x232A; on a Windows virtual machine,
+see the [Using LIQ<i>Ui</i>|&#x232A; on Microsoft Azure](AzureGuide.md) page for directions.
 
 ## How Do I Use It?
 
