@@ -268,13 +268,16 @@ along with any required supporting DLLs, into one of the valid directories.
 
 ## <a name="OSX"></a>OSX
 
-1. Install mono and [F#](http://fsharp.org/use/mac/) for OSX:
-  - You can install mono for OSX from [here](http://www.mono-project.com/download/), either the 32-bit version or the 'universal' version are fine. 
-  - For command-line usage, use homebrew to install mono/F#:
-      `brew update && brew install mono`
-  >Note: Xamarin Studio looks for mono through the first "official" install method, while bash/zsh works with the `brew` install method. As of the time of writing these steps, I have both installed.
+These instructions were originally written and tested on OSX El Capitan 10.11.2 by vsinha (*thanks!* from the LIQ<i>Ui</i>|&#x232A; team).
 
-2. Clone the LIQUi|> git repository and check that the software runs. 
+1. Install mono and [F#](http://fsharp.org/use/mac/) for OSX:
+  - You can install mono for OSX [from here](http://www.mono-project.com/download/), either the 32-bit version or the 'universal' version are fine. 
+  - For command-line usage, use homebrew to install mono/F#:
+  
+      `brew update && brew install mono`
+  >Note: Xamarin Studio looks for mono through the first "official" install method, while bash/zsh works with the `brew` install method. As of the time of writing these steps this worked with both installed.
+
+2. Either download the Zip file or Clone the LIQ<i>Ui</i>|&#x232A; git repository and check that the software runs. 
 ```
 git clone https://github.com/msr-quarc/Liquid
 cd ./Liquid/linux
@@ -299,12 +302,12 @@ The next step is to get the IDE running so that you can write your own code.
 2. Add F# support via the [add-in](https://github.com/fsharp/xamarin-monodevelop-fsharp-addin). 
   - open Xamarin Studio
   - Xamarin Studio > Add-in Manager > Language Bindings > F# Language Binding > Install
-  >The F# plugin may be installed already! (if it is you'll see it under Language bindings / F# Language Binding)
+  >The F# plugin may be installed already (if it is you'll see it under Language bindings / F# Language Binding).
 
 3. You can now open the solution file **(/Liquid/linux/Liquid.sln)**
 4. Test building and running by pressing the "Play" button in the top right, pressing CMD+ENTER, or selecting Run -> Start Without Debugging. The output for Teleport should be in a pop-window or in "Application Output" at the bottom right of the IDE window.
 5. Congrats! If you've made it to this step you're ready to start developing quantum circuits, pat yourself on the back.
 6. Now would be a good time to watch the [tutorial video](http://research.microsoft.com/apps/video/default.aspx?id=258279) and learn how to write and simulate your own quantum circuits.
 
-### Troubleshooting & Helpful Link(s)
+##### Troubleshooting & Helpful Link(s)
 - [Installing F# on OSX](http://fsharp.org/use/mac/)
