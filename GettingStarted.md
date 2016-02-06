@@ -283,7 +283,8 @@ cd ./Liquid/linux
 mono Liquid.exe
 ```
   If all is well, Liquid will ask you to accept its license. (Type `y` followed by Enter to accept.)
-3. Now try running a simulation:
+
+Now try running a simulation:
 ```
 mono Liquid.exe "__Teleport()"
 ```
