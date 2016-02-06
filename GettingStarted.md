@@ -277,7 +277,7 @@ These instructions were originally written and tested on OSX El Capitan 10.11.2 
       `brew update && brew install mono`
   >Note: Xamarin Studio looks for mono through the first "official" install method, while bash/zsh works with the `brew` install method. As of the time of writing these steps this worked with both installed.
 
-2. Either download the Zip file or Clone the LIQ<i>Ui</i>|&#x232A; git repository and check that the software runs. 
+2. Either download the Zip file or Clone the LIQ<i>Ui</i>|&#x232A; git repository and check that the software runs (remember that if you don't put the Liquid tree at the root, then rendering with TeX/TikZ won't work without editing the first line of all generated TeX files)
 ```
 git clone https://github.com/msr-quarc/Liquid
 cd ./Liquid/linux
@@ -298,7 +298,7 @@ The next step is to get the IDE running so that you can write your own code.
 
 1. MonoDevelop has been rebranded as Xamarin Studio. You can download and install Xamarin Studio from its [website](http://www.monodevelop.com/download/).
 
-  Alternatively, if you're feeling particularly 1337, you can build MonoDevelop from [source on github](https://github.com/mono/monodevelop))).
+  Alternatively, if you're feeling particularly 1337, you can build MonoDevelop from [source on github](https://github.com/mono/monodevelop).
 2. Add F# support via the [add-in](https://github.com/fsharp/xamarin-monodevelop-fsharp-addin). 
   - open Xamarin Studio
   - Xamarin Studio > Add-in Manager > Language Bindings > F# Language Binding > Install
