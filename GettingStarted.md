@@ -268,8 +268,6 @@ along with any required supporting DLLs, into one of the valid directories.
 
 ## <a name="OSX"></a>OSX
 
-##OSX installation instructions 
-
 1. Install mono and [F#](http://fsharp.org/use/mac/) for OSX:
   - You can install mono for OSX from [here](http://www.mono-project.com/download/), either the 32-bit version or the 'universal' version are fine. 
   - For command-line usage, use homebrew to install mono/F#:
@@ -291,7 +289,6 @@ mono Liquid.exe "__Teleport()"
 This will run the Teleport test and give a bunch of output. 
 >Note that you need quotes (single or double) around the command since it has parenthesis which need to be escaped on OSX and Linux (you can also use backslash in front of each paren).
 
----
 You can now run all the built-in examples! 
 
 The next step is to get the IDE running so that you can write your own code.
@@ -309,6 +306,5 @@ The next step is to get the IDE running so that you can write your own code.
 5. Congrats! If you've made it to this step you're ready to start developing quantum circuits, pat yourself on the back.
 6. Now would be a good time to watch the [tutorial video](http://research.microsoft.com/apps/video/default.aspx?id=258279) and learn how to write and simulate your own quantum circuits.
 
----
 ### Troubleshooting & Helpful Link(s)
 - [Installing F# on OSX](http://fsharp.org/use/mac/)
