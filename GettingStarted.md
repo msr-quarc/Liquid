@@ -268,22 +268,21 @@ along with any required supporting DLLs, into one of the valid directories.
 
 ## <a name="OSX"></a>OSX
 
-These instructions were originally written and tested on OSX El Capitan 10.11.2 by vsinha (*thanks!* from the LIQ<i>Ui</i>|&#x232A; team).
+These instructions were originally written and tested on OSX El Capitan 10.11.2 by vsinha (*thanks!* from the LIQ<i>Ui</i>|&#x232A; team). Latest update was tested on 10.11.3.
 
-1. Install mono and [F#](http://fsharp.org/use/mac/) for OSX:
-  - You can install mono for OSX [from here](http://www.mono-project.com/download/), either the 32-bit version or the 'universal' version are fine. 
-  - For command-line usage, use homebrew to install mono/F#:
-  
-      `brew update && brew install mono`
-  >Note: Xamarin Studio looks for mono through the first "official" install method, while bash/zsh works with the `brew` install method. As of the time of writing these steps this worked with both installed.
-
-2. Either download the Zip file or Clone the LIQ<i>Ui</i>|&#x232A; git repository and check that the software runs (remember that if you don't put the Liquid tree at the root, then rendering with TeX/TikZ won't work without editing the first line of all generated TeX files)
+1. Install mono and [F#](http://fsharp.org/use/mac/) for OSX [from here](http://www.mono-project.com/download/), we've tested the 'universal' version.
+2. Download the Zip file from the LIQ<i>Ui</i>|&#x232A; [git repository](https://github.com/msr-quarc/Liquid).
+3. You'll find `Liquid-master` in your Downloads, open the folder.
+4. Type `Command-A` `Command-C` to select all the files and copy them.
+5. Type `Shift-Command-G` and then a slash (`/`) to go to the root.
+6. Type `Shift-Command-N` to create a new folder (you will have to enter your admin password). Then create the `Liquid` folder.
+7. Double click on the `Liquid` folder to open it and then type `Command-V` to paste the contents of the downloaded `Liquid-master` tree into `\Liquid`.
+8. To check that the simulator runs, start a `Terminal` window (`Command-space Terminal`) and type the following:
+``` 
+cd /Liquid/linux 
+mono Liquid.exe 
 ```
-git clone https://github.com/msr-quarc/Liquid
-cd ./Liquid/linux
-mono Liquid.exe
-```
-  If all is well, Liquid will ask you to accept its license. (Type `y` followed by Enter to accept.)
+If all is well, Liquid will ask you to accept its license. (Type `y` followed by Enter to accept.)
 
 Now try running a simulation:
 ```
@@ -298,14 +297,12 @@ The next step is to get the IDE running so that you can write your own code.
 
 1. MonoDevelop has been rebranded as Xamarin Studio. You can download and install Xamarin Studio from its [website](http://www.monodevelop.com/download/).
 
-  Alternatively, if you're feeling particularly 1337, you can build MonoDevelop from [source on github](https://github.com/mono/monodevelop).
 2. Add F# support via the [add-in](https://github.com/fsharp/xamarin-monodevelop-fsharp-addin). 
   - open Xamarin Studio
   - Xamarin Studio > Add-in Manager > Language Bindings > F# Language Binding > Install
   >The F# plugin may be installed already (if it is you'll see it under Language bindings / F# Language Binding).
 
-3. You can now open the solution file **(/Liquid/linux/Liquid.sln)**
-4. Test building and running by pressing the "Play" button in the top right, pressing CMD+ENTER, or selecting Run -> Start Without Debugging. The output for Teleport should be in a pop-window or in "Application Output" at the bottom right of the IDE window.
+3. You can now open the solution file **(/Liquid/linux/Liquid.sln)** 4. Test building and running by pressing the "Play" button in the top right, pressing CMD+ENTER, or selecting Run -> Start Without Debugging. The output for Teleport should be in a pop-window or in "Application Output" at the bottom right of the IDE window.
 5. Congrats! If you've made it to this step you're ready to start developing quantum circuits, pat yourself on the back.
 6. Now would be a good time to watch the [tutorial video](http://research.microsoft.com/apps/video/default.aspx?id=258279) and learn how to write and simulate your own quantum circuits.
 
