@@ -247,7 +247,7 @@ along with any required supporting DLLs, into one of the valid directories.
 1. Install the IDE (monodevelop):
     
     ```
-    sudo apt-get install mono-develop
+    sudo apt-get install monodevelop
     ```
     
 1. Add F# support to monodevelop via the [add-in](https://github.com/fsharp/xamarin-monodevelop-fsharp-addin):
