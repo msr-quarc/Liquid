@@ -1,7 +1,7 @@
 # The Language-Integrated Quantum Operations (LIQ<i>Ui</i>|&#x232A;) simulator
 
 ## News
-__2016/03/04 Outputing circuits for other Quantum Languages__
+__2016/03/04 Outputting circuits for other Quantum Languages__
 
 We've uploaded sample code that shows how to print out circuits for other quantum languages. This specific example shows how to parse a circuit and generate QASM code. See [UserCode example](https://github.com/msr-quarc/Liquid/tree/master/UserCode/DaveWecker) from DaveWecker
 
