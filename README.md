@@ -1,11 +1,20 @@
 # The Language-Integrated Quantum Operations (LIQ<i>Ui</i>|&#x232A;) simulator
 
-| :bangbang: **NOTICE** :bangbang: |
-| :--: |
-|:point_right::point_right::point_right::point_right::point_right::point_right::point_right::point_right::point_right::point_right: New Version Available (time to re-install) :point_left::point_left::point_left::point_left::point_left::point_left::point_left::point_left::point_left:|
-|We are pleased to announce a major new version of LIQ<i>Ui</i>\|&#x232A; that has been re-written to be fully portable. Today we are releasing the software and instructions for Windows, Linux and OSX. We have also improved the licensing process and have removed the registration steps completely. *All* future issues *must* be logged against this version, so we encourage anyone who has already installed the software to download the new version.|
+## News
+__2016/03/04 Outputing circuits for other Quantum Languages__
 
-As always, we encourage you to join the mailing list (instructions below) so you will directly receive announcements like this.
+We've uploaded sample code that shows how to print out circuits for other quantum languages. This specific example shows how to parse a circuit and generate QASM code. See [UserCode example](https://github.com/msr-quarc/Liquid/tree/master/UserCode/DaveWecker) from DaveWecker
+
+__2016/02/04 The Microsoft Quantum Challenge__
+
+Microsoft Research is delighted to announce its first Quantum Challenge based on the simulator for Language-Integrated Quantum Operations: LIQ<i>Ui</i>\|&#x232A; from the QuArC Group.
+See http://aka.ms/quantumchallenge for full details. Closing date: April 29, 2016.
+
+__2016/02/01 New Version Available (time to re-install)__
+
+We are pleased to announce a major new version of LIQ<i>Ui</i>\|&#x232A; that has been re-written to be fully portable (currently on Windows, Linux and OSX). We have also improved the licensing process and have removed the registration steps completely. *All* future issues *must* be logged against this version, so we encourage anyone who has already installed the software to download the new version.
+
+As always, we encourage you to join our (low volume) mailing list (instructions below) so you will directly receive announcements like these.
 
 ## What Is LIQ<i>Ui</i>|&#x232A;?
 
