@@ -1,6 +1,9 @@
 # The Language-Integrated Quantum Operations (LIQ<i>Ui</i>|&#x232A;) simulator
 
 ## News
+__2016/0311 New introduction videos__
+Seven new short videos has been posted to the [LIQ<i>Ui</i>|&#x232A; Research site](http://research.microsoft.com/en-us/projects/liquid/)
+
 __2016/03/04 Outputting circuits for other Quantum Languages__
 
 We've uploaded sample code that shows how to print out circuits for other quantum languages. This specific example shows how to parse a circuit and generate QASM code. See [UserCode example](https://github.com/msr-quarc/Liquid/tree/master/UserCode/DaveWecker) from DaveWecker
@@ -96,6 +99,15 @@ see the [Using LIQ<i>Ui</i>|&#x232A; on Microsoft Azure](AzureGuide.md) page for
 
 See the [users' guide](https://msr-quarc.github.io/Liquid/LIQUiD.pdf) and the [full help documentation](https://msr-quarc.github.io/Liquid/).
 The help may also be downloaded as a [single file](https://msr-quarc.github.io/Liquid/Liquid.chm), if desired. There is also a [tutorial video](http://research.microsoft.com/apps/video/default.aspx?id=258279) available that will take you through the basics.
+
+We've also posted seven short videos to the [LIQ<i>Ui</i>|&#x232A; Research site](http://research.microsoft.com/en-us/projects/liquid/). These include:
+* [Station Q Overview](http://research.microsoft.com/apps/video/default.aspx?id=263557)
+* [LIQ<i>Ui</i>|&#x232A; Simulator History](http://research.microsoft.com/apps/video/default.aspx?id=263605)
+* [The Quantum Challenge](http://research.microsoft.com/apps/video/default.aspx?id=263584)
+* [LIQ<i>Ui</i>|&#x232A; Quantum Simulator QuickStart](http://research.microsoft.com/apps/video/default.aspx?id=263046)
+* [LIQ<i>Ui</i>|&#x232A; Quantum Error Correction](http://research.microsoft.com/apps/video/default.aspx?id=263597)
+* [LIQ<i>Ui</i>|&#x232A; Simulation Optimization](http://research.microsoft.com/apps/video/default.aspx?id=263612)
+* [LIQ<i>Ui</i>|&#x232A; Quantum Chemistry](http://research.microsoft.com/apps/video/default.aspx?id=263611)
 
 Note that this version of LIQ<i>Ui</i>|&#x232A; is limited to a maximum of 23 physical qubits for full state vector simulation.
 
