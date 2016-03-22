@@ -1,7 +1,8 @@
 # The Language-Integrated Quantum Operations (LIQ<i>Ui</i>|&#x232A;) simulator
 
 ## News
-__2016/0311 New introduction videos__
+__2016/03/11 New introduction videos__
+
 Seven new short videos have been posted to the [LIQ<i>Ui</i>|&#x232A; Research site](http://research.microsoft.com/en-us/projects/liquid/)
 
 __2016/03/04 Outputting circuits for other Quantum Languages__
